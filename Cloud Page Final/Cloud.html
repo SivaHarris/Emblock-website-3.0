@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cloud Page</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="./CSS/Cloud.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Cloudmind.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/FooterPage.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+    
+            <div class="toggler-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img id="hamburger" onclick="navHamburger(this)" src="./IMAGES/hamburger.svg" alt="">
+                    <img id="hamburgerBack" onclick="navHamburger(this)" src="./IMAGES/back.svg" alt="">
+                </button>
+                <div class="brand">
+                    <div class="logoName">
+                        <a class="navbar-brand" href="../Home/home.html"><img src="./IMAGES/Logo.jpg" alt=""></a>
+                        <a href="../Home/home.html"><h1 class="logoName">Emblock</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-ul">
+                    <li id="homeli" class="nav-item">
+                        <img id="navGifCheck" class="navliGif" src="./Images/home.gif" alt="">
+                        <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                    </li>
+                    <li id="servicesli" class="nav-item dropSerM dropdownS" onclick="servicesMToggle()">
+                        <img class="navliGif" src="./Images/services.gif" alt="">
+                        <a id="aboutus" class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services<img class="parkdown" src="./Images/parkdown.svg" alt=""></a>
+    
+                        <div class="servicesDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Automation</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Application
+                                            Services</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Data & AI</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Software
+                                            Engineering</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Cloud</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Emerging
+                                            Technologies</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/iotGif.gif" alt="">
+                                        <h3 class="rHead">Internet of
+                                            Things</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">ERP & CRM</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="productsli" class="nav-item dropProM dropdownP" onclick="productsMToggle()">
+                        <img class="navliGif" src="./Images/products.gif" alt="">
+                        <a class="nav-link" href="#">Products<img class="parkdown" src="./Images/parkdown.svg"
+                                alt=""></a>
+    
+                        <div class="productsDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Factory
+                                            Insights</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Smart Vision
+                                            System</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Attendance
+                                            Tracker</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Drone
+                                            Solutions</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Remote
+                                            Handling</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Light Control
+                                            Hub</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">Equinox</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="contactusli" class="nav-item">
+                        <img class="navliGif" src="./Images/contactus.gif" alt="">
+                        <a class="nav-link" href="#contactusid">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdownServices">
+                <div class="left">
+                    <img id="servicesGif" src="" alt="">
+                    <h1 id="servicesH1"></h1>
+                    <p id="servicesP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" id="automation" onmouseover="servicesLoad('automation')" onmouseout="servicesDefault()">
+                            <a href="../Automation/automation.html">Automation</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('softwareEngineering')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Software Engineering/softwareEng.html">Software Engineering</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('applicationServices')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Application  Page final/Application.html">Application Services</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('dataAi')" onmouseout="servicesDefault()"><a href="../AIPAGE/AiPage-final.html">Data & AI</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('cloud')" onmouseout="servicesDefault()"><a href="../Cloud Page Final/Cloud.html">Cloud</a></div>
+                        <div class="item" onmouseover="servicesLoad('iot')" onmouseout="servicesDefault()">
+                            <a href="../IOT/IOT.html">Internet of Things</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('emergingTechnology')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Emerging Technology final/Emerging.html">Emerging Technologies</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('erpcrm')" onmouseout="servicesDefault()"><a href="../ERP/ERP.html">ERP & CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownProducts">
+                <div class="left">
+                    <img id="productsGif" src="" alt="">
+                    <h1 id="productsH1"></h1>
+                    <p id="productsP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" onmouseover="productsLoad('factoryInsights')" onmouseout="productsDefault()">
+                            <a href="../Factory/factoryMonitoring.html">Factory Insights</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('smartVisionSystem')"
+                            onmouseout="productsDefault()">
+                            <a href="../Smart Vision System/smartVisionSystem.html"> Smart Vision System</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('attendanceTracker')"
+                            onmouseout="productsDefault()">
+                            <a href="../Trackerpage/Tracker.html"> Attendance Tracker</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('droneSolustions')" onmouseout="productsDefault()">
+                            <a href="../Drone Page final/Drone Page.html"> Drone Solutions</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('remoteHandling')" onmouseout="productsDefault()">
+                            <a href="../RemoteHandling final/RemoteHandling.html"> Remote Handling</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('lightControlHub')" onmouseout="productsDefault()">
+                            <a href="../Lightpage/lightControlHub.html"> Light Control Hub</a></div>
+                        <div id="equi" class="item" onmouseover="productsLoad('equinox')"
+                            onmouseout="productsDefault()">Equinox - A
+                            Trading Bot</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cloudbg">
+
+        <video autoplay muted loop id="video-background">
+            <source src="IMAGES/Cloud bg vedio.mp4" type="video/mp4">
+        
+        </video>
+
+        <div class="cloudtxt">
+            <h1>Cloud-Powered&nbsp;Operations </h1>
+            <p> Unleash business potential with flexible and scalable cloud<br> solutions</p>
+
+        </div>
+    </div>
+
+   
+
+    <div class="cloudFut">
+        <div class="futContainer">
+            <div class="futHeading"><h1>Features</h1></div>
+        
+            <div class="futTxt-1">
+             <img src="IMAGES/Group 107.png" class="futImg">
+             <div>
+                <h3  class="futHead"> Self-service On-Demand</h3>
+                <p class="futContent">This is one of the most essential and significant characteristics of cloud computing. This means that cloud computing enables clients to regularly monitor the abilities, alloted network storage, and server uptime.<p>
+             </div>
+             
+            </div>
+           <div class="futTxt-2 ">
+             <img src="IMAGES/Group 108.png" class="futImg-1">
+             <div>
+                <h3 class="futHead">Scalability And Rapid Elasticity</h3>
+             <p class="futContent">A key feature and advantage of cloud computing is its rapid scalability. This cloud feature enables cost-effective handling of workloads that require a large number of servers but only for a short period.</p>
+             </div>
+             </div>
+     
+           <div class="futTxt-3 ">
+             <img src="IMAGES/Group 109.png" class="futImg-2">
+             <div>
+                <h3 class="futHead">Resources Pooling</h3>
+             <p class="futContent">This is also a fundamental characteristic of cloud computing. Pooling resources means that a cloud service provider can distribute resources for more than one client and provide them with different services according to their needs.</p>
+             </div>
+           </div>
+     
+           <div class="futTxt-4">
+             <img src="IMAGES/Group 111.png" class="futImg-1">
+             <div>
+             <h3 class="futHead">Economical</h3>
+             <p class="futContent">This kind of service is economical as it efficiently reduces IT costs and data storage expeniture. Moreover,most cloud computing services are free.</p>
+             </div>
+             
+            </div>
+     
+           <div class="futTxt-5">
+             <img src="IMAGES/Group 114.png"  class="futImg">
+             <div>
+                <h3 class="futHead">Automation</h3>
+                <p class="futContent">Automation is an essential feature of cloud computing. The ability of cloud computing to automatically install,configure and maintain a cloud service is known as automation in cloud computing.In simple words,it is the process of making the most of the technology and minimizing the manual effort.</p>
+             </div>
+            </div> 
+        </div>
+      
+    </div>
+
+    
+
+    <div class="cloud-service">
+        <div class="ser-heading">
+            <h2>Cloud Coumputing Services Types</h2>
+            <div class="blackbg">
+
+            </div>
+        </div>
+        <div class="ser-content">
+
+            <div class="ser-content-1">
+                <div class="img-box-1">
+                    <div class="img-1">
+                        <div class="img-1-heading">
+                            <p class="img-txt">Infrastructure as a service (laaS)
+                            </p>
+
+                        <p class="img-smtxt">Infrastructure as a Service (IaaS) provides on-demand access to IT infrastructure services like compute, storage, networking, and virtualization, offering high control over IT resources.</p>
+                     </div>
+                       
+                    </div>
+                    </div>
+            </div>
+
+            <div class="ser-content-2">
+                <div class="img-box-2">
+                    <div class="img-2">
+                        <div class="img-2-heading">
+                            <p class="img-txt">Platform as a service (PaaS)
+                            </p>
+
+                        <p class="img-smtxt">Platform as a service (PaaS) provides all hardware and software resources for cloud application development, allowing companies to focus on application development without managing infrastructure.</p>
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ser-content-3">
+                <div class="img-box-3">
+                    <div class="img-3">
+                        <div class="img-3-heading">
+                            <p class="img-txt">Software as a service (SaaS)
+                            </p>
+
+                        <p class="img-smtxt">Software as a Service (SaaS) provides a comprehensive application stack, including infrastructure, maintenance, and updates, typically for end-user applications.</p>
+                     </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+   
+    <div class="cloud-solution">
+
+       <div class="img-sol">
+        <img src="IMAGES/Cloud solution.png" alt="image">
+       </div>
+
+       <div class="sol-content">
+        <h1>What Is A Cloud Driven Solution?</h1>
+        <p>Applications, storage, on-demand services, computer networks, or other resources that are accessed with an internet connection through another provider's shared cloud computing framework.</P>
+        <P class="second-txt">The simplest way to think of cloud computing is by comparing it to electricity. Your home and business have it, but you don't need a power plant on you property to use it. You just connect to the one that provides electricity to your area.</p><br>
+        <h1>What Is A Cloud Consulting?</h1>
+        <p>Cloud consultants provide technical knowledge and communication to businesses, educating them on cloud computing services and their advantages, helping them make informed decisions for operational improvement.Cloud computing, which provides constant,simple access to a network connecting servers, applications, networks, services, and other resources, is expexcted to significantly impact future technologies and businesses in the coming years.</p>
+       </div>
+
+    </div>
+
+
+     
+
+    <div class="cloud-dg-heading">
+         <h2>What is a Cloud Consulting Service Types?</h2>
+    </div>
+
+    <div class="cloud-dg">
+        <img src="IMAGES/Line-1.png" alt="Line" class="line-1">
+        <img src="IMAGES/Line-2.png" alt="Line" class="line-2">
+        <img src="IMAGES/Line-3.png" alt="Line" class="line-3">
+        <img src="IMAGES/Line-4.png" alt="Line" class="line-4">
+        <img src="IMAGES/Line-4.png" alt="LIne" class="line-5">
+        <img src="IMAGES/Line-6.png" alt="Line" class="line-6">
+      <div class="dg-container-1">
+           <div class="oval-1">
+              <div class="oval-cont-1">
+                  <h2 class="oval-head">Cloud Advisory</h2>
+                  <div class="green-cir-left">
+
+                  </div>
+              </div>
+            
+            </div>
+
+           <div class="oval-2">
+            <div class="oval-cont-2">
+                <h2 class="oval-head">Cloud Migration</h2>
+                <div class="green-cir-left">
+
+                </div>
+            </div>
+           </div>
+
+           <div class="oval-3">
+            <div class="oval-cont-3">
+                <h2 class="oval-head">Optimization</h2>
+                <div class="green-cir-left">
+
+                </div>
+            </div>
+           </div>
+      </div>
+      
+      <div class="dg-container-2">
+          <div class="center-cir">
+               <img src="IMAGES/Ellipse 80.png" alt="Circle">
+               <div class="center-txt">
+                   <h2>Cloud<br>Consulting<br>Service<br>Types</h2>
+               </div>
+               <div class="rect-1">
+                 
+               </div>
+               <div class="sm-cir-1 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+
+
+               <div class="rect-2">
+                 
+               </div>
+               <div class="sm-cir-2 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+                 
+
+               <div class="rect-3">
+                 
+               </div>
+               <div class="sm-cir-3 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+
+               <div class="rect-4">
+                 
+               </div>
+               <div class="sm-cir-4 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+
+               <div class="rect-5">
+                 
+               </div>
+               <div class="sm-cir-5 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+               
+
+               <div class="rect-6">
+                 
+               </div>
+               <div class="sm-cir-6 cir-size">
+                <img src="IMAGES/Small cir.png" alt="">
+               </div>
+          </div>
+     
+          
+      </div>
+
+
+
+
+      <div class="dg-container-3">
+        <div class="oval-4">
+            <div class="oval-cont-4">
+                <h2 class="oval-head">Data & Analytics</h2>
+                <div class="green-cir-right">
+
+                </div>
+            </div>
+          
+          </div>
+
+         <div class="oval-5">
+          <div class="oval-cont-5">
+              <h2 class="oval-head">Security</h2>
+              <div class="green-cir-right">
+
+              </div>
+          </div>
+         </div>
+
+         <div class="oval-6">
+          <div class="oval-cont-6">
+              <h2 class="oval-head">Application<br> Modernization</h2>
+              <div class="green-cir-right">
+
+              </div>
+          </div>
+         </div>
+
+
+      </div>
+    </div>
+
+    
+
+
+<div class="org-heading">
+    <h2>How cloud computing can help your organization</h2>
+</div>
+
+    <div class="cloud-org">
+
+        <div class="org-txt-1">
+            <div class="big-txt">
+                <h1 class="green">HIGHLY MOBILE</h1>
+            </div>
+             <div class="norm-txt-1">
+                <p>Highly mobile or distributed user population</p>
+             </div>
+             
+        </div>
+
+        <div class="org-txt-2">
+            <div class="big-txt">
+                <h1 class="blue">LOW UTILIZATION</h1>
+            </div>
+             <div class="norm-txt-2">
+                <p>Low utilization of existing infrastructure resources</p>
+             </div>
+        </div>
+
+        <div class="org-txt-3">
+            <div class="big-txt">
+                <h1 class="lt-blue-1">BUSINESS GROWTH</h1>
+            </div>
+             <div class="norm-txt-3">
+                <p>High business growth that outpaces infrastructure capabilities</p>
+             </div>
+            
+        </div>
+
+        <div class="org-txt-4">
+            <div class="big-txt">
+                <h1 class="d-green">DATA STORAGE RESOURCES</h1>
+            </div>
+             <div class="norm-txt-4">
+                <p>Large volumes of data that are overwhelming your on-premises data storage resources</p>
+             </div>
+        </div>
+
+        <div class="org-txt-5">
+            <div class="big-txt">
+                <h1 class="d-blue">INFRASTRUCTURE EXPENSES</h1>
+            </div>
+             <div class="norm-txt-5">
+                <p>Cash flow challenges due to high computing infrastructure expenses</p>
+             </div>
+        </div>
+
+    </div>
+
+
+
+
+   <!-- footer -->
+
+
+   <footer id="contactusid">
+    <div class="Copyright">
+        <div class="contact">
+            <div class="contact-sep-1">
+               
+                <div class="contact1">
+                  <div class="contact1-sep-1">
+                    <div class="logo-Emblock">
+                        <a href="../Home/home.html"><img src="Images/Logo.jpg" class="logo-con1">
+                            <h1>Emblock</h1>
+                        </a>
+                    </div>
+                    <div class="logo-txt">
+                        <p>Welcome to EMBLOCK - your catalyst for business transformation. We fuse technology,
+                            innovation, and expertise to drive your success.</p>
+                    </div> 
+                  </div>
+
+
+
+                    <div class="contact1-sep-2">
+                        <div class="phone-container">
+                            <div class="phone-txt">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+91 9952311408</p>
+                            </div>
+                            <div class="phone-txt">
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>contact@emblock.in
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="phone-container-2">
+                            <div class="follow-txt-1">
+                                <p class="txt-green">Follow us on:</p>
+                            </div>
+                            <div class="follow-txt-2">
+                                        <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i>
+                                        </a>
+                            
+                            </div>
+                            <div class="follow-txt-2">
+                                <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>
+                            </a>
+                            </div>
+
+                        </div>  
+                        <div class="contact-green-box">
+                            <p>
+                                Contact Us
+                            </p>
+
+                        </div>
+                      
+                    </div>
+                </div>
+                   
+
+
+              
+
+
+            </div>
+
+
+
+          <div class="contact-sep-2">
+               
+            <div class="contact2">
+                <div id="footer-2">
+                    <h3>Our Products</h3>
+
+                    <div class="footer-text">
+                      <a href="../Factory/factoryMonitoring.html"><p>Factory Insights</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Smart Vision System/smartVisionSystem.html"><p>Smart Vision System</p></a>
+                    </div>
+                   
+                    <div class="footer-text">
+                      <a href="../Trackerpage/Tracker.html"><p>Attendance Tracker</p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../Drone Page final/Drone Page.html"><p>Drone Solutions</p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../RemoteHandling final/RemoteHandling.html"><p>Remote Handling </p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../Lightpage/lightControlHub.html"><p>Light Control Hub</p></a>
+                    </div>
+
+                    <div class="footer-text">
+                      <a href="#"><p>Equinox - A trading Bot</p></a>
+                    </div>
+
+                  
+                </div>
+            </div>
+            <div class="contact3">
+                <div id="footer-3">
+                    <h3><b>Our Services</b></h3>
+                    <div class="footer-text">
+                      <a href="../Automation/automation.html"><p>Automation</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Application  Page final/Application.html"><p>Application Services </p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Software Engineering/softwareEng.html"><p>Software Engineering</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../AIPAGE/AiPage-final.html"><p>Data & AI</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Cloud Page Final/Cloud.html"><p>Cloud maintenance and support</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Emerging Technology final/Emerging.html"><p>Emerging Technologies</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../IOT/IOT.html"><p>Internet of Things</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../ERP/ERP.html"><p>ERP and CRM</p></a>
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+          
+           
+
+
+           </div>
+          
+           
+
+
+        </div>
+
+      <div class="contact-4">
+         
+        <div class="contact-4-head">
+            <div class="contact-green2-box">
+                <h3>Contact us</h3>
+            </div>
+        </div>
+        <div class="contact-4-content">
+          <div class="Ph-num">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 9952311408</p>
+          </div>
+          <div class="E-mail">
+            <i class="fa-regular fa-envelope"></i>
+            <p>contact@emblock.in
+            </p>
+          </div>
+
+
+        
+
+
+          <div  class="linkin-logo">
+              
+            <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+        <div class="Insta-logo">
+            <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+          
+
+
+      </div>
+
+    </div>
+
+       <div class="copyright-content">
+          <p class="footer-copyright"> Copyright <i class="fa-regular fa-copyright"></i><b>EMBLOCK</b> . All
+            Rights
+            Reserved
+          </p>
+       </div>
+        
+
+    </div>
+
+
+</footer>
+
+ 
+
+
+
+
+
+
+<script src="./JS/navbar.js"></script>
+<script src="./JS/navbarServices.js"></script>
+<script src="./JS/navbarProducts.js"></script>
+<script src="https://kit.fontawesome.com/49bafbd5a4.js" crossorigin="anonymous"></script>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

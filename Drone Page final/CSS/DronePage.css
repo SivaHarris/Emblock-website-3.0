@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#161616 !important;
+    overflow-x: hidden;
+}
+
+
+.drone-app-container {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    background-color: #161616 !important;
+    position: relative;
+}
+
+@keyframes changeBrightness {
+    0% {
+        filter: brightness(100%); /* Start with normal brightness */
+    }
+    25% {
+        filter: brightness(180%); /* Increase brightness to 200% */
+    }
+    75% {
+        filter: brightness(30%); /* Decrease brightness to 20% */
+    }
+    100% {
+        filter: brightness(100%); /* Return to normal brightness */
+    }
+}
+
+.bg-blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+
+.drone-img-box{
+    height: 100%;
+    width: 30%;
+}
+
+.drone-img-box img{
+    height: 80%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.App-slide-container{
+    height: 100%;
+    width: 70%;
+}
+
+.App-slide-box{
+    height: 70%;
+    width: 100%;
+    margin-top: 8%;
+    position: relative;
+}
+
+.button {
+    border-radius: 50px;
+    width: 20%;
+    border: none;
+    background-color:transparent;
+    text-align: center;
+}
+.pre {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+}
+.next {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.arrow-slide{
+    height: 75%;
+    width: 75%;
+    padding-bottom: 12.5%;
+}
+
+
+.indicators {
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+    left: 26%;
+}
+
+.indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #cc1313; /* Change color for active indicator */
+}
+
+.but-container{
+    height: 10%;
+    position: absolute;
+    left: 42%;
+    bottom: 5%;
+    width: 20%;
+}
+
+
+.content-container > div {
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0; 
+transition: opacity 0.5s ease;
+}
+
+.content-container > div.active1 {
+opacity: 1;
+}
+
+
+.slide-info-container{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.slide-info-box{
+height: 70%;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.slide-head{
+height: 30%;
+width: 100%;
+}
+
+.slide-head h1{
+font-family: "Poppins", sans-serif;
+font-size: 200%;
+font-weight: 500;
+text-align: center;
+padding-top: 2%;
+color: #fff;
+}
+
+.txt-box{
+height: 70%;
+width: 100%;
+display: flex;
+}
+
+
+.txt-box-1,.txt-box-2{
+height: 100%;
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.txt-box-head{
+height: 33%;
+width: 100%;
+}
+
+.txt-box-info{
+height: 50%;
+width: 100%;
+}
+
+.slide-sub-head-1{
+    font-family: "Poppins", sans-serif;
+font-size: 130%;
+font-weight: 500;
+text-align: center;
+padding-top: 2%;
+padding-left: 20%;
+color: #BBB7B7; 
+}
+
+.slide-sub-head-2{  
+font-family: "Poppins", sans-serif;
+font-size: 140%;
+font-weight: 500;
+text-align: center;
+padding-top: 2%;
+padding-right: 15%;
+color: #BBB7B7; 
+}
+
+
+.ul-container{
+height: 100%;
+width: 72%;
+margin-left: 23%;
+
+}
+
+.ul-container-right{
+height: 100%;
+width: 72%;
+margin-left: 10%;
+text-align: center;
+}
+
+
+
+
+.slide-info-font{
+font-family: "Montserrat", sans-serif;
+font-size: 120%;
+font-weight: 300;
+color: #BBB7B7; 
+text-align: center;
+}
+
+.bottom-spc{
+margin-bottom: 0;
+}
+
+
+/* Appliction heading */
+
+.App-head{
+    height: 50px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    background-color:#161616;
+   }
+
+   .head-box{
+    height: 100%;
+    width: 14%;
+    display: flex;
+   }
+
+   .head-box-1{
+    height: 100%;
+    width: 5%;
+    background-color: #F9AC07;
+   }
+
+   .head-box-2{
+    height: 100%;
+    width: 95%;
+    background-color: #009AA2;
+   }
+
+   .head-box-2 h1{
+    font-family: "Poppins", sans-serif;
+   font-size: 160%;
+   font-weight: 600;
+  text-align: center;
+  color: #fff;
+  padding-top: 4%;
+   }
+
+
+   /* Benefits heading..... */
+
+
+   .benifits-head{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:#161616;
+   }
+
+   .ben-head-box{
+    height: 100%;
+    width: 10%;
+    display: flex;
+   }
+
+   .ben-head-box-2{
+    height: 100%;
+    width: 95%;
+    background-color: #009AA2;
+   }
+
+
+   .ben-head-box-2 h1{
+    font-family: "Poppins", sans-serif;
+   font-size: 160%;
+   font-weight: 400;
+  text-align: center;
+  color: #fff;
+  padding-top: 7%;
+   }
+
+
+   /* Drone Benefits  */
+
+
+
+   .ben-container{
+    height: 820px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ben-img-box{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-line{
+    display: none;
+    height: 52%;
+    width: 10%;
+    position: absolute;
+    bottom: 5%;
+    left: 12%;
+    background: url("../IMAGES/linegif-ezgif.com-cut.gif");
+    background-size: cover;
+}
+
+.right-line{
+    display: none;
+    height: 52%;
+    width: 10%;
+    position: absolute;
+    bottom: 5%;
+    right: 13%;
+    background: url("../IMAGES/linegif-ezgif.com-cut.gif");
+    background-size: cover;
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+}
+
+.ben-container:hover .right-line{
+    display: block;
+}
+.ben-container:hover .left-line{
+    display: block;
+}
+
+.ben-img{
+    height: 100%;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ben-img img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    animation: drone-img 2.5s linear infinite ;
+}
+
+@keyframes drone-img{
+    0%{
+        bottom: 0%;
+    }
+    25%{
+       bottom: 8%;
+    }
+
+    50%{
+        bottom: 0%;
+    }
+
+    75%{
+        bottom:-8%;
+    }
+    100%{
+        bottom: 0%;
+    }
+
+}
+
+
+.ben-info-box-1{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ben-info-1,.ben-info-2{
+    height: 100%;
+    width: 30%;
+}
+
+.ben-info-box-2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.ben-info-3,.ben-info-4{
+    height: 100%;
+    width: 30%;
+}
+
+.ben-info-box-3{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ben-info-5{
+    height: 100%;
+    width: 30%;
+}
+
+.ben-info-head{
+    font-family: "Poppins", sans-serif;
+    font-size: 160%;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2%;
+    color: #fff;
+}
+
+.ben-info-txt{
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 110%;
+    font-weight: 300;
+    text-align: center;   
+}

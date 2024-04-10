@@ -1,0 +1,1096 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  #161616 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.cloudbg{
+    height: 650px;
+    width: 100%;
+    position: relative;
+}
+
+#video-background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cloudtxt{
+    height:200px ;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top:35%;
+    overflow: hidden;
+  
+}
+.cloudtxt h1{
+ font-weight: 900;
+ color: white;           
+ text-align: left;
+ padding-left: 3%;
+ font-size: 4rem;
+}
+
+.cloudtxt p{
+ color: #FFF;
+ font-family: 'Inter', sans-serif;;
+font-weight: 300;
+font-size: 1.4rem;
+margin-top: 2%;
+padding-left: 3%;
+text-align: left;
+}
+
+
+/* Cloud computing Services */
+
+
+
+.cloud-service{
+    height: 530px;
+    width: 100%;
+    background-image: linear-gradient(to right, #1E4C56 85%, #161616 50%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+   }
+
+   .blackbg{
+    height: 95%;
+    width: 16%;
+    background-color: black;
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    opacity: 0.4;
+   }
+   .ser-heading{
+    width: 100%;
+    height: 10%;
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 1.2rem;
+    color: #FFF;
+    position: relative;
+   }
+.ser-heading h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600 ;
+    margin-bottom: 0;
+}
+
+   .ser-content{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    overflow: hidden;
+
+   }
+
+
+
+   .ser-content-1,.ser-content-2,.ser-content-3{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .img-box-1,.img-box-2,.img-box-3{
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 2px 1px rgba(22, 22, 22, 0.40);
+    overflow-x: hidden;
+   }
+
+   .img-1  {
+    height: 100%;
+    width: 100%;
+    background-image: url("../IMAGES/Worker\ 1.png ");
+    background-size: cover;
+    position: relative;
+   }
+
+   .img-1-heading{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.85;
+    transition: height 0.5s ease, padding-top 1s ease;
+ 
+   }
+
+   .img-txt{
+    color: white;
+    font-size: 1.8rem;
+    padding-left: 5%;
+    margin-bottom: 0;
+   }
+
+   .img-smtxt{
+    color: #ffffffca;
+    margin-top: 4%;
+    font-size: 90%;
+    text-align: left;
+    padding-left: 2%;
+   }
+
+   .img-1:hover .img-1-heading{
+    height: 100%;
+    padding-top: 45%;
+   }
+
+   .img-2  {
+    height: 100%;
+    width: 100%;
+    background-image: url("../IMAGES/Worker\ 2.png");
+    background-size: cover;
+    position: relative;
+   }
+
+   .img-2-heading{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.85;
+    transition: height 0.5s ease, padding-top 1s ease;
+ 
+   }
+ 
+   .img-2:hover .img-2-heading{
+    height: 100%;
+    padding-top: 45%;
+   }
+
+   .img-3  {
+    height: 100%;
+    width: 100%;
+    background-image: url("../IMAGES/Worker\ 3.png");
+    background-size: cover;
+    position: relative;
+   }
+
+   .img-3-heading{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.85;
+    transition: height 0.5s ease, padding-top 1s ease;
+ 
+   }
+ 
+   .img-3:hover .img-3-heading{
+    height: 100%;
+    padding-top: 45%;
+   }
+
+
+/* Cloud solution */
+
+.cloud-solution{
+    height:380px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1%;
+    margin-top: 2%;
+  }
+
+  .img-sol{
+    height: 90%;
+    width: 35%;
+  }
+
+  .img-sol img{
+    height: 100%;
+    width: 100%;
+  }
+
+  
+
+  .sol-content{
+        width: 60%;
+        height: 90%;
+  }
+
+  .sol-content h1{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600 ;
+    font-size: 150%;
+    padding-left: 1.5%;
+    
+    }
+   .sol-content p{
+        color: #ffffffd0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        font-size: 100%;
+    }
+
+    .second-txt{
+        margin-top:1.5% !important ;
+    }
+
+
+/*  Cloud features*/
+
+.cloudFut{
+    height: 650px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .futContainer{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5%;
+   }
+   
+   .futHeading{
+    width: 100%;
+    height: 10%;
+   }
+
+   .futHeading h1{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 210%;
+    margin-bottom: 0;
+    text-align: center;
+   }
+
+   .futTxt-1,.futTxt-2,.futTxt-3,.futTxt-4,.futTxt-5{
+    display: flex;
+    width: 100%;
+    height: 10%;
+   }
+     
+
+   .futImg{
+    height: 90%;
+    width: 10%;
+    float: left;
+    margin-top: 0.5%;
+    padding-right: 1%;
+   }
+
+   .futImg-1{
+    height: 90%;
+    width: 10%;
+    float: left;
+    padding-right: 1%;
+    margin-left: 10%;
+   }
+
+   .futImg-2{
+    height: 90%;
+    width: 10%;
+    float: left;
+    padding-right: 1%;
+    margin-top: 0.5%;
+    margin-left: 20%;
+   }
+
+   .futContent{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 85%;
+    font-weight: 300;
+    margin-bottom: 0;
+   }
+  .futHead{
+    color: #06866F;
+    font-weight: 600;
+    font-size: 110%;
+    margin-bottom: 0.3%;
+    }
+
+   
+
+
+
+    /* Cloud Organization */
+
+    .org-heading{
+        height: 50px;
+        width: 100%;
+       margin-top: 3%;
+       }
+    
+       .org-heading h2{
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 150%;
+        color: #fff;
+        padding-left:2.5% ;
+       }
+
+       .cloud-org{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+
+    .org-txt-1,.org-txt-2,.org-txt-3,.org-txt-4,.org-txt-5{
+        height:25% ;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+       flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+  .big-txt{
+    height: 60%;
+    width: 100%;
+  }
+
+  .norm-txt-1,.norm-txt-2,.norm-txt-3,.norm-txt-4,.norm-txt-5{
+    display: none;
+height: 20%;
+width: 100%;
+}
+    .cloud-org h1{
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        color:  #ABABAB;
+        cursor: pointer;
+        margin-bottom: 0;
+        transition: color 0.5s ease;
+    }
+
+    .cloud-org p{
+        color: #ABABAB;
+    }
+
+   
+
+    .org-txt-1:hover .green{
+        color: #078649;
+    }
+    
+    .org-txt-2:hover .blue{
+        color: #065186;
+    }
+
+    .org-txt-3:hover .lt-blue-1{
+        color: #058EA1;
+    }
+
+    .org-txt-4:hover .d-green{
+        color: #06866F;
+    }
+
+    .org-txt-5:hover .d-blue{
+        color: #0865A8;
+    }
+
+
+
+   .org-txt-1:hover .norm-txt-1{
+    display: block;
+   }
+
+   .org-txt-2:hover .norm-txt-2{
+    display:block;
+   }
+
+   .org-txt-3:hover .norm-txt-3{
+    display: block;
+   }
+  
+   .org-txt-4:hover .norm-txt-4{
+    display: block;
+   }
+
+   .org-txt-5:hover .norm-txt-5{
+    display: block;
+   }
+/* Media Query */
+
+
+
+@media (max-width:1450px){
+
+    .cloud-solution{
+        height: 330px;
+    }
+    .img-sol {
+        height: 90%;
+    }
+    
+    .sol-content{
+        height: 85%;
+    }
+ 
+    .sol-content h1{
+       font-size: 130%;
+    }
+
+    .sol-content p{
+        font-size: 80%;
+    }
+
+     /* Cloud Organization */
+
+     .org-heading h2{
+        font-size: 150%;
+    }
+
+    .cloud-org h1{
+        font-size: 2.7rem;
+    }
+
+    .cloud-org p{
+        font-size: 100%;
+    }
+}
+
+@media (max-width:1290px) {
+    .futHeading h1{
+        font-size: 180%;
+    }
+     
+    .futImg{
+        height: 70%;
+        width: 8%;
+    }
+
+    .futImg-1{
+      height: 70%;
+      width: 8%;
+      margin-left:8% ;
+    }
+
+    .futImg-2{
+        height: 70%;
+        width: 9%;
+        margin-left:18% ;
+      }
+
+    .futContent{
+        font-size: 75%;
+    }
+
+    .futHead{
+        font-size: 90%;
+    }
+
+
+    /* Cloud Organization */
+
+    .org-heading h2{
+        font-size: 130%;
+    }
+
+    .cloud-org h1{
+        font-size: 2.5rem;
+    }
+
+    .cloud-org p{
+        font-size: 80%;
+    }
+  }
+
+
+@media (max-width:1150px){
+    .cloudtxt h1{
+      font-size: 3rem;
+    }
+    
+    .cloudtxt p{
+      font-size: 1rem;
+    }
+  
+    .cloudbg{
+      height: 600px;
+    }
+
+
+/* Cloud features */
+    .cloudFut{
+        height: 500px;
+    }
+
+    .futContainer{
+        gap: 3%;
+    }
+    .futHeading h1{
+        font-size: 160%;
+    }
+     
+    .futImg{
+        height: 60%;
+        width: 12%;
+    }
+
+    .futImg-1{
+      height: 60%;
+      width: 11%;
+      margin-left:5% ;
+    }
+
+    .futImg-2{
+        height: 60%;
+        width: 12%;
+        margin-left:15% ;
+      }
+
+    .futContent{
+        font-size: 60%;
+    }
+
+    .futHead{
+        font-size: 70%;
+    }
+
+    .futTxt-1,.futTxt-2,.futTxt-3,.futTxt-4,.futTxt-5{
+        height: 13%;
+       }
+
+/* Cloud Solution */
+
+    .cloud-solution{
+        height: 260px;
+    }
+    .img-sol {
+        height: 90%;
+    }
+  
+    .sol-content{
+        height: 80%;
+    }
+ 
+    .sol-content h1{
+       font-size: 110%;
+    }
+
+    .sol-content p{
+        font-size: 60%;
+    }
+
+ /* Cloud Organization */
+
+        .org-heading h2{
+            font-size: 120%;
+        }
+    
+        .cloud-org h1{
+            font-size: 1.8rem;
+        }
+    
+        .cloud-org p{
+            font-size: 60%;
+        }
+
+        .big-txt{
+            height: 50%;
+        }
+
+
+        /* Cloud Services */
+
+        .cloud-service{
+            height: 460px;
+            margin-top: 60px;
+        }
+
+        .ser-heading h2{
+            font-size: 130%;
+        }
+
+        .img-txt{
+            font-size: 1.4rem;
+        }
+
+        .img-smtxt{
+            font-size:80% ;
+        }
+  }
+
+  @media (max-width:950px){
+         /* Cloud Services */
+
+         .cloud-service{
+            height: 400px;
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+
+        .ser-heading h2{
+            font-size: 110%;
+        }
+
+        .img-txt{
+            font-size: 1.2rem;
+        }
+
+        .img-smtxt{
+            font-size: 60%;
+            margin: 5%;
+        }
+  }
+  
+ @media (max-width:950px){
+    .cloud-solution{
+        height: 700px;
+        flex-direction: column;
+        gap: 4%;
+    }
+    .img-sol {
+        height: 60%;
+        width: 80%;
+
+    }
+  
+    .sol-content{
+        height: 40%;
+        width: 90%;
+    }
+ 
+    .sol-content h1{
+       font-size: 130%;
+       padding-left: 0;
+    }
+
+    .sol-content p{
+        font-size: 70%;
+    }
+
+ /* Cloud Organization */
+
+        .cloud-org{
+            height: 300px;
+        }
+
+        .org-heading{
+            height: 30px;
+        }
+
+      .org-heading h2{
+            font-size: 100%;
+        }
+        
+        .cloud-org h1{
+           font-size: 1rem;
+        }
+        
+       .cloud-org p{
+         font-size: 40%;
+     }
+
+     .big-txt{
+        height: 40%;
+     }
+ }
+
+
+
+  @media (max-width:800px){
+      .cloudtxt h1{
+          font-size: 2rem;
+        }
+        
+        .cloudtxt p{
+          font-size: 0.8rem;
+        }
+  
+        .cloudbg{
+          height: 450px;
+        }
+
+
+/* Cloud features */
+        
+    .cloudFut{
+        height: 600px;
+    }
+   
+        .futHeading h1{
+            font-size: 180%;
+        }
+         
+        .futImg{
+            height: 50%;
+            width: 15%;
+        }
+    
+        .futImg-1{
+          height: 50%;
+          width: 15%;
+          margin-left:0% ;
+        }
+    
+        .futImg-2{
+            height: 50%;
+            width: 15%;
+            margin-left:0% ;
+          }
+    
+        .futContent{
+            margin-top: 1%;
+            font-size: 70%;
+        }
+    
+        .futHead{
+            font-size: 90%;
+        }
+
+        .futTxt-1,.futTxt-2,.futTxt-3,.futTxt-4,.futTxt-5{
+            height: 13%;
+           }
+
+        /* Cloud Services */
+
+             .cloud-service{
+                height: 330px;
+            }
+    
+            .ser-heading h2{
+                font-size: 90%;
+            }
+    
+            .img-txt{
+                font-size: 1.1rem;
+            }
+
+            .img-smtxt{
+                font-size: 50%;
+            }
+            
+         
+  }
+  
+  @media (max-width:700px){
+         /* Cloud Services */
+
+         .cloud-service{
+            background-image: linear-gradient(to right, #06866F 90%, #161616 50%);
+            height: 235px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .blackbg{
+            right: 10%;
+        }
+
+        .ser-content{
+            width: 92%;
+        }
+        .img-box-1,.img-box-2,.img-box-3{
+            border-radius: 0;
+        }
+        .ser-heading h2{
+            font-size: 70%;
+        }
+
+        .img-txt{
+            font-size: 0.6rem;
+            margin-bottom: 18%;
+            padding-top: 5%;
+        }
+
+        .img-smtxt{
+            font-size: 35%;
+        }
+
+        .img-1:hover .img-1-heading{
+            padding-top: 35%;
+           }
+
+        .img-2:hover .img-2-heading{
+            padding-top: 35%;
+           }
+
+        .img-3:hover .img-3-heading{
+            padding-top: 45%;
+           }
+  }
+
+
+  @media (max-width:600px){
+      .cloudtxt h1{
+          font-size: 1.5rem;
+        }
+        
+        .cloudtxt p{
+          font-size: 0.6rem;
+        }
+  
+        .cloudbg{
+          height: 250px;
+        }
+
+/* Cloud features */
+
+        .cloudFut{
+            height: 550px;
+        }
+
+        .futContainer{
+            gap: 3%;
+        }
+
+        .futHeading{
+            height: 5%;
+        }
+            .futHeading h1{
+                font-size: 100%;
+            }
+             
+            .futImg{
+                height: 40%;
+                width: 20%;
+            }
+        
+            .futImg-1{
+              height: 40%;
+              width: 20%;
+              margin-left:0% ;
+            }
+        
+            .futImg-2{
+                height: 40%;
+                width: 20%;
+                margin-left:0% ;
+              }
+        
+            .futContent{
+                font-size: 60%;
+            }
+        
+            .futHead{
+                font-size: 60%;
+            }
+            .futTxt-1,.futTxt-2,.futTxt-3,.futTxt-4,.futTxt-5{
+                display: flex;
+                gap: 1%;
+                height: 14%;
+               }
+    
+      
+    /* Cloud Solution */
+    
+    
+    .cloud-solution{
+        height: 500px;
+        flex-direction: column;
+        gap: 4%;
+    }
+    .img-sol {
+        height: 40%;
+        width: 80%;
+
+    }
+  
+    .sol-content{
+        height: 45%;
+        width: 90%;
+    }
+ 
+    .sol-content h1{
+       font-size: 100%;
+    }
+
+    .sol-content p{
+        font-size: 50%;
+    }
+
+         /* Cloud Organization */
+    
+         .cloud-org{
+            height: 170px;
+        }
+      
+      .org-heading h2{
+            font-size: 80%;
+        }
+        
+        .cloud-org h1{
+           font-size: 0.7rem;
+        }
+        
+       .cloud-org p{
+         font-size: 25%;
+     }
+  }
+
+
+  @media (max-width:290px){
+    .cloudtxt h1{
+        font-size: 1rem;
+      }
+      
+      .cloudtxt p{
+        font-size: 0.4rem;
+      }
+
+      .cloudbg{
+        height: 200px;
+      }
+
+/* Cloud features */
+
+.cloudFut{
+    height: 500px;
+}
+
+.futContainer{
+    gap: 3%;
+}
+
+.futHeading{
+    height: 5%;
+}
+    .futHeading h1{
+        font-size: 80%;
+    }
+     
+    .futImg{
+        height: 35%;
+        width: 20%;
+    }
+
+    .futImg-1{
+      height: 35%;
+      width: 20%;
+      margin-left:0% ;
+    }
+
+    .futImg-2{
+        height: 35%;
+        width: 20%;
+        margin-left:0% ;
+      }
+
+    .futContent{
+        font-size: 50%;
+    }
+
+    .futHead{
+        font-size: 50%;
+    }
+
+ /* Cloud Services */
+
+         .cloud-service{
+            height: 170px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .ser-heading h2{
+            font-size: 45%;
+        }
+
+        .img-txt{
+            font-size: 0.45rem;
+            margin-bottom: 18%;
+        }
+
+        .img-smtxt{
+            font-size: 25%;
+        }
+
+        .img-1:hover .img-1-heading{
+            padding-top: 45%;
+           }
+
+        .img-2:hover .img-2-heading{
+            padding-top: 45%;
+           }
+
+        .img-3:hover .img-3-heading{
+            padding-top: 50%;
+           }
+
+
+  /* Cloud Solution */
+  
+  
+  .cloud-solution{
+      height: 400px;
+      flex-direction: column;
+      gap: 4%;
+  }
+  .img-sol {
+      height: 35%;
+      width: 80%;
+
+  }
+
+  .sol-content{
+      height: 45%;
+      width: 90%;
+  }
+
+  .sol-content h1{
+     font-size: 70%;
+  }
+
+  .sol-content p{
+      font-size: 40%;
+  }
+
+       /* Cloud Organization */
+  
+       .cloud-org{
+          height: 150px;
+      }
+    
+    .org-heading h2{
+          font-size: 60%;
+      }
+      
+      .cloud-org h1{
+         font-size: 0.5rem;
+      }
+      
+     .cloud-org p{
+       font-size: 25%;
+   }
+}

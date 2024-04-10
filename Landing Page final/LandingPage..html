@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./CSS/LandingPage.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/LandingForm.css" />
+    <link rel="stylesheet" href="./CSS/FooterPage.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+  
+          <div class="toggler-logo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                  <img id="hamburger" onclick="navHamburger(this)" src="./IMAGES/hamburger.svg" alt="">
+                  <img id="hamburgerBack" onclick="navHamburger(this)" src="./IMAGES/back.svg" alt="">
+              </button>
+              <div class="brand">
+                  <div class="logoName">
+                      <a class="navbar-brand" href="../Home/home.html"><img src="./IMAGES/Logo.jpg" alt=""></a>
+                      <a href="../Home/home.html"><h1 class="logoName">Emblock</h1></a>
+                  </div>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mb-2 mb-lg-0 nav-ul">
+                  <li id="homeli" class="nav-item">
+                      <img id="navGifCheck" class="navliGif" src="./Images/home.gif" alt="">
+                      <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                  </li>
+                  <li id="servicesli" class="nav-item dropSerM dropdownS" onclick="servicesMToggle()">
+                      <img class="navliGif" src="./Images/services.gif" alt="">
+                      <a id="aboutus" class="nav-link dropdown-toggle" href="#" role="button"
+                          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services<img class="parkdown" src="./Images/parkdown.svg" alt=""></a>
+  
+                      <div class="servicesDrop">
+                          <div class="servicesDropCenter">
+                              <div class="srow r1">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                      <h3 class="rHead">Automation</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                      <h3 class="rHead">Application
+                                          Services</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                      <h3 class="rHead">Data & AI</h3>
+                                  </div>
+                              </div>
+                              <div class="srow r2">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                      <h3 class="rHead">Software
+                                          Engineering</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                      <h3 class="rHead">Cloud</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                      <h3 class="rHead">Emerging
+                                          Technologies</h3>
+                                  </div>
+                              </div>
+                              <div class="srow r3">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/iotGif.gif" alt="">
+                                      <h3 class="rHead">Internet of
+                                          Things</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                      <h3 class="rHead">ERP & CRM</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li id="productsli" class="nav-item dropProM dropdownP" onclick="productsMToggle()">
+                      <img class="navliGif" src="./Images/products.gif" alt="">
+                      <a class="nav-link" href="#">Products<img class="parkdown" src="./Images/parkdown.svg"
+                              alt=""></a>
+  
+                      <div class="productsDrop">
+                          <div class="servicesDropCenter">
+                              <div class="srow r1">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                      <h3 class="rHead">Factory
+                                          Insights</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                      <h3 class="rHead">Smart Vision
+                                          System</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                      <h3 class="rHead">Attendance
+                                          Tracker</h3>
+                                  </div>
+                              </div>
+                              <div class="srow r2">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                      <h3 class="rHead">Drone
+                                          Solutions</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                      <h3 class="rHead">Remote
+                                          Handling</h3>
+                                  </div>
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                      <h3 class="rHead">Light Control
+                                          Hub</h3>
+                                  </div>
+                              </div>
+                              <div class="srow r3">
+                                  <div class="rbox">
+                                      <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                      <h3 class="rHead">Equinox</h3>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li id="contactusli" class="nav-item">
+                      <img class="navliGif" src="./Images/contactus.gif" alt="">
+                      <a class="nav-link" href="#contactusid">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="dropdownServices">
+            <div class="left">
+                <img id="servicesGif" src="" alt="">
+                <h1 id="servicesH1"></h1>
+                <p id="servicesP"></p>
+            </div>
+            <div class="right">
+                <div class="gridOptions">
+                    <div class="item" id="automation" onmouseover="servicesLoad('automation')" onmouseout="servicesDefault()">
+                        <a href="../Automation/automation.html">Automation</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('softwareEngineering')"
+                        onmouseout="servicesDefault()">
+                        <a href="../Software Engineering/softwareEng.html">Software Engineering</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('applicationServices')"
+                        onmouseout="servicesDefault()">
+                        <a href="../Application  Page final/Application.html">Application Services</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('dataAi')" onmouseout="servicesDefault()"><a href="../AIPAGE/AiPage-final.html">Data & AI</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('cloud')" onmouseout="servicesDefault()"><a href="../Cloud Page Final/Cloud.html">Cloud</a></div>
+                    <div class="item" onmouseover="servicesLoad('iot')" onmouseout="servicesDefault()">
+                        <a href="../IOT/IOT.html">Internet of Things</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('emergingTechnology')"
+                        onmouseout="servicesDefault()">
+                        <a href="../Emerging Technology final/Emerging.html">Emerging Technologies</a>
+                    </div>
+                    <div class="item" onmouseover="servicesLoad('erpcrm')" onmouseout="servicesDefault()"><a href="../ERP/ERP.html">ERP & CRM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdownProducts">
+            <div class="left">
+                <img id="productsGif" src="" alt="">
+                <h1 id="productsH1"></h1>
+                <p id="productsP"></p>
+            </div>
+            <div class="right">
+                <div class="gridOptions">
+                    <div class="item" onmouseover="productsLoad('factoryInsights')" onmouseout="productsDefault()">
+                        <a href="../Factory/factoryMonitoring.html">Factory Insights</a>
+                    </div>
+                    <div class="item" onmouseover="productsLoad('smartVisionSystem')"
+                        onmouseout="productsDefault()">
+                        <a href="../Smart Vision System/smartVisionSystem.html"> Smart Vision System</a>
+                    </div>
+                    <div class="item" onmouseover="productsLoad('attendanceTracker')"
+                        onmouseout="productsDefault()">
+                        <a href="../Trackerpage/Tracker.html"> Attendance Tracker</a>
+                    </div>
+                    <div class="item" onmouseover="productsLoad('droneSolustions')" onmouseout="productsDefault()">
+                        <a href="../Drone Page final/Drone Page.html"> Drone Solutions</a>
+                    </div>
+                    <div class="item" onmouseover="productsLoad('remoteHandling')" onmouseout="productsDefault()">
+                        <a href="../RemoteHandling final/RemoteHandling.html"> Remote Handling</a>
+                    </div>
+                    <div class="item" onmouseover="productsLoad('lightControlHub')" onmouseout="productsDefault()">
+                        <a href="../Lightpage/lightControlHub.html"> Light Control Hub</a></div>
+                    <div id="equi" class="item" onmouseover="productsLoad('equinox')"
+                        onmouseout="productsDefault()">Equinox - A
+                        Trading Bot</a></div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </nav>
+
+    <video autoplay muted loop id="video-background">
+      <source src="IMAGES/Landing page background.mp4" type="video/mp4" />
+    </video>
+
+    <div class="landing-bg">
+      <div class="expert-box">
+        <div class="expert-info">
+          <h1>Talk to our Experts !!!</h1>
+          <p>
+            Explore our comprehensive services, ranging from software
+            development to network security. As your trusted one-stop solution
+            provider, we offer unparalleled expertise and personalized
+            support tailored to meet your unique requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="landing-looping">
+        <p>We Aspire to</p>
+        <div class="word">
+          <span class="txt-1">INNOVATE</span>
+          <span class="txt-2">NAVIGATE</span>
+          <span class="txt-3">DESIGN</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div class="LandingPageSlide-container">
+        <div class="slide-container-1">
+          <div class="landingPageFormNavLineContainer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="282"
+              height="1"
+              viewBox="0 0 282 1"
+              fill="none"
+              id="landingPageFormNavLine"
+            >
+              <path d="M0 0.5H282.006" stroke="white" stroke-dasharray="2 2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFirstCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavSecondCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavThirdCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavFourthCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+          </div>
+          <div class="landingPageFormNavLineContainer2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="282"
+              height="1"
+              viewBox="0 0 282 1"
+              fill="none"
+              id="landingPageFormNavLine"
+            >
+              <path d="M0 0.5H282.006" stroke="white" stroke-dasharray="2 2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="97"
+              height="2"
+              viewBox="0 0 97 2"
+              fill="none"
+              id="landingPageFormNavLineFill"
+            >
+              <path
+                d="M1 1H96"
+                stroke="#1ED760"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFirstCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavSecondCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavThirdCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavFourthCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+          </div>
+          <div class="landingPageFormNavLineContainer3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="282"
+              height="1"
+              viewBox="0 0 282 1"
+              fill="none"
+              id="landingPageFormNavLine"
+            >
+              <path d="M0 0.5H282.006" stroke="white" stroke-dasharray="2 2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="191"
+              height="2"
+              viewBox="0 0 191 2"
+              fill="none"
+              id="landingPageFormNavLineFill"
+            >
+              <path
+                d="M1 1H190"
+                stroke="#1ED760"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFirstCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavSecondCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavThirdCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              id="landingPageFormNavFourthCircle"
+            >
+              <circle cx="8.20312" cy="7.5" r="7.5" fill="white" />
+            </svg>
+          </div>
+          <div class="landingPageFormNavLineContainer4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="282"
+              height="1"
+              viewBox="0 0 282 1"
+              fill="none"
+              id="landingPageFormNavLine"
+            >
+              <path d="M0 0.5H282.006" stroke="white" stroke-dasharray="2 2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="286"
+              height="2"
+              viewBox="0 0 286 2"
+              fill="none"
+              id="landingPageFormNavLineFill"
+            >
+              <path
+                d="M1 1H285"
+                stroke="#1ED760"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFirstCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavSecondCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavThirdCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFourthCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+          </div>
+          <div class="landingPageFormNavLineContainer4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="282"
+              height="1"
+              viewBox="0 0 282 1"
+              fill="none"
+              id="landingPageFormNavLine"
+            >
+              <path d="M0 0.5H282.006" stroke="white" stroke-dasharray="2 2" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="286"
+              height="2"
+              viewBox="0 0 286 2"
+              fill="none"
+              id="landingPageFormNavLineFill"
+            >
+              <path
+                d="M1 1H285"
+                stroke="#1ED760"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFirstCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavSecondCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavThirdCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              id="landingPageFormNavFourthCircle"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#1ED760" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="slide-container-2">
+          <div class="image-slider">
+            <div id="image1" class="slide-div">
+              <div class="landingPageForm">
+                <div class="landingPageFormTitle">Get in touch with us !</div>
+                <div class="enterUrInfo">Enter your personal information</div>
+                <div class="landingPageFormTopLine"></div>
+                <div class="enterUrInfoName">Name</div>
+                <input type="text" class="landingPageFormName" />
+                <div class="enterUrInfoContact">Contact Number</div>
+                <input type="tel" class="landingPageFormContactNo" required />
+                <div class="enterUrInfoEmail">Email</div>
+                <input type="email" class="landingPageFormEmail" required />
+                <div class="landingPageFormBottomLine"></div>
+                <button
+                  class="landingPageFormFirstNextBtn"
+                  name="next"
+                  value="Next"
+                  onclick="validatePersonalInfo()"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <div id="image2" class="slide-div">
+              <section id="landingPageFormSectionVariant2">
+                <div class="landingPageFormContainer">
+                  <div class="landingPageForm2">
+                    <div class="landingPageFormTitle">
+                      Get in touch with us !
+                    </div>
+                    <div class="enterUrCompanyInfo">
+                      Tell us about your company
+                    </div>
+                    <div class="landingPageFormTopLine"></div>
+                    <div class="enterUrCompanyName">Your Company</div>
+                    <input
+                      type="text"
+                      class="landingPageFormCompanyName"
+                      required
+                    />
+                    <div class="enterUrStageOfProject">
+                      Stage of your project
+                    </div>
+                    <div class="radioInputNewProject">
+                      <input
+                        type="radio"
+                        id="landingPageFormStageOfProjectNewProject"
+                        value="New Project"
+                        name="stageOfProject"
+                        style="
+                          width: 11px;
+                          height: 11px;
+                          align-self: center;
+                          justify-self: center;
+                          accent-color: rgba(30, 215, 96, 1);
+                          cursor: pointer;
+                        "
+                        onclick="changeColor(this.value)"
+                      />
+                      <label
+                        for="landingPageFormStageOfProjectNewProject"
+                        id="newProject"
+                      >
+                        New Project
+                      </label>
+                    </div>
+                    <div class="radioInputAddOn">
+                      <input
+                        type="radio"
+                        id="landingPageFormStageOfProjectADDOn"
+                        value="Add-on features"
+                        name="stageOfProject"
+                        style="
+                          width: 11px;
+                          height: 11px;
+                          align-self: center;
+                          justify-self: center;
+                          accent-color: rgba(30, 215, 96, 1);
+                          cursor: pointer;
+                        "
+                        onclick="changeColor(this.value)"
+                      />
+                      <label
+                        for="landingPageFormStageOfProjectADDOn"
+                        id="addOn"
+                      >
+                        Add-on features
+                      </label>
+                    </div>
+
+                    <div class="radioInputMaintenance">
+                      <input
+                        type="radio"
+                        id="landingPageFormStageOfProjectMaintenance"
+                        value="Maintenance and Support"
+                        name="stageOfProject"
+                        style="
+                          width: 11px;
+                          height: 11px;
+                          align-self: center;
+                          justify-self: center;
+                          accent-color: rgba(30, 215, 96, 1);
+                          cursor: pointer;
+                        "
+                        onclick="changeColor(this.value)"
+                      />
+                      <label
+                        for="landingPageFormStageOfProjectMaintenance"
+                        id="maintenance"
+                      >
+                        Maintenance and Support
+                      </label>
+                    </div>
+
+                    <div class="enterUrInfoSubject">Subject</div>
+                    <input type="text" class="landingPageFormSubject" />
+                    <div class="landingPageFormBottomLine"></div>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondNextBtn"
+                      name="next"
+                      onclick="validateCompanyInfo()"
+                    >
+                      Next
+                    </button>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondBackBtn"
+                      name="back"
+                      onclick="prevSlide()"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="image3" class="slide-div">
+              <section id="landingPageFormSectionVariant3">
+                <div class="landingPageFormContainer">
+                  <div class="landingPageForm3">
+                    <div class="landingPageFormTitle">
+                      Get in touch with us !
+                    </div>
+                    <div class="enterUrInfo">What are you looking for?</div>
+                    <div class="landingPageFormTopLine"></div>
+                    <div class="landingPageServices">Services</div>
+                    <div class="landingPageServicesInputContainer">
+                      <div class="landingPageServicesInputAutomation">
+                        Automation
+                      </div>
+                      <div class="landingPageServicesInputApplicationServices">
+                        Application Services
+                      </div>
+                      <div class="landingPageServicesInputSoftwareEngineering">
+                        Software Engineering
+                      </div>
+                      <div class="landingPageServicesInputInternetOfThings">
+                        Internet of Things
+                      </div>
+                      <div class="landingPageServicesInputDataAI">
+                        Data & AI
+                      </div>
+                      <div class="landingPageServicesInputEmerging">
+                        Emerging Technologies
+                      </div>
+                      <div class="landingPageServicesInputCloud">Cloud</div>
+                      <div class="landingPageServicesInputERP">ERP & CRM</div>
+                    </div>
+                    <div class="landingPageProducts">Products</div>
+                    <div class="landingPageProductsInputContainer">
+                      <div class="landingPageProductsInputFactory">
+                        Factory Insights
+                      </div>
+                      <div class="landingPageProductsInputSmartVision">
+                        Smart Vision System
+                      </div>
+                      <div class="landingPageProductsInputAttendance">
+                        Attendance Tracker
+                      </div>
+                      <div class="landingPageProductsInputDrone">
+                        Drone Solutions
+                      </div>
+                      <div class="landingPageProductsInputRemote">
+                        Remote Handling
+                      </div>
+                      <div class="landingPageProductsInputLight">
+                        Light Control Hub
+                      </div>
+                      <div class="landingPageProductsInputEquinox">Equinox</div>
+                    </div>
+                    <div class="landingPageFormBottomLine"></div>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondNextBtn"
+                      name="next"
+                      onclick="validateServicesProducts()"
+                    >
+                      Next
+                    </button>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondBackBtn"
+                      name="back"
+                      onclick="prevSlide()"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="image4" class="slide-div">
+              <section id="landingPageFormSection4">
+                <div class="landingPageFormContainer">
+                  <div class="landingPageForm4">
+                    <div class="landingPageFormTitle">
+                      Get in touch with us !
+                    </div>
+                    <div class="enterPlanMeeting">Plan a meeting</div>
+                    <div class="inputPlanMeetingContainer">
+                      <div>
+                        <input
+                          type="radio"
+                          value="Virtual"
+                          name="planMeeting"
+                          onclick="changeColor(this.value)"
+                          style="
+                            width: 11px;
+                            height: 11px;
+                            align-self: center;
+                            justify-self: center;
+                            accent-color: rgba(30, 215, 96, 1);
+                            cursor: pointer;
+                          "
+                        />
+                        <label for="planMeeting" id="virtualInputValue"
+                          >Virtual</label
+                        >
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          value="Offline"
+                          name="planMeeting"
+                          onclick="changeColor(this.value)"
+                          style="
+                            width: 11px;
+                            height: 11px;
+                            align-self: center;
+                            justify-self: center;
+                            accent-color: rgba(30, 215, 96, 1);
+                            cursor: pointer;
+                          "
+                        />
+                        <label for="planMeeting" id="offlineInputValue"
+                          >Offline</label
+                        >
+                      </div>
+                    </div>
+                    <div class="landingPageFormTopLine"></div>
+                    <div class="enterDate">Select Date</div>
+                    <div id="LandingPageChooseDate" onclick="openCalendar()">
+                      <img src="./IMAGES/dateInputLogo.png" />
+                    </div>
+                    <div class="landingPageFormMeetingDate">
+                      <div id="meetingDate"></div>
+                      <div class="controls">
+                        <button onclick="previousMonth()">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 13 13"
+                            fill="none"
+                          >
+                            <g clip-path="url(#clip0_4400_470)">
+                              <path
+                                d="M2.60182 6.5L9.53516 0V13L2.60182 6.5Z"
+                                fill="#1ED760"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_4400_470">
+                                <rect
+                                  width="13"
+                                  height="13"
+                                  fill="white"
+                                  transform="matrix(0 1 -1 0 13 0)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <div id="currentMonthYear"></div>
+                        <button onclick="nextMonth()">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="13"
+                            height="13"
+                            viewBox="0 0 13 13"
+                            fill="none"
+                          >
+                            <g clip-path="url(#clip0_4400_472)">
+                              <path
+                                d="M10.3982 6.5L3.46484 0V13L10.3982 6.5Z"
+                                fill="#1ED760"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_4400_472">
+                                <rect
+                                  width="13"
+                                  height="13"
+                                  fill="white"
+                                  transform="matrix(0 1 1 0 0 0)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="calendar" id="calendarContainer"></div>
+                    </div>
+
+                    <div class="enterTime">Choose Time</div>
+                    <div id="LandingPageChooseTime" onclick="openClock()">
+                      <img src="./IMAGES/clockInputLogo.png" />
+                    </div>
+                    <div class="landingPageFormMeetingTime">
+                      <div id="meetingTime"></div>
+                      <div class="landingPageClockInputmain-container">
+                        <!-- Container for time selector -->
+                        <div class="landingPageClockInputcontainer">
+                          <!-- Hour column -->
+                          <div class="hour-column">
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('01')"
+                            >
+                              01
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('02')"
+                            >
+                              02
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('03')"
+                            >
+                              03
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('04')"
+                            >
+                              04
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('05')"
+                            >
+                              05
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('06')"
+                            >
+                              06
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('07')"
+                            >
+                              07
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('08')"
+                            >
+                              08
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('09')"
+                            >
+                              09
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('10')"
+                            >
+                              10
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('11')"
+                            >
+                              11
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectHour('12')"
+                            >
+                              12
+                            </div>
+                          </div>
+                          <!-- Minute column -->
+                          <div class="minute-column">
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('00')"
+                            >
+                              00
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('05')"
+                            >
+                              05
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('10')"
+                            >
+                              10
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('15')"
+                            >
+                              15
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('20')"
+                            >
+                              20
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('25')"
+                            >
+                              25
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('30')"
+                            >
+                              30
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('35')"
+                            >
+                              35
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('40')"
+                            >
+                              40
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('45')"
+                            >
+                              45
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('50')"
+                            >
+                              50
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectMins('55')"
+                            >
+                              55
+                            </div>
+                          </div>
+                          <!-- AM/PM column -->
+                          <div class="am-pm-column">
+                            <div
+                              class="time-selector"
+                              onclick="selectAmPm('AM')"
+                            >
+                              AM
+                            </div>
+                            <div
+                              class="time-selector"
+                              onclick="selectAmPm('PM')"
+                            >
+                              PM
+                            </div>
+                            <div onclick="getTime()" class="time-selector">
+                              Done
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="landingPageFormAnyOtherQuestions">
+                      Anything else you want us to know
+                    </div>
+                    <input
+                      type="text"
+                      class="landingPageFormAnyOtherQuestionsInput"
+                      placeholder="This is optional"
+                    />
+                    <div class="landingPageFormBottomLine"></div>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondNextBtn"
+                      id="finishCollectData"
+                      onclick="validateMeetingInfo()"
+                    >
+                      Finish
+                    </button>
+                    <button
+                      type="button"
+                      class="landingPageFormSecondBackBtn"
+                      name="back"
+                      onclick="prevSlide()"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div id="image5" class="slide-div">
+              <section id="landingPageFormSection5">
+                <div class="landingPageFormContainer">
+                  <div class="landingPageForm5">
+                    <div class="landingPageFormTitle">
+                      Get in touch with us !
+                    </div>
+                    <div class="enterRecordedMsg">Bingo! Info Recorded</div>
+
+                    <div class="landingPageFormTopLine"></div>
+
+                    <div class="landingPageFormBottomLine"></div>
+                    <button
+                      type="button"
+                      id="continueBtn"
+                      class="landingPageFormFirstNextBtn"
+                      onclick="nextSlide()"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chooseus-head">
+      <h1>Why Choose Us?</h1>
+    </div>
+
+    <div class="chooseus-container">
+      <div class="chooseus-info-box">
+        <div class="chooseus-txt">
+          <h4>
+            Discover unmatched service with us: expert solutions, competitive
+            pricing, and a commitment to innovation. Join us in making a
+            difference.
+          </h4>
+        </div>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1440"
+        height="379"
+        viewBox="0 0 1440 379"
+        fill="none"
+        class="curve-1"
+      >
+        <path
+          d="M616.5 185.5C410 155.999 118.5 251.833 -5 300L4.5 378.372H1444V49.8735C1371.2 -21.3258 1154.5 -11.751 1061 49.8735C1002.33 88.5398 832.1 207.1 616.5 185.5Z"
+          fill="url(#paint0_linear_4141_4460)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_4141_4460"
+            x1="724.25"
+            y1="2.70508"
+            x2="724.25"
+            y2="378.373"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#1F1F1F" />
+            <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="ball">
+        <img src="IMAGES/ball.png" alt="ball image" />
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1438"
+        height="379"
+        viewBox="0 0 1438 379"
+        fill="none"
+        class="curve-2"
+      >
+        <path
+          d="M611.5 139.5C405 109.999 124 171.833 0.5 220V378.999H1440V50.5004C1367.2 -20.6989 1150.5 -11.1241 1057 50.5004C998.333 89.1668 827.1 161.1 611.5 139.5Z"
+          fill="url(#paint0_linear_4141_4462)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_4141_4462"
+            x1="720.25"
+            y1="3.33203"
+            x2="720.25"
+            y2="379"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#1F1F1F" />
+            <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1440"
+        height="384"
+        viewBox="0 0 1440 384"
+        fill="none"
+        class="curve-3"
+      >
+        <path
+          d="M613.237 120.452C407.674 85.0023 125.007 138.699 0.167693 183.281L-4.4219 342.214L1434.48 383.766L1443.96 55.4046C1373.25 -17.8664 1156.36 -14.5508 1061.12 44.3491C1001.36 81.3059 828.123 148.266 613.237 120.452Z"
+          fill="url(#paint0_linear_4141_4463)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_4141_4463"
+            x1="725.872"
+            y1="-12.5201"
+            x2="715.028"
+            y2="362.991"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#0E0E0E" />
+            <stop offset="1" stop-color="#1F1F1F" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <footer id="contactusid">
+      <div class="Copyright">
+          <div class="contact">
+              <div class="contact-sep-1">
+                 
+                  <div class="contact1">
+                    <div class="contact1-sep-1">
+                      <div class="logo-Emblock">
+                          <a href="../Home/home.html"><img src="Images/Logo.jpg" class="logo-con1">
+                              <h1>Emblock</h1>
+                          </a>
+                      </div>
+                      <div class="logo-txt">
+                          <p>Welcome to EMBLOCK - your catalyst for business transformation. We fuse technology,
+                              innovation, and expertise to drive your success.</p>
+                      </div> 
+                    </div>
+  
+  
+  
+                      <div class="contact1-sep-2">
+                          <div class="phone-container">
+                              <div class="phone-txt">
+                                  <i class="fa-solid fa-phone"></i>
+                                  <p>+91 9952311408</p>
+                              </div>
+                              <div class="phone-txt">
+                                  <i class="fa-regular fa-envelope"></i>
+                                  <p>contact@emblock.in
+                                  </p>
+                              </div>
+                          </div>  
+                          <div class="phone-container-2">
+                              <div class="follow-txt-1">
+                                  <p class="txt-green">Follow us on:</p>
+                              </div>
+                              <div class="follow-txt-2">
+                                          <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                                              class="fa-brands fa-instagram"></i>
+                                          </a>
+                              
+                              </div>
+                              <div class="follow-txt-2">
+                                  <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                                      class="fa-brands fa-linkedin"></i>
+                              </a>
+                              </div>
+  
+                          </div>  
+                          <div class="contact-green-box">
+                              <p>
+                                  Contact Us
+                              </p>
+  
+                          </div>
+                        
+                      </div>
+                  </div>
+                     
+  
+  
+                
+  
+  
+              </div>
+  
+  
+  
+            <div class="contact-sep-2">
+                 
+              <div class="contact2">
+                  <div id="footer-2">
+                      <h3>Our Products</h3>
+  
+                      <div class="footer-text">
+                        <a href="../Factory/factoryMonitoring.html"><p>Factory Insights</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../Smart Vision System/smartVisionSystem.html"><p>Smart Vision System</p></a>
+                      </div>
+                     
+                      <div class="footer-text">
+                        <a href="../Trackerpage/Tracker.html"><p>Attendance Tracker</p></a>
+                      </div>
+  
+                      
+                      <div class="footer-text">
+                        <a href="../Drone Page final/Drone Page.html"><p>Drone Solutions</p></a>
+                      </div>
+  
+                      
+                      <div class="footer-text">
+                        <a href="../RemoteHandling final/RemoteHandling.html"><p>Remote Handling </p></a>
+                      </div>
+  
+                      
+                      <div class="footer-text">
+                        <a href="../Lightpage/lightControlHub.html"><p>Light Control Hub</p></a>
+                      </div>
+  
+                      <div class="footer-text">
+                        <a href="#"><p>Equinox - A trading Bot</p></a>
+                      </div>
+  
+                    
+                  </div>
+              </div>
+              <div class="contact3">
+                  <div id="footer-3">
+                      <h3><b>Our Services</b></h3>
+                      <div class="footer-text">
+                        <a href="../Automation/automation.html"><p>Automation</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../Application  Page final/Application.html"><p>Application Services </p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../Software Engineering/softwareEng.html"><p>Software Engineering</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../AIPAGE/AiPage-final.html"><p>Data & AI</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../Cloud Page Final/Cloud.html"><p>Cloud maintenance and support</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../Emerging Technology final/Emerging.html"><p>Emerging Technologies</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../IOT/IOT.html"><p>Internet of Things</p></a>
+                      </div>
+                      <div class="footer-text">
+                        <a href="../ERP/ERP.html"><p>ERP and CRM</p></a>
+                      </div>
+  
+                  </div>
+              </div>
+              
+  
+  
+            
+             
+  
+  
+             </div>
+            
+             
+  
+  
+          </div>
+  
+        <div class="contact-4">
+           
+          <div class="contact-4-head">
+            <div class="contact-green2-box">
+              <h3>Contact us</h3>
+          </div>
+          </div>
+          <div class="contact-4-content">
+            <div class="Ph-num">
+              <i class="fa-solid fa-phone"></i>
+              <p>+91 9952311408</p>
+            </div>
+            <div class="E-mail">
+              <i class="fa-regular fa-envelope"></i>
+              <p>contact@emblock.in
+              </p>
+            </div>
+  
+  
+          
+  
+  
+            <div  class="linkin-logo">
+                
+              <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i>
+              </a>
+  
+          </div>
+  
+          <div class="Insta-logo">
+              <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i>
+              </a>
+          </div>
+  
+            
+  
+  
+        </div>
+  
+      </div>
+  
+         <div class="copyright-content">
+            <p class="footer-copyright"> Copyright <i class="fa-regular fa-copyright"></i><b>EMBLOCK</b> . All
+              Rights
+              Reserved
+            </p>
+         </div>
+          
+  
+      </div>
+  
+  
+  </footer>
+ 
+
+
+  <script src="./JS/navbar.js"></script>
+  <script src="./JS/navbarServices.js"></script>
+  <script src="./JS/navbarProducts.js"></script>
+  <script src="https://kit.fontawesome.com/49bafbd5a4.js" crossorigin="anonymous"></script>
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./JS/LandingPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Shadows+Into+Light&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+  }
+  .main-container {
+    position: relative;
+    margin: 0 auto;
+    height: 75vh;
+    margin-top: 80px;
+    background-image: url('../IMAGES/bannerimage.png');
+    z-index: 1;
+  }
+  .main-container h1 {
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+    z-index: 4 !important;
+    margin: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  .main-container p {
+    position: absolute;
+    top: 21rem;
+    left: 3rem;
+    z-index: 4;
+    margin: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  #catchMeIfYouCan{
+    display: block;
+    position: absolute;
+    top: 18rem;
+    left: 55rem;
+    max-width: 20ch;
+    z-index: 3;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .revealed-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 75vh;
+    width: 100%;
+    background: radial-gradient(
+      circle 180px at 61% 70%,
+      rgba(30, 30, 30, 0.1) 5%,
+      rgba(0, 0, 0, 0.96)
+    );
+    pointer-events: none;
+  }
+  

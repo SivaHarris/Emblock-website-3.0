@@ -1,0 +1,484 @@
+.ERP-doughnut-div{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background: #161616; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;    
+}
+
+.ERP-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.ERP-bg-img{
+    position: absolute;
+    top: -9%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.production-bg{
+    position: absolute;
+    top: 4%;
+    left:40%;
+    background-image: url('../IMAGES/Ellipse\ 110.png');
+    width: 304px;
+    height: 316px;
+    background-repeat: no-repeat;
+    
+}
+
+.finance-bg{
+    position: relative;
+    top: 18.5%;
+    left:50%;
+    background-image: url('../IMAGES/Ellipse\ 109.png');
+    width: 312px;
+    height: 261px;
+    background-repeat: no-repeat;
+}
+
+.Logistics-bg{
+    position: relative;
+    top: 21%;
+    left:49.5%;
+    background-image: url('../IMAGES/Ellipse\ 115\ \(1\).png');
+    width: 313px;
+    height: 257px;
+    background-repeat: no-repeat;
+}
+
+.CRM-bg{
+    position: relative;
+    top: -59%;
+    left:-9%;
+    background-image: url('../IMAGES/Ellipse\ 114.png');
+    width: 343px;
+    height: 316px;
+    background-repeat: no-repeat;
+}
+
+.HR-bg{
+    position: relative;
+    top: -163.3%;
+    left:-58.7%;
+    background-image: url('../IMAGES/Ellipse\ 116.png');
+    width: 303px;
+    height: 270px;
+    background-repeat: no-repeat;
+}
+
+.Proj-manage-bg{
+    position: relative;
+    top: -335.1%;
+    left:-59%;
+    background-image: url('../IMAGES/Ellipse\ 111.png');
+    width: 312px;
+    height: 260px;
+    background-repeat: no-repeat;
+}
+
+.center-bg{
+    position: relative;
+    top: -363.5%;
+    left:11.3%;
+    background-image: url('../IMAGES/Ellipse\ 88.png');
+    width: 225px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.center-text{
+    color: white;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: relative;
+    top: 34%;
+    left: 17%;
+}
+
+.production-content,
+.finance-content,
+.Logistics-content,
+.CRM-content,
+.HR-content,
+.Proj-manage-content,
+.hover-content,
+.prod-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.hover-content1,
+.hover-content2,
+.hover-content3,
+.hover-content4,
+.hover-content5,
+.hover-content6{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.production-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:40%;
+    left:31%;
+}
+
+.production-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:5%;
+    left:29%;
+}
+
+.finance-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:65%;
+    left:41%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.finance-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:20%;
+    left:41%;
+}
+
+.Logistics-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:50%;
+    left:46.5%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.Logistics-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:6%;
+    left:41%;
+}
+
+.CRM-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:74%;
+    left:43.5%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.CRM-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:33%;
+    left:32.5%;
+}
+
+.HR-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:50%;
+    left:20.5%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.HR-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:6%;
+    left:20%;
+}
+
+.Proj-manage-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:65%;
+    left:21%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.Proj-manage-gif{
+    width: 124px;
+    height: 123px;
+    position: absolute;
+    top:20%;
+    left:24%;
+}
+
+.prod-div:hover .production-content {
+    opacity: 0;
+}
+
+.prod-div:hover .hover-content1 {
+    opacity: 1;
+}
+
+.finance-bg:hover .finance-content {
+    opacity: 0;
+}
+
+.finance-bg:hover .hover-content2 {
+    opacity: 1;
+}
+
+.Logistics-bg:hover .Logistics-content {
+    opacity: 0;
+}
+
+.Logistics-bg:hover .hover-content3 {
+    opacity: 1;
+}
+
+.CRM-bg:hover .CRM-content {
+    opacity: 0;
+}
+
+.CRM-bg:hover .hover-content4 {
+    opacity: 1;
+}
+
+.HR-bg:hover .HR-content {
+    opacity: 0;
+}
+
+.HR-bg:hover .hover-content5 {
+    opacity: 1;
+}
+
+.Proj-manage-bg:hover .Proj-manage-content {
+    opacity: 0;
+}
+
+.Proj-manage-bg:hover .hover-content6 {
+    opacity: 1;
+}
+
+.production-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:12%;
+    left:40%;
+}
+
+.finance-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:30%;
+    left:47%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.Logistics-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:9%;
+    left:55%;
+}
+
+.CRM-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:37.5%;
+    left:50%;
+}
+
+.HR-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:6%;
+    left:28%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.Proj-manage-hover-head{
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    position: absolute;
+    top:32%;
+    left:26%;
+    max-width: 124px;
+    text-align: center;
+}
+
+.production-hover-gif{
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top:5%;
+    left:15%;
+}
+
+.production-info{
+    color: white;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:26%;
+    left:25%;
+    max-width: 160px;
+    text-align: center;
+}
+
+.finance-hover-gif{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:32%;
+    left:35%;
+}
+
+.finance-info{
+    color: white;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:58%;
+    left:33%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.Logistics-hover-gif{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:5%;
+    left:40%;
+}
+
+.Logistics-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:30%;
+    left:33%;
+    max-width: 170px;
+    text-align: center;
+}
+
+.CRM-hover-gif{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:34%;
+    left:35%;
+}
+
+.CRM-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:55%;
+    left:22%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.HR-hover-gif{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:5%;
+    left:10%;
+}
+
+.HR-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:35%;
+    left:10%;
+    max-width: 180px;
+    text-align: center;
+}
+
+.Proj-manage-hover-gif{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top:29%;
+    left:21%;
+}
+
+.Proj-manage-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 300;
+    position: absolute;
+    top:55%;
+    left:8%;
+    max-width: 200px;
+    text-align: center;
+}

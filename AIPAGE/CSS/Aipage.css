@@ -1,0 +1,4124 @@
+body{
+    overflow-x: hidden;
+   
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.ai-background {
+    position: relative;
+    height: 650px;
+    width:100%;
+    padding-top: 50px;
+}
+
+.ai-header{
+    color: white;
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 800;
+    position: absolute;
+    top:33.6%;
+    left:3%;
+}
+
+.ai-smallheader{
+    color: white;
+    font-size: 48px;
+    font-family: Inter;
+    font-weight: 100;
+    position: absolute;
+    top:43.7%;
+    left:3%;
+    width: 40%;
+    line-height: 122.5%;
+
+}
+
+.grey-box{
+    
+    position: relative;
+    background-color: #161616;
+    width: 100%;
+    height:420px;
+    overflow: hidden;
+    
+    
+}
+
+.grey-div1{
+    
+    position: relative;
+    background-color: #161616;
+    width: 100%;
+    height:50px;
+    
+}
+
+.grey-div2{
+    
+    position: relative;
+    background-color: #161616;
+    width: 100%;
+    height:460px;
+    
+}
+
+.data-text{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    position: relative;
+    top:35%;
+    left: 4%;
+    width:300px;
+
+}
+
+.adoption-box{
+    width: 184px;
+    height: 244.08px;
+    border-radius: 7.07px;
+    background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+    position: relative;
+    top:21.6%;
+    left:4%;
+
+}
+
+.adoption-img{
+    position:absolute;
+    top:5%;
+    left: 28%;
+}
+
+.adoption-perc{
+    color: white;
+    font-size: 24.50px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:13.2%;
+    left:36.4%;
+    width:20%;
+}
+
+.adoption-perc-symbol{
+    color: white;
+    font-size: 14.14px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:1.7%;
+    left:53.4%;
+    width:10%;
+}
+
+.adoption-name{
+    color: white;
+    font-size: 22.62px;
+    font-family: Inter;
+    font-weight: 700;
+    position:relative;
+    top:17.7%;
+    left:20.4%;
+    width:60%;
+}
+
+.adoption-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 200;
+    position:relative;
+    top:24%;
+    left:7%;
+    width:90%;
+    line-height: 120%;
+}
+.growth-box{
+    width: 240px;
+    height: 325.45px;
+    border-radius: 7.07px;
+    background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+    position: absolute;
+    top:11.7%;
+    left:20.5%;
+
+}
+
+.growth-img{
+    position:absolute;
+    top:6%;
+    left: 28%;
+}
+
+.growth-perc{
+    color: white;
+    font-size: 32.67px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:14.3%;
+    left:36.4%;
+    width:20%;
+}
+
+.growth-perc-symbol{
+    color: white;
+    font-size: 18.85px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:2.7%;
+    left:53.4%;
+    width:10%;
+}
+
+.growth-name{
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+    font-weight: 700;
+    position:relative;
+    top:19.5%;
+    left:29.6%;
+    width:60%;
+}
+
+.growth-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:relative;
+    top:24%;
+    left:14%;
+    width: 80%;
+    line-height: 120%;
+}
+
+.investment-box{
+    width: 270px;
+    height: 366.13px;
+    border-radius: 7.07px;
+    background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+    position: absolute;
+    top:7%;
+    left:41%;
+
+}
+
+.investment-img{
+    position:absolute;
+    top:6%;
+    left: 28%;
+}
+
+.investment-perc{
+    color: white;
+    font-size: 36.75px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:14.5%;
+    left:36.4%;
+    width:20%;
+}
+
+.investment-perc-symbol{
+    color: white;
+    font-size: 21.20px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:3%;
+    left:53.4%;
+    width:10%;
+}
+
+.investment-name{
+    color: white;
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 700;
+    position:relative;
+    top:20%;
+    left:21.9%;
+    width:60%;
+}
+
+.investment-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:relative;
+    top:24%;
+    left:4%;
+    width: 92%;
+    line-height: 120%;
+}
+
+.revenue-box{
+    width: 240px;
+    height: 325.45px;
+    border-radius: 7.07px;
+    background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+    position: absolute;
+    top:11.7%;
+    left:63.5%;
+
+}
+
+.revenue-img{
+    position:absolute;
+    top:6%;
+    left: 28%;
+}
+
+.revenue-perc{
+    color: white;
+    font-size: 32.67px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:14.3%;
+    left:36.4%;
+    width:20%;
+}
+
+.revenue-perc-symbol{
+    color: white;
+    font-size: 18.85px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:2.7%;
+    left:53.4%;
+    width:10%;
+}
+
+.revenue-name{
+    color: white;
+    font-size: 26px;
+    font-family: Inter;
+    font-weight: 700;
+    position:relative;
+    top:19.2%;
+    left:26.5%;
+    width:60%;
+}
+
+.revenue-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:relative;
+    top:24%;
+    left:7%;
+    width: 85%;
+    line-height: 120%;
+}
+
+.regulation-box{
+    width: 184px;
+    height: 244.08px;
+    border-radius: 7.07px;
+    background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+    position: absolute;
+    top:21.6%;
+    left:84%;
+
+}
+
+.regulation-img{
+    position:absolute;
+    top:5%;
+    left: 28%;
+}
+
+
+.regulation-perc{
+    color: white;
+    font-size: 24.50px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:13.2%;
+    left:36.4%;
+    width:20%;
+}
+
+.regulation-perc-symbol{
+    color: white;
+    font-size: 14.14px;
+    font-family: Inter;
+    font-weight: 400;
+    position:relative;
+    top:1.7%;
+    left:53.4%;
+    width:10%;
+}
+
+.regulation-name{
+    color: white;
+    font-size: 22.62px;
+    font-family: Inter;
+    font-weight: 700;
+    position:relative;
+    top:17.7%;
+    left:16.4%;
+    width:60%;
+}
+
+.regulation-info{
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 200;
+    position:relative;
+    top:24%;
+    left:7%;
+    width:86%;
+    line-height: 120%;
+}
+
+.aicategory-text{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    position: relative;
+    top:6%;
+    left: 4%;
+    width:400px;
+    height:410px;
+}
+
+.aicategory-image{
+    position: relative;
+    top: 5%;
+    left: -2%;
+    
+}
+
+.narrow-ai{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    position: relative;
+    top: -78%;
+    left: 140%;
+   
+}
+
+.general-ai{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    position: relative;
+    top: -76%;
+    left: 140%;
+   
+}
+
+.super-ai{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    position: relative;
+    top: -74%;
+    left: 140%;
+    
+}
+
+.ai-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position: relative;
+    width:200%;
+    line-height: 122.5%;
+}
+
+.black-box{
+    background-color: black;
+    width:100%;
+    height:665px;
+
+}
+
+.healthcare{
+    position: relative;
+    top:3.5%;
+    left: 7.6%;
+    width:23%;
+}
+
+.healthcare-head{
+    color: white;
+    font-size: 24px; 
+    font-family: Inter; 
+    font-weight: 600;
+    position: absolute;
+    top:54%;
+    left:17.4%;
+}
+
+.healthcare-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position: absolute;
+    top:67%;
+    left:5.8%;
+    width:70%;
+    line-height: 120%;
+}
+
+
+.smp{
+    position: relative;
+    top:-49.2%;
+    left:29.6%;
+    width:203px;
+    height:196px;
+    max-width: 17%;
+}
+
+.smp-logo{
+    position: absolute;
+    top:6%;
+    left:28.5%;
+}
+
+.smp-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position: absolute;
+    top:48%;
+    left:7%;
+    width:20%;
+    line-height: 120%;
+}
+
+.E-commerce{
+    position: relative;
+    top:-78.6%;
+    left: 46.9%;
+    max-width: 20%;
+}
+
+.Ecom-head{
+    position:absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    top:40%;
+    left: 34%;
+}
+
+.Ecom-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:60%;
+    left: 6%;
+    width:120%;
+    line-height: 120%;
+}
+
+.Education{
+    position: relative;
+    top:-108.3%;
+    left: 75.2%;
+    max-width: 20%;
+}
+
+.education-logo{
+    position: absolute;
+    top:9%;
+    left:24.3%;
+}
+
+.education-head{
+    color: white;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 600;
+    position: absolute;
+    top:65%;
+    left:15%;
+
+}
+
+.cfa{
+    position: relative;
+    top:-103.5%;
+    left:29.6%;
+    width: 30%;
+}
+
+.cfa-head{
+    color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    position:absolute;
+    top:34%;
+    left:6.1%;
+}
+
+.cfa-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:52%;
+    left:6.1%;
+    line-height: 120%;
+    max-width: 70%;
+}
+
+.socialmedia{
+    position: relative;
+    top:-133%;
+    left:56.6%;
+    width: 30%;
+}
+
+.socialmedia-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position:absolute;
+    top:47.5%;
+    left:3.5%;
+}
+
+.socialmedia-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:68%;
+    left:3.5%;
+    line-height: 120%;
+    max-width: 50%;
+}
+
+.Enterprise{
+    position: relative;
+    top:-162.6%;
+    left:75.2%;
+    width: 20%;
+}
+
+.Enterprise-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position:absolute;
+    top:52.5%;
+    left:3.5%;
+    width:30%;
+    line-height: 110%;
+}
+
+.Enterprise-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:68%;
+    left:3.5%;
+    line-height: 120%;
+    max-width: 75%;
+}
+.securityapps{
+    position: relative;
+    top: -198.4%;
+    left: 7.6%;
+    width:20%;
+
+}
+
+.securityapps-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position:absolute;
+    top:39.5%;
+    left:4.5%;
+    width:30%;
+    line-height: 110%;
+}
+
+.securityapps-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:67%;
+    left:4.5%;
+    line-height: 120%;
+    max-width: 80%;
+}
+
+.robotics{
+    position: relative;
+    top:-223.4%;
+    left:29.6%;
+    width: 30%;
+
+}
+
+.robotics-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position:absolute;
+    top:42.5%;
+    left:16.5%;
+    width:30%;
+    line-height: 110%;
+}
+
+.automotive{
+    position: relative;
+    top: -248.2%;
+    left: 50.15%;
+    width:25%;
+
+}
+
+.automotive-head{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    position:absolute;
+    top:15.5%;
+    left:37.5%;
+    width:30%;
+    line-height: 110%;
+}
+
+.automotive-info{
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 200;
+    position:absolute;
+    top:57%;
+    left:4.5%;
+    line-height: 120%;
+    max-width: 77.3%;
+}
+
+.grey-box2{
+    background-color: #161616;
+    width:100%;
+    height:480px;
+
+}
+
+.future-work{
+    color: white;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    position: relative;
+    top:4.5%;
+    left: 4%;
+    width:300px;
+
+}
+
+
+
+@media only screen and (max-width: 1417px) {
+    .ai-info{
+        font-size: 15px;
+        max-width: 170%;
+    }
+    
+}
+
+@media only screen and (max-width: 1298px) {
+    .ai-info{
+        font-size: 14px;
+        max-width: 160%;
+    }
+    
+    ai-background {
+        
+        top:50px;
+        
+        
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    
+    
+    .healthcare{
+        position: relative;
+        top:3.5%;
+        left: 5.6%;
+        width:23%;
+    }
+    
+    .healthcare-head{
+        color: white;
+        font-size: 24px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:47%;
+        left:17.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:58%;
+        left:5.8%;
+        width:75%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:-49.2%;
+        left:29%;
+        width:203px;
+        height:196px;
+        max-width: 17%;
+    }
+    
+    .smp-logo{
+        position: absolute;
+        top:4%;
+        left:28.5%;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 23px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:48%;
+        left:7%;
+        width:20%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:-78.6%;
+        left: 47.9%;
+        max-width: 20%;
+    }
+    
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        top:36%;
+        left: 34%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:56%;
+        left: 6%;
+        width:120%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-108.3%;
+        left: 78.2%;
+        max-width: 20%;
+    }
+    
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:24.3%;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 32px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:15%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-103.5%;
+        left:29%;
+        width: 30%;
+    }
+    
+    .cfa-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:34%;
+        left:6.1%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:52%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 70%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-133%;
+        left:59%;
+        width: 30%;
+    }
+    
+    .socialmedia-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:41.5%;
+        left:3.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:62%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 50%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-162.6%;
+        left:78.2%;
+        width: 20%;
+    }
+    
+    .Enterprise-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:45.5%;
+        left:3.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:62%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    .securityapps{
+        position: relative;
+        top: -198.4%;
+        left: 5.6%;
+        width:20%;
+    
+    }
+    
+    .securityapps-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:4.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:63%;
+        left:4.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-223.4%;
+        left:29%;
+        width: 30%;
+    
+    }
+    
+    .robotics-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:16.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -248.2%;
+        left: 51.55%;
+        width:25%;
+    
+    }
+    
+    .automotive-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:15.5%;
+        left:37.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:57%;
+        left:12.5%;
+        line-height: 120%;
+        max-width: 77.3%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1250px) {
+    .ai-info{
+        font-size: 14px;
+        max-width: 140%;
+    }
+
+    .ai-smallheader{
+        width: 54%;
+    
+    }
+
+    .adoption-box{
+        width: 159px;
+        height: 219.08px;
+        top:21.6%;
+        left:4%;
+    
+    }
+    
+    .adoption-img{
+        position:absolute;
+        top:5%;
+        left: 30%;
+        width: 63px;
+        height: 63px;
+    }
+    
+    .adoption-perc{
+        
+        font-size: 22.50px;
+        top:12.2%;
+        left:36.6%;
+        width:20%;
+    }
+    
+    .adoption-perc-symbol{
+        
+        font-size: 14.14px;
+        top:0%;
+        left:53.6%;
+        width:10%;
+    }
+    
+    .adoption-name{
+        font-size: 21.62px;
+        top:16.7%;
+        left:19.4%;
+        width:60%;
+    }
+    
+    .adoption-info{
+        font-size: 13px;
+        top:24%;
+        left:7%;
+        width:90%;
+        line-height: 120%;
+    }
+    .growth-box{
+        width: 215px;
+        height: 300.45px;
+        top:11.7%;
+        left:20.5%;
+    
+    }
+    
+    .growth-img{
+        top:6%;
+        left: 31%;
+        width: 77px;
+        height: 77px;
+    }
+    
+    .growth-perc{
+        font-size: 29.67px;
+        top:12%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .growth-perc-symbol{
+        
+        font-size: 17.85px;
+        top:0%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .growth-name{
+        
+        font-size: 25px;
+        top:19.5%;
+        left:28%;
+        width:60%;
+    }
+    
+    .growth-info{
+        
+        font-size: 15px;
+        top:24%;
+        left:14%;
+        width: 80%;
+        line-height: 120%;
+    }
+    
+    .investment-box{
+        width: 245px;
+        height: 341.13px;
+        top:7%;
+        left:41%;
+    
+    }
+    
+    .investment-img{
+        top:6%;
+        left: 30%;
+        width:90px;
+        height: 90px;
+    }
+    
+    .investment-perc{
+        font-size: 32.75px;
+        top:12.5%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .investment-perc-symbol{
+        
+        font-size: 20px;
+        left:53.4%;
+        top:1%;
+        width:10%;
+    }
+    
+    .investment-name{
+        font-size: 27px;
+        top:20%;
+        left:20%;
+        width:60%;
+    }
+    
+    .investment-info{
+
+        font-size: 15px;
+        top:23%;
+        left:3.5%;
+        width: 95%;
+        line-height: 120%;
+    }
+    
+    .revenue-box{
+        width: 215px;
+        height: 300.45px;
+        top:11.7%;
+        left:63.5%;
+    
+    }
+    
+    .revenue-img{
+       
+        top:6%;
+        left: 31%;
+        width: 77px;
+        height: 77px;
+    }
+    
+    .revenue-perc{
+        
+        font-size: 29.67px;
+        top:12%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .revenue-perc-symbol{
+        
+        font-size: 17.85px;
+        top:0%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .revenue-name{
+       
+        font-size: 25px;
+        top:19.2%;
+        left:25%;
+        width:60%;
+    }
+    
+    .revenue-info{
+        
+        font-size: 15px;
+        top:24%;
+        left:7%;
+        width: 85%;
+        line-height: 120%;
+    }
+    
+    .regulation-box{
+        width: 159px;
+        height: 219.08px;
+        top:21.6%;
+        left:84%;
+    
+    }
+    
+    .regulation-img{
+        
+        top:5%;
+        left: 30%;
+        width: 63px;
+        height: 63px;
+    }
+    
+    
+    .regulation-perc{
+        font-size: 22.50px;
+        top:12.2%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .regulation-perc-symbol{
+        
+        font-size: 14.14px;
+        top:0%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .regulation-name{
+        
+        font-size: 21.62px;
+        top:16.7%;
+        left:15.6%;
+        width:60%;
+    }
+    
+    .regulation-info{
+        
+        font-size: 13px;
+        top:24%;
+        left:7%;
+        width:90%;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .black-box{
+        height:635px;
+        
+    }
+    
+    .healthcare{
+    
+        top:6.5%;
+        left: 3.6%;
+        width:240px;
+        height:300px;
+    }
+    
+    .healthcareview{
+        width:240px;
+        height:300px;
+    }
+    .healthcare-head{
+        color: white;
+        font-size: 23px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:43%;
+        left:17.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 15.3px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:58%;
+        left:4%;
+        width:94%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:-40.7%;
+        left:28%;
+        width:180px;
+        height:172px;
+        max-width: 17%;
+    }
+    
+    .smpview{
+        width:180px;
+        height:172px;
+    }
+    .smp-logo{
+        position: absolute;
+        top:3%;
+        left:28.5%;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 21px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:48%;
+        left:7%;
+        width:20%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:-68%;
+        left: 47.9%;
+        width: 305px;
+        height: 172px;
+        max-width: 20%;
+    }
+    
+    .E-commerceview{
+        width: 305px;
+        height: 172px;
+    }
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 23px;
+        font-family: Inter;
+        font-weight: 600;
+        top:33%;
+        left: 34%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 14.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:55%;
+        left: 2%;
+        width:128%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-95.5%;
+        left: 78.2%;
+        width: 220PX;
+        height: 172px;
+        max-width: 20%;
+    }
+    
+    .Educationview{
+        width: 220PX;
+        height: 172px;
+    }
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:31.3%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:23%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-89%;
+        left:28%;
+        width: 305px;
+        height: 172px;
+    }
+    
+    .cfaview{
+        width: 305px;
+        height: 172px;
+    }
+    .cfa-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:23%;
+        left:6.1%;
+        line-height: 120%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:54%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-116.2%;
+        left:57.5%;
+        width: 190px;
+        height: 172px;
+    }
+    
+    .socialmediaview{
+        width: 190px;
+        height: 172px;
+    }
+    .socialmedia-head{
+        color: white;
+        font-size: 22px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:6.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:59%;
+        left:6.5%;
+        line-height: 120%;
+        max-width: 70%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-143.3%;
+        left:78.2%;
+        width: 220px;
+        height:350px;
+
+    }
+    
+    .Enterpriseview{
+        width: 220px;
+        height:350px;
+    }
+    .Enterprise-head{
+        color: white;
+        font-size: 23px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:43.5%;
+        left:3.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:62%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    .securityapps{
+        position: relative;
+        top: -176.4%;
+        left: 3.6%;
+        width:240px;
+        height: 210px;
+    
+    }
+    
+    .securityappsview{
+        width:240px;
+        height: 210px;
+    }
+    .securityapps-head{
+        color: white;
+        font-size: 22px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:4.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:63%;
+        left:4.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-199.1%;
+        left:28%;
+        width: 225;
+        height: 145;
+    }
+    
+    .roboticsview{
+        width:225px;
+        height: 145px;
+    }
+    .robotics-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:16.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -222%;
+        left: 51.1%;
+        width:268px;
+        height: 145px;
+    
+    }
+
+    .automotiveview{
+        width:268px;
+        height: 145px;
+    }
+    
+    .automotive-head{
+        color: white;
+        font-size: 22px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:14.5%;
+        left:37.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:57%;
+        left:10.5%;
+        line-height: 120%;
+        max-width: 85.3%;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .narrow-ai{
+        
+        left: 130%;
+       
+    }
+    
+    .general-ai{
+        
+        left: 130%;
+       
+    }
+    
+    .super-ai{
+        
+        left: 130%;
+        
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+
+    .ai-category-image-shrunk{
+        width: 450px;
+        height: 341px;
+    }
+    .narrow-ai{
+        
+        left: 120%;
+       
+    }
+    
+    .general-ai{
+        
+        left: 120%;
+       
+    }
+    
+    .super-ai{
+        
+        left: 120%;
+        
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+
+
+    .Ecom-head{        
+        width: 100%;
+    }
+    
+
+
+    .adoption-box{
+        width: 139px;
+        height: 199.08px;
+        top:21.6%;
+        left:4%;
+    
+    }
+    
+    .adoption-img{
+        position:absolute;
+        top:5%;
+        left: 27%;
+        width: 63px;
+        height: 63px;
+    }
+    
+    .adoption-perc{
+        
+        font-size: 21.50px;
+        top:12.2%;
+        left:36.6%;
+        width:20%;
+    }
+    
+    .adoption-perc-symbol{
+        
+        font-size: 14.14px;
+        top:0%;
+        left:55.6%;
+        width:10%;
+    }
+    
+    .adoption-name{
+        font-size: 19.62px;
+        top:16.7%;
+        left:18.4%;
+        width:60%;
+    }
+    
+    .adoption-info{
+        font-size: 12px;
+        top:24%;
+        left:7%;
+        width:90%;
+        line-height: 120%;
+    }
+    .growth-box{
+        width: 195px;
+        height: 280.45px;
+        top:11.7%;
+        left:20.5%;
+    
+    }
+    
+    .growth-img{
+        top:6%;
+        left: 30%;
+        width: 77px;
+        height: 77px;
+    }
+    
+    .growth-perc{
+        font-size: 27.67px;
+        top:12%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .growth-perc-symbol{
+        
+        font-size: 17.85px;
+        top:0%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .growth-name{
+        
+        font-size: 23px;
+        top:19.5%;
+        left:28%;
+        width:60%;
+    }
+    
+    .growth-info{
+        
+        font-size: 14px;
+        top:24%;
+        left:14%;
+        width: 80%;
+        line-height: 120%;
+    }
+    
+    .investment-box{
+        width: 225px;
+        height: 321.13px;
+        top:7%;
+        left:41%;
+    
+    }
+    
+    .investment-img{
+        top:6%;
+        left: 30%;
+        width:90px;
+        height: 90px;
+    }
+    
+    .investment-perc{
+        font-size: 32.75px;
+        top:12.5%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .investment-perc-symbol{
+        
+        font-size: 20px;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .investment-name{
+        font-size: 25px;
+        top:20%;
+        left:20%;
+        width:60%;
+    }
+    
+    .investment-info{
+
+        font-size: 13px;
+        top:23%;
+        left:3.5%;
+        width: 95%;
+        line-height: 120%;
+    }
+    
+    .revenue-box{
+        width: 195px;
+        height: 280.45px;
+        top:11.7%;
+        left:63.5%;
+    
+    }
+    
+    .revenue-img{
+       
+        top:6%;
+        left: 30%;
+        width: 77px;
+        height: 77px;
+    }
+    
+    .revenue-perc{
+        
+        font-size: 29.67px;
+        top:12%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .revenue-perc-symbol{
+        
+        font-size: 17.85px;
+        top:0%;
+        left:55.4%;
+        width:10%;
+    }
+    
+    .revenue-name{
+       
+        font-size: 23px;
+        top:19.2%;
+        left:25%;
+        width:60%;
+    }
+    
+    .revenue-info{
+        
+        font-size: 14px;
+        top:24%;
+        left:7%;
+        width: 89.5%;
+        line-height: 120%;
+    }
+    
+    .regulation-box{
+        width: 139px;
+        height: 199.08px;
+        top:21.6%;
+        left:84%;
+    
+    }
+    
+    .regulation-img{
+        
+        top:5%;
+        left: 28%;
+        width: 63px;
+        height: 63px;
+    }
+    
+    
+    .regulation-perc{
+        font-size: 22.50px;
+        top:12.2%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .regulation-perc-symbol{
+        
+        font-size: 14.14px;
+        top:0%;
+        left:56.4%;
+        width:10%;
+    }
+    
+    .regulation-name{
+        
+        font-size: 19.62px;
+        top:16.7%;
+        left:15.6%;
+        width:60%;
+    }
+    
+    .regulation-info{
+        
+        font-size: 11.5px;
+        top:24%;
+        left:7%;
+        width:90%;
+        line-height: 120%;
+    }
+
+    .grey-box{
+        height:390px;
+    }
+}
+
+@media only screen and (max-width:1082px){
+    .ai-info{
+        font-size: 13px;
+        max-width: 130%;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .grey-box2{
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width:1040px){
+    .ai-info{
+        font-size: 13px;
+        max-width: 120%;
+    }
+
+    .black-box{
+        height:525px;
+        
+    }
+    
+    .healthcare{
+    
+        top:6.5%;
+        left: 3.6%;
+        width:190px;
+        height:250px;
+    }
+    
+    .healthcareview{
+        width:190px;
+        height:250px;
+    }
+    .healthcare-head{
+        color: white;
+        font-size: 21px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:39%;
+        left:17.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 13.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:54%;
+        left:4%;
+        width:94%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:-41.2%;
+        left:28%;
+        width:150px;
+        height:142px;
+        max-width: 17%;
+    }
+    
+    .smpview{
+        width:150px;
+        height:142px;
+    }
+    .smp-logo{
+        position: absolute;
+        top:3%;
+        left:28.5%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 18.5px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:48%;
+        left:7%;
+        width:20%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:-68.5%;
+        left: 47.9%;
+        width: 255px;
+        height: 142px;
+        max-width: 20%;
+    }
+    
+    .E-commerceview{
+        width: 255px;
+        height: 142px;
+    }
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 21px;
+        font-family: Inter;
+        font-weight: 600;
+        top:30%;
+        left: 30%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 13.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:52%;
+        left: 10%;
+        width:110%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-96%;
+        left: 78.2%;
+        width: 180PX;
+        height: 142px;
+        max-width: 20%;
+    }
+    
+    .Educationview{
+        width: 180PX;
+        height: 142px;
+    }
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:31.3%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 22px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:21%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-90%;
+        left:28%;
+        width: 255px;
+        height: 142px;
+    }
+    
+    .cfaview{
+        width: 255px;
+        height: 142px;
+    }
+    .cfa-head{
+        color: white;
+        font-size: 18.5px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:16%;
+        left:6.1%;
+        line-height: 120%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 13.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-117.2%;
+        left:57.5%;
+        width: 160px;
+        height: 142px;
+    }
+    
+    .socialmediaview{
+        width: 160px;
+        height: 142px;
+    }
+    .socialmedia-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:30.5%;
+        left:6.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 13.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:56%;
+        left:6.5%;
+        line-height: 120%;
+        max-width: 70%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-145.3%;
+        left:78.2%;
+        width: 180px;
+        height:300px;
+
+    }
+    
+    .Enterpriseview{
+        width: 180px;
+        height:300px;
+
+    }
+    .Enterprise-head{
+        color: white;
+        font-size: 21px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:38.5%;
+        left:3.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 13.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:58%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    .securityapps{
+        position: relative;
+        top: -179.7%;
+        left: 3.6%;
+        width:190px;
+        height: 180px;
+    
+    }
+    
+    .securityappsview{
+        width:190px;
+        height: 180px;
+    }
+    .securityapps-head{
+        color: white;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:4.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:63%;
+        left:4.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-202.6%;
+        left:28%;
+        width: 200px;
+        height: 120px;
+    }
+    
+    .roboticsview{
+        width: 200px;
+        height: 120px;
+    }
+    .robotics-head{
+        color: white;
+        font-size: 22px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:25.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -225.4%;
+        left: 51.1%;
+        width:228px;
+        height: 120px;
+    
+    }
+
+    .automotiveview{
+        width:228px;
+        height: 120px;
+    }
+    
+    .automotive-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:13.5%;
+        left:40.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:57%;
+        left:10.5%;
+        line-height: 120%;
+        max-width: 85.3%;
+    }
+}
+
+
+@media only screen and (max-width:1007px){
+
+    .ai-header{
+        
+        font-size: 36px;
+        
+        top:32.6%;
+        left:3%;
+    }
+    
+    .ai-smallheader{
+       
+        font-size: 47px;
+        
+        top:41.7%;
+        left:3%;
+        width: 66.3%;
+        line-height: 122.5%;
+    
+    }
+    .ai-category-image-shrunk{
+        width: 400px;
+        height:341px;
+    }
+
+    .narrow-ai{
+        
+        left: 105%;
+        
+    }
+    
+    .general-ai{
+        
+        left: 105%;
+       
+    }
+    
+    .super-ai{
+        
+        left: 105%;
+        
+    }
+
+    .ai-info{
+        font-size: 13px;
+        max-width: 130%;
+    }
+}
+
+@media only screen and (max-width:979px){
+    .ai-info{
+        font-size: 13px;
+        max-width: 110%;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width:1359px){
+    .ai-header{
+        
+        font-size: 36px;
+        
+        top:27.3%;
+        left:3%;
+    }
+    
+    .ai-smallheader{
+       
+        font-size: 47px;
+        
+        top:35.7%;
+        left:3%;
+        width: 48.8%;
+        line-height: 122.5%;
+    
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .ai-header{
+        
+        font-size: 36px;
+        
+        top:22.3%;
+        left:3%;
+    }
+    
+    .ai-smallheader{
+       
+        font-size: 47px;
+        
+        top:29.4%;
+        left:3%;
+        width: 60.8%;
+        line-height: 122.5%;
+    
+    }
+}
+
+@media only screen and (max-width:912px){
+    .ai-header{
+        
+        font-size: 36px;
+        
+        top:20.6%;
+        left:3%;
+    }
+    
+    .ai-smallheader{
+       
+        font-size: 47px;
+        
+        top:24.7%;
+        left:3%;
+        width: 66.3%;
+        line-height: 122.5%;
+    
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .ai-background{
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width:896px){
+    .ai-category-image-shrunk{
+        width: 350px;
+        height:321px;
+
+    }
+
+    .aicategory-image{
+        
+        top: 7%;
+        left: -2%;
+        
+    }
+
+    .narrow-ai{
+        font-size: 22px;
+        top: -74%;
+        left: 90%;
+        
+    }
+    
+    .general-ai{
+        font-size: 22px;
+        top: -72%;
+        left: 90%;
+       
+    }
+    
+    .super-ai{
+        font-size: 22px;
+        top: -70%;
+        left: 90%;
+       
+        
+    }
+
+    .ai-info{
+        font-size: 12.5px;
+        max-width: 110%;
+    }
+}
+
+@media only screen and (max-width:880px){
+    .grey-box2{
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width:870px){
+    
+
+    .black-box{
+        height:460px;
+        
+    }
+    
+    .healthcare{
+    
+        top:6.5%;
+        left: 3.6%;
+        width:160px;
+        height:220px;
+    }
+    
+    .healthcareview{
+        width:160px;
+        height:220px;
+    }
+    .healthcare-head{
+        color: white;
+        font-size: 19px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:39%;
+        left:17.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 12.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:54%;
+        left:4%;
+        width:94%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:-41.7%;
+        left:28%;
+        width:130px;
+        height:122px;
+        max-width: 17%;
+    }
+    
+    .smpview{
+        width:130px;
+        height:122px;
+    }
+    .smp-logo{
+        position: absolute;
+        top:3%;
+        left:28.5%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:48%;
+        left:7%;
+        width:20%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:-68.5%;
+        left: 48.9%;
+        width: 215px;
+        height: 122px;
+        max-width: 20%;
+    }
+    
+    .E-commerceview{
+        width: 215px;
+        height: 122px;
+    }
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 600;
+        top:23%;
+        left: 30%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 12.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:46%;
+        left: 10%;
+        width:110%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-95.3%;
+        left: 79.2%;
+        width: 150PX;
+        height: 122px;
+        max-width: 20%;
+    }
+    
+    .Educationview{
+        width: 150PX;
+        height: 122px;
+    }
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:29%;
+        width: 55px;
+        height: 55px;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 21px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:16%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-90%;
+        left:28%;
+        width: 215px;
+        height: 122px;
+    }
+    
+    .cfaview{
+        width: 215px;
+        height: 122px;
+    }
+    .cfa-head{
+        color: white;
+        font-size: 16.5px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:12%;
+        left:6.1%;
+        line-height: 110%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 12.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:45%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-116.5%;
+        left:57.5%;
+        width: 140px;
+        height: 122px;
+    }
+    
+    .socialmediaview{
+        width: 140px;
+        height: 122px;
+    }
+    .socialmedia-head{
+        color: white;
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:26.5%;
+        left:6.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 12.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:6.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-143.6%;
+        left:79.2%;
+        width: 150px;
+        height:260px;
+
+    }
+    
+    .Enterpriseview{
+        width: 150px;
+        height:260px;
+
+    }
+    .Enterprise-head{
+        color: white;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:30.5%;
+        left:3.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 12.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    .securityapps{
+        position: relative;
+        top: -178.5%;
+        left: 3.6%;
+        width:160px;
+        height: 160px;
+    
+    }
+    
+    .securityappsview{
+        width:160px;
+        height: 160px;
+    }
+    .securityapps-head{
+        color: white;
+        font-size: 17px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:4%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:63%;
+        left:4%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-204.6%;
+        left:28%;
+        width: 170px;
+        height: 120px;
+    }
+    
+    .roboticsview{
+        width: 170px;
+        height: 120px;
+    }
+    .robotics-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:25.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -230.7%;
+        left: 51.1%;
+        width:200px;
+        height: 120px;
+    
+    }
+
+    .automotiveview{
+        width:200px;
+        height: 120px;
+    }
+    
+    .automotive-head{
+        color: white;
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:13.5%;
+        left:40.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:7.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width:835px){
+    
+
+    .ai-info{
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .narrow-ai{
+        top: -72%;
+    }
+
+    .general-ai{
+        top: -70%;
+    }
+
+    .super-ai{
+        top: -68%;
+    }
+}
+
+@media only screen and (max-width:793px){
+
+    .grey-div2{
+    
+        height:400px;
+        
+    }
+
+    .ai-category-image-shrunk{
+        width: 320px;
+        height: 300px;
+    }
+
+    .narrow-ai{
+        font-size: 20px;
+        top: -67%;
+        left:83%;
+        
+    }
+
+    .general-ai{
+        font-size: 20px;
+        top: -65%;
+        left:83%;
+    }
+
+    .super-ai{
+        font-size: 20px;
+        top: -63%;
+        left:83%;
+    }
+
+    .ai-info{
+        font-size: 11px;
+    }
+
+    .Ecom-info{
+        font-size: 12px;
+    }
+
+    .ai-smallheader{
+        font-size: 45px;
+        max-width: 68%;
+    }
+}
+
+@media only screen and (max-width:764px){
+
+    .grey-div2{
+        height: 370px;
+    }
+
+    .ai-category-image-shrunk{
+        
+        width: 260px;
+        height: 280px;
+    }
+
+    .aicategory-image{
+        position: relative;
+        top: 3.5%;
+        left: -2%;
+        
+    }
+
+    .narrow-ai{
+        font-size: 19px;
+        top: -67%;
+        left:70%;
+        
+    }
+
+    .general-ai{
+        font-size: 19px;
+        top: -65%;
+        left:70%;
+    }
+
+    .super-ai{
+        font-size: 19px;
+        top: -63%;
+        left:70%;
+    }
+}
+
+
+
+@media only screen and (max-width:740px){
+    
+
+    .black-box{
+        height:404px;
+        
+    }
+    
+    .healthcare{
+    
+        top:6.5%;
+        left: 3.6%;
+        width:130px;
+        height:190px;
+    }
+    
+    .healthcareview{
+        width:130px;
+        height:190px;
+    }
+    .healthcare-head{
+        color: white;
+        font-size: 17px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:28%;
+        left:12.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:48%;
+        left:4%;
+        width:94%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:-40.9%;
+        left:28%;
+        width:115px;
+        height:110px;
+        max-width: 17%;
+    }
+    
+    .smpview{
+        width:115px;
+        height:110px;
+    }
+    .smp-logo{
+        position: absolute;
+        top:3%;
+        left:28.5%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:48%;
+        left:7%;
+        width:20%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:-68.5%;
+        left: 50.4%;
+        width: 170px;
+        height: 110px;
+        max-width: 20%;
+    }
+    
+    .E-commerceview{
+        width: 170px;
+        height: 110px;
+    }
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 17px;
+        font-family: Inter;
+        font-weight: 600;
+        top:16%;
+        left: 20%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:40%;
+        left: 4%;
+        width:110%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-95.9%;
+        left: 79.2%;
+        width: 120PX;
+        height: 110px;
+        max-width: 20%;
+    }
+    
+    .Educationview{
+        width: 120PX;
+        height: 110px;
+    }
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:29%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 19px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:12%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-91.5%;
+        left:28%;
+        width: 170px;
+        height: 110px;
+    }
+    
+    .cfaview{
+        width: 170px;
+        height: 110px;
+    }
+    .cfa-head{
+        color: white;
+        font-size: 14.5px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:12%;
+        left:6.1%;
+        line-height: 110%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:45%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-119%;
+        left:57.5%;
+        width: 120px;
+        height: 110px;
+    }
+    
+    .socialmediaview{
+        width: 120px;
+        height: 110px;
+    }
+    .socialmedia-head{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:26.5%;
+        left:6.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:6.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-146.3%;
+        left:79.2%;
+        width: 120px;
+        height:220px;
+
+    }
+    
+    .Enterpriseview{
+        width: 120px;
+        height:220px;
+
+    }
+    .Enterprise-head{
+        color: white;
+        font-size: 17px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:30.5%;
+        left:3.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    .securityapps{
+        position: relative;
+        top: -178%;
+        left: 3.6%;
+        width:130px;
+        height: 130px;
+    
+    }
+    
+    .securityappsview{
+        width:130px;
+        height: 130px;
+    }
+    .securityapps-head{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:35.5%;
+        left:2%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 10px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:63%;
+        left:2%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-203.1%;
+        left:28%;
+        width: 140px;
+        height: 100px;
+    }
+    
+    .roboticsview{
+        width: 140px;
+        height: 100px;
+    }
+    .robotics-head{
+        color: white;
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:25.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -227.7%;
+        left: 51.8%;
+        width:160px;
+        height: 100px;
+    
+    }
+
+    .automotiveview{
+        width:160px;
+        height: 100px;
+    }
+    
+    .automotive-head{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:13.5%;
+        left:40.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 10.5px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left:7.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+
+    .grey-box2{
+        height: 300px;
+    }
+
+
+}
+
+@media only screen and (max-width: 711px) {
+    .ai-info{
+        font-size: 10px;
+    }
+
+    .narrow-ai{
+        max-width: 82%;
+    }
+
+    .general-ai{
+       max-width: 82%;
+    }
+
+    .super-ai{
+        max-width: 82%;
+    }
+    
+}
+
+@media only screen and (max-width: 635px) {
+    .ai-info{
+        font-size: 9.5px;
+    }
+
+    .narrow-ai{
+        top: -65%;
+        font-size: 17px;
+        left:65%;
+        max-width: 70%;
+    }
+
+    .general-ai{
+        font-size: 17px;
+        top: -63%;
+        left:65%;
+        max-width: 70%;
+    }
+
+    .super-ai{
+        font-size: 17px;
+        top: -61%;
+        left:65%;
+        max-width: 70%;
+    }
+
+    .aicategory-image{
+        top: 4.5%;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+    .ai-background{
+        height: 620px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .ai-background {
+        position: relative;
+        height: 400px;
+        width:100%;
+        padding-top: 20px;
+        
+    }
+
+    .ai-header{
+        font-size: 25px;
+        top:20.6%;
+        left:5%;
+    }
+    
+    .ai-smallheader{
+        
+        font-size: 28px;
+        top:29.7%;
+        left:5%;
+        width: 70%;
+    
+    }
+
+    .grey-box{
+        height:330px;
+        overflow-x:scroll;
+    }
+
+    .data-text{
+        top: 22%;
+    }
+
+    .adoption-box{
+        width: 120px;
+        height: 195px;
+        border-radius: 7.07px;
+        background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+        position: relative;
+        top:21.6%;
+        left:-21%;
+    
+    }
+    
+    .adoption-img{
+        position:absolute;
+        top:5%;
+        left: 28%;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .adoption-perc{
+        color: white;
+        font-size: 24.50px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:13.2%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .adoption-perc-symbol{
+        color: white;
+        font-size: 14.14px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:1.7%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .adoption-name{
+        color: white;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        position:relative;
+        top:17.7%;
+        left:20.4%;
+        width:60%;
+    }
+    
+    .adoption-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:relative;
+        top:24%;
+        left:7%;
+        width:90%;
+        line-height: 120%;
+    }
+    .growth-box{
+        width: 150px;
+        height: 225px;
+        border-radius: 7.07px;
+        background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+        position: absolute;
+        top:11.7%;
+        left:6.5%;
+    
+    }
+    
+    .growth-img{
+        position:absolute;
+        top:6%;
+        left: 28%;
+    }
+    
+    .growth-perc{
+        color: white;
+        font-size: 32.67px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:14.3%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .growth-perc-symbol{
+        color: white;
+        font-size: 18.85px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:2.7%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .growth-name{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 700;
+        position:relative;
+        top:19.5%;
+        left:29.6%;
+        width:60%;
+    }
+    
+    .growth-info{
+        color: white;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 200;
+        position:relative;
+        top:24%;
+        left:14%;
+        width: 80%;
+        line-height: 120%;
+    }
+    
+    .investment-box{
+        width: 190px;
+        height: 260px;
+        border-radius: 7.07px;
+        background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+        position: absolute;
+        top:7%;
+        left:41%;
+    
+    }
+    
+    .investment-img{
+        position:absolute;
+        top:6%;
+        left: 28%;
+    }
+    
+    .investment-perc{
+        color: white;
+        font-size: 36.75px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:14.5%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .investment-perc-symbol{
+        color: white;
+        font-size: 21.20px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:3%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .investment-name{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 700;
+        position:relative;
+        top:20%;
+        left:21.9%;
+        width:60%;
+    }
+    
+    .investment-info{
+        color: white;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 200;
+        position:relative;
+        top:24%;
+        left:4%;
+        width: 92%;
+        line-height: 120%;
+    }
+    
+    .revenue-box{
+        width: 150px;
+        height: 225px;
+        border-radius: 7.07px;
+        background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+        position: absolute;
+        top:11.7%;
+        left:63.5%;
+    
+    }
+    
+    .revenue-img{
+        position:absolute;
+        top:6%;
+        left: 28%;
+    }
+    
+    .revenue-perc{
+        color: white;
+        font-size: 32.67px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:14.3%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .revenue-perc-symbol{
+        color: white;
+        font-size: 18.85px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:2.7%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .revenue-name{
+        color: white;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 700;
+        position:relative;
+        top:19.2%;
+        left:26.5%;
+        width:60%;
+    }
+    
+    .revenue-info{
+        color: white;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 200;
+        position:relative;
+        top:24%;
+        left:7%;
+        width: 85%;
+        line-height: 120%;
+    }
+    
+    .regulation-box{
+        width: 120px;
+        height: 195px;
+        border-radius: 7.07px;
+        background: linear-gradient(180deg, #2D2D2D  -40%, #132725 100%);
+        position: absolute;
+        top:21.6%;
+        left:95%;
+    
+    }
+    
+    .regulation-img{
+        position:absolute;
+        top:5%;
+        left: 28%;
+    }
+    
+    
+    .regulation-perc{
+        color: white;
+        font-size: 24.50px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:13.2%;
+        left:36.4%;
+        width:20%;
+    }
+    
+    .regulation-perc-symbol{
+        color: white;
+        font-size: 14.14px;
+        font-family: Inter;
+        font-weight: 400;
+        position:relative;
+        top:1.7%;
+        left:53.4%;
+        width:10%;
+    }
+    
+    .regulation-name{
+        color: white;
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 700;
+        position:relative;
+        top:17.7%;
+        left:16.4%;
+        width:60%;
+    }
+    
+    .regulation-info{
+        color: white;
+        font-size: 11px;
+        font-family: Inter;
+        font-weight: 200;
+        position:relative;
+        top:24%;
+        left:7%;
+        width:86%;
+        line-height: 120%;
+    }
+
+    .grey-div2{
+        height: 765px;
+    }
+
+    .narrow-ai{
+        
+        font-size: 14.5px;
+        top: 9%;
+        left: 6%;
+       
+    }
+    
+    .general-ai{
+        
+        font-size: 14.5px;
+        top: 11%;
+        left: 6%;
+       
+    }
+    
+    .super-ai{
+        font-size: 14.5px;
+        top: 14%;
+        left: 6%;
+        
+    }
+
+    .ai-info{
+        overflow-x: hidden;
+        font-size: 13px;
+        width:100%;
+        line-height: 122.5%;
+    }
+
+
+    
+    .grey-box2{
+        background-color: #161616;
+        width:100%;
+        height:780px;
+    
+    }
+
+    .future-work{
+        
+        top:3.5%;
+        left: 8%;
+        
+    
+    }
+
+    .black-box{
+        height:830px;
+        
+    }
+    
+    .healthcare{
+        
+        position: absolute;
+        top: 5%;
+        display: none;
+    }
+    
+    .healthcare-head{
+        color: white;
+        font-size: 24px; 
+        font-family: Inter; 
+        font-weight: 600;
+        position: absolute;
+        top:54%;
+        left:17.4%;
+    }
+    
+    .healthcare-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position: absolute;
+        top:67%;
+        left:5.8%;
+        width:75%;
+        line-height: 120%;
+    }
+    
+    
+    .smp{
+        position: relative;
+        top:59.4%;
+        left:50%;
+        width: 226px;
+        height: 150px;
+    }
+
+    .smpview{
+        width: 226px;
+        height: 150px;
+    }
+    
+    .smp-logo{
+        position: absolute;
+        top:6%;
+        left:14.5%;
+        width:62px;
+        height:64px;
+    }
+    
+    .smp-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:57%;
+        left:7%;
+        width:250%;
+        line-height: 120%;
+    }
+    
+    .E-commerce{
+        position: relative;
+        top:61%;
+        left: 50%;
+        width: 226px;
+        height: 150px;
+    }
+    
+    .E-commerceview{
+        width: 226px;
+        height: 150px;
+    }
+
+    .Ecom-head{
+        position:absolute;
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        top:20%;
+        left: 6%;
+        width:200%;
+    }
+    
+    .Ecom-info{
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:50%;
+        left: 6%;
+        width:240%;
+        line-height: 120%;
+    }
+    
+    .Education{
+        position: relative;
+        top:-34.7%;
+        left: 5%;
+        max-width: 20%;
+        width:165px;
+        height: 210px;
+    }
+
+    .Educationview{
+        width:165px;
+        height: 210px;
+    }
+    
+    .education-logo{
+        position: absolute;
+        top:9%;
+        left:30.3%;
+    }
+    
+    .education-head{
+        color: white;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: 600;
+        position: absolute;
+        top:65%;
+        left:21%;
+    
+    }
+    
+    .cfa{
+        position: relative;
+        top:-1.9%;
+        left:5%;
+        width: 215px;
+        height: 311px;
+    }
+
+    .cfaview{
+        width:215px;
+        height: 311px;
+    }
+    
+    .cfa-head{
+        color: white;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: 500;
+        position:absolute;
+        top:30%;
+        left:6.1%;
+        line-height: 110%;
+    }
+    
+    .cfa-info{
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:52%;
+        left:6.1%;
+        line-height: 120%;
+        max-width: 100%;
+    }
+    
+    .socialmedia{
+        position: relative;
+        top:-133%;
+        left:50.6%;
+        width: 30%;
+        display: none;
+    }
+    
+    .socialmedia-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:47.5%;
+        left:3.5%;
+    }
+    
+    .socialmedia-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:68%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 50%;
+    }
+    
+    .Enterprise{
+        position: relative;
+        top:-94.4%;
+        left:5%;
+        width: 450px;
+        height:248px;
+    }
+
+    .Enterpriseview{
+        width: 450px;
+        height:248px;
+    }
+    
+    .Enterprise-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:46.5%;
+        left:3.5%;
+        width:60%;
+        line-height: 110%;
+    }
+    
+    .Enterprise-info{
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:68%;
+        left:3.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    .securityapps{
+        position: relative;
+        top: -198.4%;
+        left: 7.6%;
+        width:20%;
+        display: none;
+    
+    }
+    
+    .securityapps-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:39.5%;
+        left:4.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .securityapps-info{
+        color: white;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:67%;
+        left:4.5%;
+        line-height: 120%;
+        max-width: 80%;
+    }
+    
+    .robotics{
+        position: relative;
+        top:-223.4%;
+        left:29.6%;
+        width: 30%;
+        display: none;
+    
+    }
+    
+    .robotics-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:42.5%;
+        left:16.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive{
+        position: relative;
+        top: -199.7%;
+        left: 42.15%;
+        width:265px;
+        height: 210px;
+    
+    }
+    
+    .automotiveview{
+        width:265px;
+        height: 210px;
+
+    }
+    .automotive-head{
+        color: white;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 600;
+        position:absolute;
+        top:15.5%;
+        left:37.5%;
+        width:30%;
+        line-height: 110%;
+    }
+    
+    .automotive-info{
+        color: white;
+        font-size: 14px;
+        font-family: Inter;
+        font-weight: 200;
+        position:absolute;
+        top:57%;
+        left:4.5%;
+        line-height: 120%;
+        max-width: 90%;
+    }
+
+    .ai-category-image-shrunk{
+        width:410px;
+    }
+
+    .aicategory-image{
+        left:6%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

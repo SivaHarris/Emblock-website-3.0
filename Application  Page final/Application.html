@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Application Page</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="./CSS/Application.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/FooterPage.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+   
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+    
+            <div class="toggler-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img id="hamburger" onclick="navHamburger(this)" src="./IMAGES/hamburger.svg" alt="">
+                    <img id="hamburgerBack" onclick="navHamburger(this)" src="./IMAGES/back.svg" alt="">
+                </button>
+                <div class="brand">
+                    <div class="logoName">
+                        <a class="navbar-brand" href="../Home/home.html"><img src="./IMAGES/Logo.jpg" alt=""></a>
+                        <a href="../Home/home.html"><h1 class="logoName">Emblock</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-ul">
+                    <li id="homeli" class="nav-item">
+                        <img id="navGifCheck" class="navliGif" src="./Images/home.gif" alt="">
+                        <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                    </li>
+                    <li id="servicesli" class="nav-item dropSerM dropdownS" onclick="servicesMToggle()">
+                        <img class="navliGif" src="./Images/services.gif" alt="">
+                        <a id="aboutus" class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services<img class="parkdown" src="./Images/parkdown.svg" alt=""></a>
+    
+                        <div class="servicesDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Automation</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Application
+                                            Services</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Data & AI</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Software
+                                            Engineering</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Cloud</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Emerging
+                                            Technologies</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/iotGif.gif" alt="">
+                                        <h3 class="rHead">Internet of
+                                            Things</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">ERP & CRM</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="productsli" class="nav-item dropProM dropdownP" onclick="productsMToggle()">
+                        <img class="navliGif" src="./Images/products.gif" alt="">
+                        <a class="nav-link" href="#">Products<img class="parkdown" src="./Images/parkdown.svg"
+                                alt=""></a>
+    
+                        <div class="productsDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Factory
+                                            Insights</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Smart Vision
+                                            System</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Attendance
+                                            Tracker</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Drone
+                                            Solutions</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Remote
+                                            Handling</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Light Control
+                                            Hub</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">Equinox</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="contactusli" class="nav-item">
+                        <img class="navliGif" src="./Images/contactus.gif" alt="">
+                        <a class="nav-link" href="#contactusid">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdownServices">
+                <div class="left">
+                    <img id="servicesGif" src="" alt="">
+                    <h1 id="servicesH1"></h1>
+                    <p id="servicesP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" id="automation" onmouseover="servicesLoad('automation')" onmouseout="servicesDefault()">
+                            <a href="../Automation/automation.html">Automation</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('softwareEngineering')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Software Engineering/softwareEng.html">Software Engineering</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('applicationServices')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Application  Page final/Application.html">Application Services</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('dataAi')" onmouseout="servicesDefault()"><a href="../AIPAGE/AiPage-final.html">Data & AI</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('cloud')" onmouseout="servicesDefault()"><a href="../Cloud Page Final/Cloud.html">Cloud</a></div>
+                        <div class="item" onmouseover="servicesLoad('iot')" onmouseout="servicesDefault()">
+                            <a href="../IOT/IOT.html">Internet of Things</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('emergingTechnology')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Emerging Technology final/Emerging.html">Emerging Technologies</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('erpcrm')" onmouseout="servicesDefault()"><a href="../ERP/ERP.html">ERP & CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownProducts">
+                <div class="left">
+                    <img id="productsGif" src="" alt="">
+                    <h1 id="productsH1"></h1>
+                    <p id="productsP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" onmouseover="productsLoad('factoryInsights')" onmouseout="productsDefault()">
+                            <a href="../Factory/factoryMonitoring.html">Factory Insights</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('smartVisionSystem')"
+                            onmouseout="productsDefault()">
+                            <a href="../Smart Vision System/smartVisionSystem.html"> Smart Vision System</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('attendanceTracker')"
+                            onmouseout="productsDefault()">
+                            <a href="../Trackerpage/Tracker.html"> Attendance Tracker</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('droneSolustions')" onmouseout="productsDefault()">
+                            <a href="../Drone Page final/Drone Page.html"> Drone Solutions</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('remoteHandling')" onmouseout="productsDefault()">
+                            <a href="../RemoteHandling final/RemoteHandling.html"> Remote Handling</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('lightControlHub')" onmouseout="productsDefault()">
+                            <a href="../Lightpage/lightControlHub.html"> Light Control Hub</a></div>
+                        <div id="equi" class="item" onmouseover="productsLoad('equinox')"
+                            onmouseout="productsDefault()">Equinox - A
+                            Trading Bot</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="Application-bg">
+    <video autoplay muted loop id="video-background">
+        <source src="Images/Application bg vedio.mp4" type="video/mp4">
+
+    </video>
+    <div class="Application-content">
+       <h1>Application Services</h1>
+       <p>Elevate Efficiency, Exceed Expectations: Precision in Every Application</p>
+    </div>
+</div>
+
+
+
+
+<div class="App-circle">
+   
+  <div class="App-overflow-1">
+    <div class="slide-content">
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                      <h3> Cloud Based Solutions</h3>
+                    </div>
+
+                    <div class="slide-info">
+                        <p>Harness the power of the cloud with our cloud-based application services. Benefit from increased scalability, flexibility, and cost-effectiveness as we design, deploy, and manage your applications in leading cloud platforms</p>
+                    </div>
+
+                </div>
+    
+                <div class="slide-image">
+    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                        <h3>UI/UX Design Services</h3>
+                      </div>
+  
+                      <div class="slide-info">
+                         <p>Elevate user experiences with our cutting-edge UI/UX design services. Our design experts collaborate with you to create visually appealing, intuitive interfaces that captivate users and drive engagement</p>
+                      </div>
+                </div>
+    
+                <div class="slide-image-2">
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                        <h3>Quality Assurance and Testing</h3>
+                      </div>
+  
+                      <div class="slide-info">
+                          <p>Ensure the reliability and performance of your applications with our rigorous quality assurance and testing processes. Our testing team employs industry best practices to identify and address any issues before deployment</p>
+                      </div>
+                </div>
+    
+                <div class="slide-image-3">
+    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                        <h3>Mobile App Development</h3>
+                      </div>
+  
+                      <div class="slide-info">
+                        <p>Capture the ever-growing mobile audience with our expert mobile app development services. Whether iOS or Android, we create intuitive and user-friendly applications that enhance your brand's presence in the mobile space</p>
+                      </div>
+                </div>
+    
+                <div class="slide-image-4">
+    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                        <h3>Integration Services</h3>
+                      </div>
+  
+                      <div class="slide-info">
+                        <p>Seamlessly connect and enhance your existing systems with our integration services. We specialize in integrating diverse applications and technologies, streamlining operations and maximizing efficiency</p>
+                      </div>
+                </div>
+    
+                <div class="slide-image-5">
+    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slide-container">
+            <div class="slide-container-2">
+                <div class="slide-txt">
+                    <div class="slide-head">
+                        <h3>Agile Transformation</h3>
+                      </div>
+  
+                      <div class="slide-info">
+                         <p>Elevate Your Business with Our Agile Transformation Services! Unlock Speed, Collaboration, and Innovation Today</p>
+                      </div>
+                </div>
+    
+                <div class="slide-image-6">
+    
+                </div>
+            </div>
+        </div>
+
+       
+       
+    
+       <button class="button pre"><img src="Images/circle left arrow.png" alt="Arrow"></button>
+       <button class="button next"><img src="Images/Circle right arrow.png" alt="Arrow"></button>
+    </div>
+  </div>
+
+  <div class="App-overflow-2">
+    <div class="circle-1">
+    </div>
+    <div class="circle-2"></div>
+  </div>
+
+  <div class="App-overflow-3">
+    <h2>Our<br>Services</h2>
+  </div>
+    
+  
+</div>
+
+
+<div class="App-details">
+
+ 
+    <div class="App-txt-emp">
+    
+    </div>
+    <div class="emp-txt-box">
+        <p>Empower Your Business, Elevate Your Success! Application<br> Services Drive Efficiency, Enhance Security, and Catapult<br> Innovation. Stay Ahead, Stay Relevant – Your Digital<br> Transformation Starts Here!</p>
+     </div>
+
+     <div class="emp-img-box">
+
+     </div>
+  
+</div>
+
+
+
+
+
+<div class="App-service">
+    <div class="App-ser-container">
+        <div class="ser-hover-container-1">
+            <div class="ser-hover-box-1">
+            
+                 <div class="ser-box-head-1">
+                    <img src="Images/hover-arrow 1.png" alt="image arrow" class="box-img">
+                    <h3 class="box-txt">Efficiency and Productivity</h3>
+                </div>
+                <div class="box-info-1">
+                    <p>Streamlines business processes, automate tasks, and enhance overall operational efficiency and boosts productivity by providing tools that simplify complex tasks.</p>
+                </div>
+                
+
+            </div>
+          
+       
+            <div class="ser-hover-box-2">
+                <div class="ser-box-head-2">
+                    <img src="Images/hover arrow 2.png" alt="image arrow" class="box-img">
+                    <h3 class="box-txt">Innovation and Adaptability</h3>
+                </div>
+                <div class="box-info-2">
+                    <p>Application services enable businesses to adopt new technologies, innovate, and stay ahead of market trends and provide a platform for rapid prototyping and testing of new ideas.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="ser-hover-container-2">
+           <div class="ser-hover-box-3">
+            <div class="ser-box-head-3">
+                <img src="Images/hover arrow 3.png" alt="image arrow" class="box-img box-img-4">
+                <h3 class="box-txt-3">Scalability</h3>
+            </div>
+            <div class="box-info-3">
+                <p>Application services enable businesses to adopt new technologies, innovate, and stay ahead of market trends and provide a platform for rapid prototyping and testing of new ideas.</p>
+            </div>
+          </div>
+          <div class="ser-hover-box-4">
+            <div class="ser-box-head-4">
+                <img src="Images/hover arrow 4.png" alt="image arrow" class="box-img  box-img-4">
+                <h3 class="box-txt">Customer Engagement and Marketing</h3>
+            </div>
+            <div class="box-info-4">
+                <p>Customer engagement applications, such as mobile apps and online platforms, enable businesses to connect with their audience, gather feedback, and execute targeted marketing strategies.</p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="ser-circle">
+       <h2>Why Application<br>Service?</h2>
+    </div>
+</div>
+   
+
+
+
+
+<div class="App-differ">
+   <div class="green-box">
+       <div class="green-box-txt">
+         <h2>What makes us<br>different?</h2>
+
+       </div>
+   </div>
+   
+   <div class="black-box-1">
+       <div class="black-box-2">
+          <div class="black-box-txt">
+             <p>We stand out by crafting bespoke solutions tailored to your business needs, backed by a dynamic blend of innovation and industry expertise. Our agile execution, transparent collaboration, and focus on security ensure your success. With a proven track record, a client-centric approach, and a commitment to continuous learning, we go beyond delivering applications – we deliver excellence that evolves with your aspirations</p>
+          </div>
+       </div>
+   </div>
+</div>
+
+<div class="gap">
+
+</div>
+
+    <!-- footer -->
+
+    <footer id="contactusid">
+        <div class="Copyright">
+            <div class="contact">
+                <div class="contact-sep-1">
+                   
+                    <div class="contact1">
+                      <div class="contact1-sep-1">
+                        <div class="logo-Emblock">
+                            <a href="../Home/home.html"><img src="Images/Logo.jpg" class="logo-con1">
+                                <h1>Emblock</h1>
+                            </a>
+                        </div>
+                        <div class="logo-txt">
+                            <p>Welcome to EMBLOCK - your catalyst for business transformation. We fuse technology,
+                                innovation, and expertise to drive your success.</p>
+                        </div> 
+                      </div>
+    
+    
+    
+                        <div class="contact1-sep-2">
+                            <div class="phone-container">
+                                <div class="phone-txt">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>+91 9952311408</p>
+                                </div>
+                                <div class="phone-txt">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <p>contact@emblock.in
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="phone-container-2">
+                                <div class="follow-txt-1">
+                                    <p class="txt-green">Follow us on:</p>
+                                </div>
+                                <div class="follow-txt-2">
+                                            <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                                                class="fa-brands fa-instagram"></i>
+                                            </a>
+                                
+                                </div>
+                                <div class="follow-txt-2">
+                                    <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i>
+                                </a>
+                                </div>
+    
+                            </div>  
+                            <div class="contact-green-box">
+                                <p>
+                                    Contact Us
+                                </p>
+    
+                            </div>
+                          
+                        </div>
+                    </div>
+                       
+    
+    
+                  
+    
+    
+                </div>
+    
+    
+    
+              <div class="contact-sep-2">
+                   
+                <div class="contact2">
+                    <div id="footer-2">
+                        <h3>Our Products</h3>
+    
+                        <div class="footer-text">
+                          <a href="../Factory/factoryMonitoring.html"><p>Factory Insights</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Smart Vision System/smartVisionSystem.html"><p>Smart Vision System</p></a>
+                        </div>
+                       
+                        <div class="footer-text">
+                          <a href="../Trackerpage/Tracker.html"><p>Attendance Tracker</p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../Drone Page final/Drone Page.html"><p>Drone Solutions</p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../RemoteHandling final/RemoteHandling.html"><p>Remote Handling </p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../Lightpage/lightControlHub.html"><p>Light Control Hub</p></a>
+                        </div>
+    
+                        <div class="footer-text">
+                          <a href="#"><p>Equinox - A trading Bot</p></a>
+                        </div>
+    
+                      
+                    </div>
+                </div>
+                <div class="contact3">
+                    <div id="footer-3">
+                        <h3><b>Our Services</b></h3>
+                        <div class="footer-text">
+                          <a href="../Automation/automation.html"><p>Automation</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Application  Page final/Application.html"><p>Application Services </p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Software Engineering/softwareEng.html"><p>Software Engineering</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../AIPAGE/AiPage-final.html"><p>Data & AI</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Cloud Page Final/Cloud.html"><p>Cloud maintenance and support</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Emerging Technology final/Emerging.html"><p>Emerging Technologies</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../IOT/IOT.html"><p>Internet of Things</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../ERP/ERP.html"><p>ERP and CRM</p></a>
+                        </div>
+    
+                    </div>
+                </div>
+                
+    
+    
+              
+               
+    
+    
+               </div>
+              
+               
+    
+    
+            </div>
+    
+          <div class="contact-4">
+             
+            <div class="contact-4-head">
+                <div class="contact-green2-box">
+                    <h3>Contact us</h3>
+                </div>
+            </div>
+            <div class="contact-4-content">
+              <div class="Ph-num">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 9952311408</p>
+              </div>
+              <div class="E-mail">
+                <i class="fa-regular fa-envelope"></i>
+                <p>contact@emblock.in
+                </p>
+              </div>
+    
+    
+            
+    
+    
+              <div  class="linkin-logo">
+                  
+                <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i>
+                </a>
+    
+            </div>
+    
+            <div class="Insta-logo">
+                <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+    
+              
+    
+    
+          </div>
+    
+        </div>
+    
+           <div class="copyright-content">
+              <p class="footer-copyright"> Copyright <i class="fa-regular fa-copyright"></i><b>EMBLOCK</b> . All
+                Rights
+                Reserved
+              </p>
+           </div>
+            
+    
+        </div>
+    
+    
+    </footer>
+
+
+    
+    
+    
+    
+    
+      
+
+        
+    
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const contentContainer = document.querySelector('.slide-content');
+        const prevButton = document.querySelector('.pre');
+        const nextButton = document.querySelector('.next');
+        let currentIndex = 0;
+        let slideTimeout;
+
+      
+        showContent(currentIndex);
+
+        
+        function showContent(index) {
+            const contents = contentContainer.querySelectorAll('.slide-container');
+            contents.forEach((content, i) => {
+                if (i === index) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+            // Clear any existing slide timeout and start a new one
+            clearTimeout(slideTimeout);
+            slideTimeout = setTimeout(nextSlide, 3000);
+        }
+
+       
+        function nextSlide() {
+            const totalContents = contentContainer.querySelectorAll('.slide-container').length;
+            currentIndex = (currentIndex + 1) % totalContents;
+            showContent(currentIndex);
+        }
+
+        // Event listener for Previous button
+        prevButton.addEventListener('click', function() {
+            const totalContents = contentContainer.querySelectorAll('.slide-container').length;
+            currentIndex = (currentIndex - 1 + totalContents) % totalContents;
+            showContent(currentIndex);
+        });
+
+        // Event listener for Next button
+        nextButton.addEventListener('click', function() {
+            const totalContents = contentContainer.querySelectorAll('.slide-container').length;
+            currentIndex = (currentIndex + 1) % totalContents;
+            showContent(currentIndex);
+        });
+
+
+
+     let circle1=   document.querySelector(".circle-1");
+     let circle2=   document.querySelector(".circle-2");
+
+     function displayCircle(){
+       if(circle1.style.display==="none"){
+        circle1.style.display = "block";
+        circle2.style.display = "none";
+       }
+       else{
+        circle1.style.display = "none";
+        circle2.style.display = "block";
+       }
+     }
+
+     setInterval(displayCircle,1500);
+
+
+    });
+
+
+
+</script>
+
+    
+<script src="./JS/navbar.js"></script>
+<script src="./JS/navbarServices.js"></script>
+<script src="./JS/navbarProducts.js"></script>
+<script src="https://kit.fontawesome.com/49bafbd5a4.js" crossorigin="anonymous"></script>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

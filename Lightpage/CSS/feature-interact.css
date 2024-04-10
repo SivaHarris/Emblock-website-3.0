@@ -1,0 +1,633 @@
+.light-div3 {
+  width: 100%;
+  height: 584px;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.feature-head {
+  color: white;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 4%;
+  text-align: center;
+  background-color: #161616;
+  display: flex;
+  justify-content: center !important;
+  position: relative;
+}
+.feature-head > div {
+  position: absolute;
+  top: 90%;
+  justify-self: center;
+  width: 20%;
+  height: 5px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+
+.feature-content {
+  background-color: #161616;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.slide-left {
+  width: 30px;
+  height: 30px;
+  background-image: url("../IMAGES/Group\ 433.png");
+  position: relative;
+  top: 33%;
+  left: 4%;
+  cursor: pointer;
+}
+
+.slide-right {
+  width: 30px;
+  height: 30px;
+  background-image: url("../IMAGES/Group\ 434.png");
+  position: absolute;
+  top: 46%;
+  right: 4%;
+  cursor: pointer;
+}
+
+.slides {
+  position: absolute;
+  width: 80%;
+  height: 390px;
+
+  margin-left: 10%;
+}
+
+/*.slide1{
+    background-color: blueviolet;
+}
+
+.slide2{
+    background-color: ;
+}
+
+.slide3{
+    background-color:yellow;
+}*/
+
+.circle.active {
+  background-color: #1ed760;
+}
+
+.light-controller {
+  position: relative;
+  margin-top: 420px;
+  margin-left: 46%;
+}
+
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.remote-text-section {
+  width: 35%;
+  height: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.lamp-section {
+  width: 65%;
+  height: 100%;
+  background-color: #161616;
+}
+
+.remote-control,
+.customized-design,
+.dimming {
+  width: 100%;
+  height: 100%;
+  /*background-color: blue;*/
+  display: flex;
+}
+
+.remote-text {
+  color: white;
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  margin-top: 24%;
+}
+
+.lamp {
+  width: 100px;
+  height: 100px;
+  background-image: url("../IMAGES/white-light-bulb.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: -179%;
+  left: 50%;
+}
+
+.light-ellipseglow {
+  width: 900px;
+  height: 950px;
+  background-image: url("../IMAGES/Ellipse\ 158.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -28%;
+  margin-left: 2%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.lampshade {
+  width: 283px;
+  height: 340px;
+  background-image: url("../IMAGES/Vector\ 59.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: -200%;
+  left: 40.5%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.modes-head-section {
+  width: 40%;
+  height: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+}
+
+.modes-lighting-section {
+  width: 60%;
+  height: 100%;
+}
+
+.modes-head {
+  color: white;
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin-top: 25%;
+  margin-left: 0%;
+
+  text-align: center;
+}
+
+.modes-containder {
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  margin-left: 0%;
+
+  display: flex;
+}
+
+.relax-mode {
+  width: 33.3%;
+  display: flex;
+  cursor: pointer;
+}
+.party-mode {
+  width: 33.3%;
+  display: flex;
+  cursor: pointer;
+}
+.study-mode {
+  width: 33.4%;
+  display: flex;
+  cursor: pointer;
+}
+
+#clicker1 {
+  width: 15px;
+  height: 15px;
+  background-image: url("../IMAGES/clicker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+#clicker2 {
+  width: 15px;
+  height: 15px;
+  background-image: url("../IMAGES/clicker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+#clicker3 {
+  width: 15px;
+  height: 15px;
+  background-image: url("../IMAGES/clicker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.relax-option {
+  color: #91966a;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-left: 3%;
+  margin-top: -3px;
+}
+
+.party-option {
+  color: #9f48b5;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-left: 3%;
+  margin-top: -3px;
+}
+
+.study-option {
+  color: #636c93;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-left: 3%;
+  margin-top: -3px;
+}
+
+#active-clicker1 {
+  width: 21px;
+  height: 21px;
+  background-image: url("../IMAGES/active-clicker1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  margin-left: -9.8%;
+  opacity: 0;
+}
+
+#active-clicker2 {
+  width: 21px;
+  height: 21px;
+  background-image: url("../IMAGES/active-clicker2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  margin-left: -9.8%;
+  opacity: 0;
+}
+
+#active-clicker3 {
+  width: 21px;
+  height: 21px;
+  background-image: url("../IMAGES/active-clicker3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1%;
+  margin-left: -9.5%;
+  opacity: 0;
+}
+
+.dimming-options-section {
+  width: 40%;
+  height: 100%;
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+}
+
+.dimming-lighting-section {
+  width: 60%;
+  height: 100%;
+  background-color: #161616;
+}
+
+.dimming-head {
+  color: white;
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.intensity-text {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6%;
+}
+
+.intensity-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #161616;
+  margin-top: 3%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.colors-text {
+  color: white;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.colors-container {
+  width: 70%;
+  height: 45px;
+  display: flex;
+
+  margin-top: 2%;
+  margin-left: 17%;
+}
+
+.color-whiteoption {
+  width: 43px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.color-greenoption {
+  width: 43px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #1ed760;
+  cursor: pointer;
+  margin-left: 8%;
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.color-yellowoption {
+  width: 43px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #ffff00;
+  cursor: pointer;
+  margin-left: 8%;
+  z-index: 1;
+}
+
+.color-redoption {
+  width: 43px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  cursor: pointer;
+  margin-left: 8%;
+  z-index: 1;
+}
+
+.color-blueoption {
+  width: 43px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #0763cf;
+  cursor: pointer;
+  margin-left: 8%;
+  z-index: 1;
+}
+
+.light-machine {
+  width: 157px;
+  height: 143px;
+  background-image: url("../IMAGES/long-lighter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  left: 75%;
+}
+
+svg {
+  margin-top: -21%;
+  margin-left: -63%;
+}
+
+/*switch-box*/
+.switch-box {
+  width: 159.99px;
+  height: 50px;
+  background-color: #cc1313;
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.switch-circle {
+  width: 40.5px;
+  height: 39.58px;
+  background-color: #fff !important;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition: left 0.4s ease-in-out;
+  top: 4.8px;
+  left: 7px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.on {
+  opacity: 0;
+  left: 20px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.off {
+  opacity: 1;
+  right: 30px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.itsactive {
+  background-color: #059425;
+}
+
+.non-active {
+  background-color: #cc1313;
+}
+/*switch-box*/
+
+.lamp-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: justify !important;
+  position: relative;
+  top: 32%;
+  left: 6%;
+}
+
+#stop0 {
+  stop-color: white;
+  stop-opacity: 0.19;
+}
+
+#stop1 {
+  stop-color: white;
+  stop-opacity: 0;
+}
+
+#opacityRange {
+  width: 305px;
+  height: 18px;
+  margin-left: 18%;
+  cursor: pointer;
+}
+
+#relax-lighting {
+  width: 60%;
+  position: absolute;
+  height: 100%;
+
+  display: flex;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#party-lighting {
+  width: 60%;
+  position: absolute;
+  height: 100%;
+
+  display: flex;
+
+  transition: opacity 0.5s ease-in-out;
+}
+
+#study-lighting {
+  width: 60%;
+  position: absolute;
+  height: 100%;
+
+  display: flex;
+
+  transition: opacity 0.5s ease-in-out;
+}
+
+.left-relax-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/left-relax-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 89%;
+}
+.right-relax-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/right-relax-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 87.8%;
+}
+
+.left-party-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/left-party-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 89%;
+}
+.right-party-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/right-party-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 87.8%;
+}
+
+.left-study-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/left-study-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 89%;
+}
+.right-study-lighting {
+  width: 50%;
+  height: 100%;
+  background-image: url("../IMAGES/right-study-light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 87.8%;
+}
+
+.light-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 65%;
+  top: 35%;
+  opacity: 0.4;
+}
+
+.dimming-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  left: 64%;
+  top: 43%;
+}

@@ -1,0 +1,475 @@
+#AttendanceTrackerWhatWeOfferSection {
+  background: #010101;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.AttendanceTrackerWhatWeOfferSectionTopCornerBg {
+  width: 30%;
+  height: 50%;
+  border-radius: 30%;
+  background: #01244b;
+  filter: blur(150px);
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  z-index: 2;
+}
+.AttendanceTrackerWhatWeOfferSectionBottomCornerBg {
+  width: 35%;
+  height: 50%;
+  border-radius: 30%;
+  background: #01244b;
+  filter: blur(150px);
+  position: absolute;
+  top: 80%;
+  right: -10%;
+  z-index: 2;
+}
+.AttendanceTrackerWhatWeOfferHeader {
+  width: 450px;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.AttendanceTrackerWhatWeOfferPara {
+  width: 469px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #888;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+}
+.AttendanceTrackerScrollSection {
+  /* margin-top: 500px; */
+  display: grid;
+  grid-template-columns: 397px 289px 397px;
+  grid-template-rows: 142px 269px 142px;
+  column-gap: 28px;
+  row-gap: 28px;
+}
+.AttendanceScrollBoxRealtime {
+  display: flex;
+  width: 144px;
+  height: 142px;
+  right: 0px;
+  top: 0px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0f3561;
+  border-radius: 5px;
+  justify-content: flex-end;
+  align-content: center;
+  z-index: 3;
+}
+.AttendanceScrollBoxRealtimePara {
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 253px;
+  height: 92px;
+  opacity: 0;
+  flex-shrink: 0;
+  justify-self: center;
+  align-self: center;
+}
+.AttendanceScrollBoxRealtimeGifSection {
+  width: 144px;
+  height: 142px;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-content: center;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxRealtimeGifSectionGif {
+  width: 69.231px;
+  height: 67.027px;
+  background-image: url("../IMAGES/attendanceTrackerRealTimeGif.gif");
+  background-size: cover;
+  justify-self: center;
+}
+.AttendanceScrollBoxRealtimeGifSectionText {
+  width: 116.308px;
+  height: 44.238px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.AttendanceScrollBoxCustomReport {
+  display: flex;
+  width: 104px;
+  height: 106px;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxCustomReportPara {
+  width: 168px;
+  height: 78px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 28px;
+  opacity: 0;
+}
+
+.AttendanceScrollBoxCustomReportGifSection {
+  width: 104px;
+  height: 106px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxCustomReportGifSectionGif {
+  background-image: url("../IMAGES/customizableReportingGif.gif");
+  width: 74px;
+  height: 74px;
+  background-size: cover;
+  justify-self: center;
+  align-self: center;
+}
+.AttendanceScrollBoxCustomReportGifSectionText {
+  width: 96px;
+  height: 33px;
+  margin-bottom: 11px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  justify-self: center;
+}
+
+.AttendanceScrollBoxGeolocation {
+  display: flex;
+  width: 104px;
+  height: 106px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0f3561;
+  border-radius: 5px;
+  justify-content: flex-end;
+}
+.AttendanceScrollBoxGeolocationPara {
+  width: 178px;
+  height: 78px;
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0;
+}
+.AttendanceScrollBoxGeolocationGifSection {
+  width: 104px;
+  height: 106px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxGeolocationGifSectionGif {
+  width: 50px;
+  height: 50px;
+  background-image: url("../IMAGES/geoLocationTaggingGif.gif");
+  background-size: cover;
+  justify-self: center;
+}
+.AttendanceScrollBoxGeolocationGifSectionText {
+  width: 96px;
+  height: 33px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.AttendanceScrollBoxMobileAccess {
+  display: flex;
+  width: 104px;
+  height: 106px;
+  border-radius: 5px;
+  background: #0f3561;
+}
+.AttendanceScrollBoxMobileAccessPara {
+  width: 168px;
+  height: 78px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0;
+  align-self: center;
+  line-height: normal;
+}
+.AttendanceScrollBoxMobileAccessGifSection {
+  width: 104px;
+  height: 106px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxMobileAccessGifSectionGif {
+  width: 40px;
+  height: 40px;
+  background-image: url("../IMAGES/mobileAccessbilityGif.gif");
+  background-size: cover;
+  justify-self: center;
+  align-self: center;
+}
+.AttendanceScrollBoxMobileAccessGifSectionText {
+  width: 96px;
+  height: 33px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.AttendanceScrollBoxIntegration {
+  display: flex;
+  width: 104px;
+  height: 106px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0f3561;
+  border-radius: 5px;
+  justify-content: flex-end;
+}
+.AttendanceScrollBoxIntegrationPara {
+  width: 180px;
+  height: 78px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0;
+  transition: 2s;
+}
+.AttendanceScrollBoxIntegrationGifSection {
+  width: 104px;
+  height: 106px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  background: #0f3561;
+  border-radius: 5px;
+}
+.AttendanceScrollBoxIntegrationGifSectionGif {
+  width: 39px;
+  height: 39px;
+  background-image: url("../IMAGES/integrationCapababilitiesGif.gif");
+  background-size: cover;
+  justify-self: center;
+}
+.AttendanceScrollBoxIntegrationGifSectionText {
+  width: 96px;
+  height: 33px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.AttendanceScrollBoxAutomated {
+  width: 144px;
+  height: 142px;
+  border-radius: 5px;
+  display: flex;
+  background: #0f3561;
+  align-items: center;
+  z-index: 3;
+}
+.AttendanceScrollBoxAutomatedPara {
+  width: 253px;
+  height: 111px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  align-self: flex-end;
+  justify-self: start;
+  line-height: normal;
+  opacity: 0;
+}
+.AttendanceScrollBoxAutomatedGifSection {
+  width: 144px;
+  height: 142px;
+  display: grid;
+  border-radius: 5px;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  background: #0f3561;
+}
+.AttendanceScrollBoxAutomatedGifSectionGif {
+  width: 51.231px;
+  height: 53.623px;
+  background-image: url("../IMAGES/automatedNotificationsGif.gif");
+  background-size: cover;
+  justify-self: center;
+}
+.AttendanceScrollBoxAutomatedGifSectionText {
+  width: 132.923px;
+  height: 44.239px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.AttendanceScrollBoxBiometrics {
+  width: 282px;
+  height: 269px;
+  display: grid;
+  border-radius: 5px;
+  background: #031931;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+}
+.AttendanceScrollBoxBiometricsGif {
+  width: 147px;
+  height: 110px;
+  background-image: url("../IMAGES/biometricIntegrationGif.gif");
+  background-size: cover;
+  justify-self: center;
+}
+.AttendanceScrollBoxBiometricsHeader {
+  width: 178px;
+  height: 23px;
+  color: #fff;
+  text-align: center;
+  justify-self: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.AttendanceScrollBoxBiometricsPara {
+  width: 229px;
+  height: 73px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* aligning scroll boxes */
+.AttendanceScrollBoxRealtime {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  opacity: 0;
+  transition: 5s;
+  justify-self: end;
+}
+
+.AttendanceScrollBoxCustomReport {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  transition: 5s;
+  align-self: end;
+}
+.AttendanceScrollBoxGeolocation {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: end;
+  opacity: 0;
+  transition: 5s;
+}
+.AttendanceScrollBoxBiometrics {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.AttendanceScrollBoxMobileAccess {
+  grid-row: 2/3;
+  grid-column: 3/-1;
+  align-self: end;
+  opacity: 0;
+  transition: 5s;
+}
+.AttendanceScrollBoxIntegration {
+  grid-column: 2/3;
+  grid-row: 3;
+  opacity: 0;
+  transition: 5s;
+  justify-self: end;
+}
+.AttendanceScrollBoxAutomated {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 0;
+  transition: 5s;
+}

@@ -1,0 +1,136 @@
+
+.offeringsContainer {
+  background-image: url("../IMAGES/image\ 200.png");
+  width: 100%;
+  height: 533px;
+  justify-content: center;
+  color: white;
+}
+.offeringsHeader {
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 4%;
+ 
+}
+.offeringsBodyPara {
+  height: 77px;
+  width: 794px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+/* hoverfunctionality */
+.offeringsBoxText:hover .offeringsBoxTextHide {
+  display: block;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.offeringsBoxText:hover {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.offeringsBoxText {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 162px;
+  height: 97px;
+  justify-self: center;
+}
+.offeringsBoxTextHide {
+  display: none;
+}
+/* hover functionality end */
+.offeringsHoverBoxArea {
+  display: grid;
+  column-gap: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+/* cst-Customer Service transformation */
+.offeringsHoverBoxCST {
+  width: 169px;
+  height: 173px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #00172d;
+}
+/* hcm - human capital management */
+.offeringsHoverBoxHCM {
+  width: 169px;
+  height: 173px;
+  display: grid;
+  margin-top: 86px;
+  align-content: center;
+  justify-content: center;
+  background-color: #13304a;
+}
+/* DSCT - digital supply chain transformation */
+.offeringsHoverBoxDSCT {
+  width: 169px;
+  height: 173px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #00264b;
+}
+/* EAI - Enterprise Artificial Intelligence */
+.offeringsHoverBoxEAI {
+  width: 169px;
+  height: 173px;
+  display: grid;
+  margin-top: 86px;
+  align-content: center;
+  justify-content: center;
+  background-color: #213144;
+}
+/* EPI - Enterprise platform intergration */
+.offeringsHoverBoxEPI {
+  width: 169px;
+  height: 173px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: #001d3b;
+}
+/* gif inside hoverbox */
+.offeringsHoverBoxGif {
+  width: 116px;
+  height: 65px;
+  flex-shrink: 0;
+  justify-self: center;
+}
+.offeringsHoverBoxGif img {
+  width: 116px;
+  height: 65px;
+}

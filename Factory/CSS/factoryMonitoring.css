@@ -1,0 +1,664 @@
+body {
+  background-color: #141414;
+}
+.factoryMonitoringVideoContainer {
+  margin-top: 80px;
+  height: 556px;
+  width: 100%; /* Fixed width */
+  aspect-ratio: 16 / 9; /* Aspect ratio of 16:9 */
+  overflow: hidden;
+  display: grid;
+  color: #fff;
+}
+#factoryMonitoringVideo {
+  width: 100%; /* Make the video fill its container */
+  height: 100%; /* Make the video fill its container */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.factoryMonitoringVideotext-overlayContainer {
+  display: grid;
+  grid-template-rows: 117px;
+  width: 837px;
+  height: 191px;
+  position: absolute;
+  margin-top: 372px;
+  margin-left: 45px;
+}
+.factoryMonitoringVideoTextHead {
+  width: 837px;
+  height: 117px;
+  position: absolute;
+  z-index: 2;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0;
+  transition: opacity 3s;
+  color: white !important;
+}
+.factoryMonitoringVideoTextPara {
+  position: absolute;
+  width: 660px;
+  height: 72px;
+  margin-top: 118px;
+  z-index: 2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  opacity: 0;
+  transition: opacity 3s;
+  color: white !important;
+}
+
+.factoryMonitoringVideoTextHead.active {
+  opacity: 1;
+}
+.factoryMonitoringVideoTextPara.active {
+  opacity: 1;
+}
+/* end of factoring monitoring video section */
+
+/* start of factory hoverbox section */
+.factoryMonitoringHoverBoxSection {
+  background-image: url("../IMAGES/image\ 203.png");
+  background-size: cover;
+  background-color: rgba(13, 21, 29, 0.89);
+  position: relative;
+  height: 737px;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 87px 43px 94px auto;
+}
+.factoryMonitoringHoverBoxHeader {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  width: 827px;
+  height: 47px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.factoryMonitoringHoverBoxSubHeader {
+  width: 270px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  color: #8b929b;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.factoryMonitoringHoverBoxPara {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 76px;
+  width: 1053px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  overflow: hidden;
+}
+.colorLayer {
+  background: rgba(13, 21, 29, 0.89);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* hoverBoxsection starts */
+.factoryMonitorhoverBoxContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  width: 834px;
+  height: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
+}
+#realTimeHover {
+  background-image: url("../IMAGES/factorypic1.png");
+  background-size: cover;
+}
+#advancedAnalyticsHover {
+  background-image: url("../IMAGES/factorypic2.png");
+  background-size: cover;
+}
+#remoteAccessibilityHover {
+  background-image: url("../IMAGES/factorypic3.png");
+  background-size: cover;
+}
+.factoryMonitorhoverBoxContainer div {
+  width: 278px;
+  height: 185px;
+  background: rgba(0, 0, 0, 0.46);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.factoryMonitorhoverBoxDown {
+  z-index: -1;
+  position: absolute;
+  color: black;
+}
+.factoryMonitorhoverBoxDown p {
+  font-weight: 400;
+  color: black;
+}
+#hoverBoxAdvancedAnalytics.factoryMonitorhoverBoxDown {
+  margin-left: 278px;
+}
+#rmAccesshoverBox.factoryMonitorhoverBoxDown {
+  margin-left: 556px;
+}
+#advancedAnalyticsHover p {
+  display: none;
+  font-weight: 400;
+  color: black;
+}
+.factoryMonitorhoverBoxContainer:hover .factoryMonitorhoverBox {
+  color: transparent;
+}
+.factoryMonitorhoverBoxContainer:hover .factoryMonitorhoverBoxDown {
+  z-index: 1;
+  background-color: #fff;
+  transition: 1s;
+  margin-top: 185px;
+  color: black;
+}
+.factoryMonitorhoverBoxContainer:hover #advancedAnalyticsHover {
+  background-color: #fff;
+  background-image: none;
+  transition: 1s;
+  color: black;
+  margin-bottom: 185px;
+}
+.factoryMonitorhoverBoxContainer:hover #advancedAnalyticsHover p {
+  display: block;
+  transition: 1s;
+}
+
+#hoverBoxAdvancedAnalytics {
+  background-image: url("../IMAGES/factorypic2.png");
+  background-size: cover;
+}
+/* end of hover box section */
+
+/* start of factory monitoring section 3-diagram section */
+.factoryMonitorDiagramSection {
+  height: 820px;
+  background-image: url("../IMAGES/factoryMonitoringSection3BG.png");
+  background-size: cover;
+  
+  /* display: grid;
+  align-content: center;
+  grid-template-columns: 432px auto 432px;
+  grid-template-rows: 233.19px 171px 171px 301px; */
+}
+
+.MainCircle {
+  width: 233.649px;
+  height: 233.191px;
+  flex-shrink: 0;
+  margin-top: 98px;
+  position: absolute;
+  margin-left: 618px;
+  margin-right: 588px;
+  background-image: url("../IMAGES/Ellipse\ 151.png");
+}
+.MainCircleColorLayer {
+  width: 233.649px;
+  height: 233.191px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.63);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  
+}
+.MainCircleText {
+  width: 164px;
+  height: 86px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.SubCircle {
+  width: 171px;
+  height: 171px;
+  background-image: url("../IMAGES/Ellipse\ 142.png");
+  display: grid;
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+}
+.SubCircleColorLayer {
+  width: 171px;
+  height: 171px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.63);
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.SubCircleGifText {
+  width: 132px;
+  height: 57px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: none;
+}
+
+#EfficiencyBoost .SubCircleGif {
+  width: 125px;
+  height: 60px;
+  background-image: url("../IMAGES/factoryMonitoringEffciencyBoost.gif");
+  background-size: cover;
+}
+#OptimisedResource .SubCircleGif {
+  width: 125px;
+  height: 78px;
+  background-image: url("../IMAGES/factoryMonitoringOptimisedResourcegif.gif");
+  background-size: cover;
+}
+#MinimizedDowntime .SubCircleGif {
+  width: 125px;
+  height: 125px;
+  background-image: url("../IMAGES/factoryMonitoringMinimizedDowntime.gif");
+  background-size: cover;
+}
+#DataDecisions .SubCircleGif {
+  width: 79px;
+  height: 79px;
+  background-image: url("../IMAGES/factoryMonitoringDataDecisions.gif");
+  background-size: cover;
+}
+#CostEfficiency .SubCircleGif {
+  width: 89px;
+  height: 89px;
+  background-image: url("../IMAGES/factoryMonitoringCostEfficiencygif.gif");
+  background-size: cover;
+}
+
+/* adjusting position of subcircles */
+#EfficiencyBoost {
+  margin-left: 261px;
+  margin-top: 226px;
+  position: absolute;
+}
+#OptimisedResource {
+  margin-left: 396px;
+  position: absolute;
+  margin-top: 382px;
+}
+#MinimizedDowntime {
+  position: absolute;
+  margin-left: 627px;
+  margin-top: 489px;
+}
+#DataDecisions {
+  position: absolute;
+  margin-right: 396px;
+  margin-top: 382px;
+  margin-left: 873px;
+}
+#CostEfficiency {
+  position: absolute;
+  margin-right: 261px;
+  margin-top: 226px;
+  margin-left: 1008px;
+}
+#EfficiencyBoostTextBox {
+  position: absolute;
+  margin-top: 254px;
+  margin-bottom: 450px;
+  margin-left: 40px;
+}
+#OptimisedResourceTextBox {
+  position: absolute;
+  margin-left: 179px;
+  margin-top: 419px;
+  margin-bottom: 285px;
+}
+#MinimizedDowntimeTextBox {
+  position: absolute;
+  margin-top: 674px;
+  margin-left: 615px;
+}
+#DataDecisionsTextBox {
+  margin-top: 419px;
+  position: absolute;
+  margin-left: 1051px;
+}
+#CostEfficiencyTextBox {
+  position: absolute;
+  margin-left: 1186px;
+  margin-top: 254px;
+  margin-right: 44px;
+}
+
+/* connecting Gif */
+
+.EfficiencyBoostSubCircleConnectingGif {
+  width: 237.244px;
+  height: 168.297px;
+  position: absolute;
+  transform: rotate(-12.446deg);
+  background-size: cover;
+  background-image: url("../IMAGES/Connector-gif.gif");
+  margin-top: 132px;
+  margin-left: 380px;
+  z-index: -1;
+}
+.OptimisedResourceSubCircleConnectingGif {
+  width: 217.497px;
+  height: 168.297px;
+  transform: rotate(-43.135deg);
+  background-image: url("../IMAGES/Connector-gif.gif");
+  background-size: cover;
+  margin-top: 228px;
+  margin-left: 450px;
+  position: absolute;
+  z-index: -1;
+}
+.MinimizedDowntimeSubCircleConnectingGif {
+  position: absolute;
+  background-image: url("../IMAGES/Connector-gif.gif");
+  background-size: cover;
+  width: 243.458px;
+  height: 168.297px;
+  margin-top: 328px;
+  margin-left: 555px;
+  margin-bottom: 290px;
+  z-index: -1;
+  transform: rotate(-89deg);
+}
+
+.DataDecisionsSubCircleConnectingGif{
+  position: absolute;
+  background-image: url("../IMAGES/Connector-gif.gif");
+  background-size: cover;
+  width: 243.458px;
+  height: 168.297px;
+  margin-top: 280px;
+  margin-left: 685px;
+  margin-bottom: 290px;
+  z-index: -1;
+  transform: rotate(-130deg);
+}
+
+.CostEfficiencySubCircleConnectingGif{
+  position: absolute;
+  background-image: url("../IMAGES/Connector-gif.gif");
+  background-size: cover;
+  width: 243.458px;
+  height: 168.297px;
+  margin-top: 232px;
+  margin-left: 795px;
+  margin-bottom: 290px;
+  z-index: -1;
+  transform: rotate(-160deg);
+}
+
+/* SubCircle text box CSS */
+.DiagramSectionTextBox {
+  border: 3px dashed #012249;
+  width: 210px;
+  height: 116px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.EfficiencyBoostHeader {
+  color: #0b57a2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 138px;
+  height: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.EfficiencyBoostPara {
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 194px;
+  height: 67px;
+  flex-shrink: 0;
+}
+.OptimisedResourceHeader {
+  width: 166px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #0b57a2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.OptimisedResourcePara {
+  width: 194px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.MinimizedDowntimeHeader {
+  width: 184px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #0b57a2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.MinimizedDowntimePara {
+  width: 202px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.DataDecisionsHeader {
+  width: 166px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #0b57a2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+.DataDecisionsPara {
+  width: 194px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.CostEfficiencyHeader {
+  color: #0b57a2;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 166px;
+  height: 19px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.CostEfficiencyPara {
+  width: 194px;
+  height: 67px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+/* hover functionality */
+#EfficiencyBoost:hover .SubCircleGifText {
+  display: block;
+  margin-top: 83px;
+  margin-left: 23px;
+  margin-right: 23px;
+  position: absolute;
+}
+#EfficiencyBoost:hover .SubCircleGif {
+  width: 87px;
+  height: 42px;
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 19px;
+  position: absolute;
+}
+#OptimisedResource:hover .SubCircleGifText {
+  display: block;
+  margin-top: 83px;
+  margin-left: 23px;
+  margin-right: 23px;
+  position: absolute;
+}
+#OptimisedResource:hover .SubCircleGif {
+  width: 87px;
+  height: 42px;
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 19px;
+  position: absolute;
+}
+#MinimizedDowntime:hover .SubCircleGifText {
+  display: block;
+  margin-top: 83px;
+  margin-left: 23px;
+  margin-right: 23px;
+  position: absolute;
+}
+#MinimizedDowntime:hover .SubCircleGif {
+  width: 87px;
+  height: 86px;
+  background-image: url("../IMAGES/factoryMonitoringMinimizedDowntimeShrinked.gif");
+  margin-left: 42px;
+  margin-right: 42px;
+  position: absolute;
+}
+#DataDecisions:hover .SubCircleGifText {
+  display: block;
+  margin-top: 83px;
+  margin-left: 23px;
+  margin-right: 23px;
+  position: absolute;
+}
+#DataDecisions:hover .SubCircleGif {
+  width: 57px;
+  height: 57px;
+  background-image: url("../IMAGES/factoryMonitoringDataDecisionsShrinked.gif");
+  margin-left: 57px;
+  margin-right: 57px;
+  margin-top: 14px;
+  position: absolute;
+}
+#CostEfficiency:hover .SubCircleGifText {
+  display: block;
+  margin-top: 83px;
+  margin-left: 23px;
+  margin-right: 23px;
+  position: absolute;
+}
+#CostEfficiency:hover .SubCircleGif {
+  width: 72px;
+  height: 72px;
+  margin-left: 50px;
+  margin-right: 49px;
+  position: absolute;
+}
+.img {
+  transform: rotate(90deg);
+  width: 243.458px;
+  height: 168.297px;
+  margin-left: 245px;
+  margin-top: 585px;
+  margin-right: 328px;
+  margin-bottom: 685px;
+}

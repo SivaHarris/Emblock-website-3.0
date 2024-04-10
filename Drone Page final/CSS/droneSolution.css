@@ -1,0 +1,162 @@
+#DroneSolutionsHeadSection {
+  width: 100%;
+  height: 540px;
+  z-index: 2;
+}
+.DroneSolutionsImageSection {
+  width: 100%;
+  height: 100%;
+  background-image: url("../IMAGES/droneSolutionsBgImage.png");
+  background-size: cover;
+  display: grid;
+  z-index: 2;
+}
+.DroneSolutionsImageSectionHeader {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 539px;
+  height: 78px;
+  margin-left: 45px;
+  margin-top: 162px;
+  position: absolute;
+}
+.DroneSolutionsImageSectionPara {
+  display: grid;
+  width: 725px;
+  height: 24px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 43px;
+  margin-top: 259px;
+  position: absolute;
+}
+#DroneSolutionsWhyDroneSection {
+  height: 462px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+.WhyDroneSolutionsHoverContainer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: #161616;
+  z-index: 2;
+  overflow: hidden;
+}
+.WhyDroneSolutionsHoverHeader {
+  width: 30%;
+  height: 90px;
+  display: block;
+  position: absolute;
+  left: 7%;
+  top: 28%;
+}
+
+.WhyDroneSolutionsHoverHeader p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  left: 45%;
+  top:20%;
+  position: relative;
+}
+
+.WhyDroneSolutionsHoverPara {
+  display: grid;
+  position: absolute;
+  width: 850px;
+  height: 96px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 244px;
+  margin-left: 102px;
+}
+.WhyDroneSolutionsHoverYellowBoxRight {
+  width: 478px;
+  height: 91px;
+  flex-shrink: 0;
+  background: #e19e0f;
+  justify-self: end;
+  margin-top: 122px;
+  position: absolute;
+}
+
+.WhyDroneSolutionsHoverYellowBoxLeft {
+  position: absolute;
+  width: 90px;
+  height: 91px;
+  flex-shrink: 0;
+  background: #e19e0f;
+  margin-top: 324px;
+  justify-self: start;
+  transition: 200ms;
+}
+.WhyDroneSolutionsBgDrone {
+  width: 441px;
+  height: 454px;
+  /* position: relative; */
+  background-size: cover;
+  background-color: #345871;
+  margin-top: -39px;
+  z-index: -1;
+  margin-right: -102px;
+  justify-self: end;
+  border-radius: 50%;
+}
+.WhyDroneSolutionsBgDroneImg {
+  right: -25%;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsHoverPara {
+  text-align: left;
+}
+
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsHoverHeader {
+  background-color: #e19e0f;
+  
+  }
+
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsHoverHeader p{
+transition: 700ms;
+left: -8%;
+top: 28%;
+font-size: 32px;
+
+}
+
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsHoverYellowBoxLeft {
+  width: 0px;
+}
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsHoverYellowBoxRight {
+  width: 0px;
+}
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsBgDrone {
+  z-index: 0;
+}
+.WhyDroneSolutionsHoverContainer:hover .WhyDroneSolutionsBgDroneImg {
+  transition: 500ms;
+  right: 0%;
+  z-index: 2;
+}

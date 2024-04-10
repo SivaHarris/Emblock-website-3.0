@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Handling Page</title>
+    <link rel="stylesheet" href="./CSS/RemoteHandling.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/Remote_capabilities.css" />
+    <link rel="stylesheet" href="./CSS/FooterPage.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+    
+            <div class="toggler-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img id="hamburger" onclick="navHamburger(this)" src="./IMAGES/hamburger.svg" alt="">
+                    <img id="hamburgerBack" onclick="navHamburger(this)" src="./IMAGES/back.svg" alt="">
+                </button>
+                <div class="brand">
+                    <div class="logoName">
+                        <a class="navbar-brand" href="../Home/home.html"><img src="./IMAGES/Logo.jpg" alt=""></a>
+                        <a href="../Home/home.html"><h1 class="logoName">Emblock</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-ul">
+                    <li id="homeli" class="nav-item">
+                        <img id="navGifCheck" class="navliGif" src="./Images/home.gif" alt="">
+                        <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                    </li>
+                    <li id="servicesli" class="nav-item dropSerM dropdownS" onclick="servicesMToggle()">
+                        <img class="navliGif" src="./Images/services.gif" alt="">
+                        <a id="aboutus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services<img class="parkdown" src="./Images/parkdown.svg" alt=""></a>
+    
+                        <div class="servicesDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Automation</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Application
+                                            Services</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Data & AI</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Software
+                                            Engineering</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Cloud</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Emerging
+                                            Technologies</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/iotGif.gif" alt="">
+                                        <h3 class="rHead">Internet of
+                                            Things</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">ERP & CRM</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="productsli" class="nav-item dropProM dropdownP" onclick="productsMToggle()">
+                        <img class="navliGif" src="./Images/products.gif" alt="">
+                        <a class="nav-link  active" href="#">Products<img class="parkdown" src="./Images/parkdown.svg"
+                                alt=""></a>
+    
+                        <div class="productsDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Factory
+                                            Insights</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Smart Vision
+                                            System</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Attendance
+                                            Tracker</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Drone
+                                            Solutions</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Remote
+                                            Handling</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Light Control
+                                            Hub</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">Equinox</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="contactusli" class="nav-item">
+                        <img class="navliGif" src="./Images/contactus.gif" alt="">
+                        <a class="nav-link" href="#contactusid">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdownServices">
+                <div class="left">
+                    <img id="servicesGif" src="" alt="">
+                    <h1 id="servicesH1"></h1>
+                    <p id="servicesP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" id="automation" onmouseover="servicesLoad('automation')" onmouseout="servicesDefault()">
+                            <a href="../Automation/automation.html">Automation</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('softwareEngineering')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Software Engineering/softwareEng.html">Software Engineering</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('applicationServices')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Application  Page final/Application.html">Application Services</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('dataAi')" onmouseout="servicesDefault()"><a href="../AIPAGE/AiPage-final.html">Data & AI</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('cloud')" onmouseout="servicesDefault()"><a href="../Cloud Page Final/Cloud.html">Cloud</a></div>
+                        <div class="item" onmouseover="servicesLoad('iot')" onmouseout="servicesDefault()">
+                            <a href="../IOT/IOT.html">Internet of Things</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('emergingTechnology')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Emerging Technology final/Emerging.html">Emerging Technologies</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('erpcrm')" onmouseout="servicesDefault()"><a href="../ERP/ERP.html">ERP & CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownProducts">
+                <div class="left">
+                    <img id="productsGif" src="" alt="">
+                    <h1 id="productsH1"></h1>
+                    <p id="productsP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" onmouseover="productsLoad('factoryInsights')" onmouseout="productsDefault()">
+                            <a href="../Factory/factoryMonitoring.html">Factory Insights</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('smartVisionSystem')"
+                            onmouseout="productsDefault()">
+                            <a href="../Smart Vision System/smartVisionSystem.html"> Smart Vision System</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('attendanceTracker')"
+                            onmouseout="productsDefault()">
+                            <a href="../Trackerpage/Tracker.html"> Attendance Tracker</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('droneSolustions')" onmouseout="productsDefault()">
+                            <a href="../Drone Page final/Drone Page.html"> Drone Solutions</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('remoteHandling')" onmouseout="productsDefault()">
+                            <a href="../RemoteHandling final/RemoteHandling.html"> Remote Handling</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('lightControlHub')" onmouseout="productsDefault()">
+                            <a href="../Lightpage/lightControlHub.html"> Light Control Hub</a></div>
+                        <div id="equi" class="item" onmouseover="productsLoad('equinox')"
+                            onmouseout="productsDefault()">Equinox - A
+                            Trading Bot</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="rmtHandlingHomeSection">
+      <div class="rmtHandlingHomeCtr">
+        <div class="rmtHandlingHomeCtrColorLayer">
+          <div class="rmtHandlingHomeCtrPwrCtr">
+            <div class="rmtHandlingHomeCtrPwrLogo">
+              <img src="./IMAGES/remoteHandlingPwrLogo.png" alt="logo" />
+            </div>
+            <div class="rmtHandlingHomeCtrPwrText">Turn ON</div>
+          </div>
+          <div class="rmtHandlingHomeCtrTxtSection">
+            <h1>Make Your Work Easy with <br />Remote Handling</h1>
+          </div>
+        </div>
+      </div>
+   </section>
+
+
+
+
+
+
+   <div class="remote-div2">
+    <div class="left-text">
+        <div class="remote-head">Remote Handling</div>
+        <div class="remote-text">Smart Remote Access helps users create a virtual LAN in order to access devices on the internal network.</div>
+        <div class="remote-img" >
+            <div class="click-button" onclick="changeOpacity()">
+                <svg width="40" height="40" id="circleSvg">
+                    <circle cx="20" cy="20" r="20" />
+                </svg>
+                <i class="fa fa-power-off" style="font-size:32px"></i>
+            </div>
+            
+            
+            <div class="on-off-text">
+                <span class="on-swap" id="on-swap">ON</span>
+                <span>/</span>
+                <span class="off-swap" id="off-swap">OFF</span>
+            </div>
+        </div>
+        <div class="remote-on-off-text">
+            <span>Click the Power button to turn </span>
+            <span class="ON" id="ON"> ON </span>
+            <span class="OFF" id="OFF">OFF </span>
+            <span class="machine-text">the Machine</span>
+        </div> 
+    </div>
+    <div class="right-img-div">
+        <div class="img-gif-section">
+            <img class="machine-img" src="./IMAGES/machine_img.png">
+            <img class="machine-gif" id="gifImage" src="./IMAGES/machine_gif.gif">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+   <div class="capabilities">
+      <div class="capabilities-head">Capabilities Of Remote Handling</div>
+      <div class="image">
+      <img src="IMAGES/capabilities.gif">
+   </div>
+    <div class="container">
+      <div class="wrapper">
+          <button class="toggle">
+              Access to System & Servers
+              <i class="fas fa-plus icon"></i>
+          </button>
+          <div class="content">
+              <p>Provide safe connections to your organizational systems and on-premises servers from any location,by assigning  trusted device names within the NordLayer app.</p>
+          </div>
+    </div>
+    <div class="wrapper">
+          <button class="toggle">
+              Share & Access Files
+              <i class="fas fa-plus icon"></i>
+          </button>
+          <div class="content">
+              <p>Smart remote access enables seamless file sharing  between servers and devices linked via a virtual LAN, facilitating efficient business operations.</p>
+          </div>
+      </div>
+      <div class="wrapper">
+          <button class="toggle">
+              Govern Other Devices
+              <i class="fas fa-plus icon"></i>
+          </button>
+          <div class="content">
+              <p>IT administrators can utilize third-party software to establish a remote desktop protocol session,in addition to smart remote access,in order to take control of another device when necessaey.</p>
+          </div>
+      </div>
+   </div>
+  </div>
+
+
+
+
+
+  <div class="Benefits">
+    <div class="benefits-topic">Benefits of Remote Handling</div>   
+       <div class="benefits-boxes">
+           <div class="box1">
+               <div class="box">Manage<span> Issues </span>Seamlessly</div>
+               <div class="box-image-1"><img src="./IMAGES/box1.gif" width="100%" height="100%"></div>
+               <div class="box-info">
+                   Manage technical issues in real-time, and resolve them quickly to avoid working disruption to work.
+               </div>
+           </div>
+           <div class="box1">
+               <div class="box"><span>Securely </span>Connect from anywhere</div>
+               <div class="box-image-2"><img src="./IMAGES/box2.gif"width="100%" height="100%"></div>
+               <div class="box-info">
+                   Establish secure VPN connections between your network and external devices
+               </div>
+           </div>
+           <div class="box1">
+               <div class="box">Enable File <span>Transfers</span></div>
+               <div class="box-image"><img src="./IMAGES/box3.gif" width="100%" height="100%"></div>
+               <div class="box-info">
+                   Efficient file transfer to and from any remote device, including operating system updates.
+               </div>
+           </div>
+           <div class="box1">
+           <div class="box">Save <span>Cloud</span> Storage Costs</div>
+           <div class="box-image"><img src="./IMAGES/box4.png" width="100%" height="100%"></div>
+               <div class="box-info">
+                   Save money by storing extensive data or sizable individual files, instead of relying on cloud storage.
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+
+      
+<!-- footer -->
+
+
+
+
+<footer id="contactusid">
+    <div class="Copyright">
+        <div class="contact">
+            <div class="contact-sep-1">
+               
+                <div class="contact1">
+                  <div class="contact1-sep-1">
+                    <div class="logo-Emblock">
+                        <a href="../Home/home.html"><img src="Images/Logo.jpg" class="logo-con1">
+                            <h1>Emblock</h1>
+                        </a>
+                    </div>
+                    <div class="logo-txt">
+                        <p>Welcome to EMBLOCK - your catalyst for business transformation. We fuse technology,
+                            innovation, and expertise to drive your success.</p>
+                    </div> 
+                  </div>
+
+
+
+                    <div class="contact1-sep-2">
+                        <div class="phone-container">
+                            <div class="phone-txt">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+91 9952311408</p>
+                            </div>
+                            <div class="phone-txt">
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>contact@emblock.in
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="phone-container-2">
+                            <div class="follow-txt-1">
+                                <p class="txt-green">Follow us on:</p>
+                            </div>
+                            <div class="follow-txt-2">
+                                        <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i>
+                                        </a>
+                            
+                            </div>
+                            <div class="follow-txt-2">
+                                <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>
+                            </a>
+                            </div>
+
+                        </div>  
+                        <div class="contact-green-box">
+                            <p>
+                                Contact Us
+                            </p>
+
+                        </div>
+                      
+                    </div>
+                </div>
+                   
+
+
+              
+
+
+            </div>
+
+
+
+          <div class="contact-sep-2">
+               
+            <div class="contact2">
+                <div id="footer-2">
+                    <h3>Our Products</h3>
+
+                    <div class="footer-text">
+                      <a href="../Factory/factoryMonitoring.html"><p>Factory Insights</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Smart Vision System/smartVisionSystem.html"><p>Smart Vision System</p></a>
+                    </div>
+                   
+                    <div class="footer-text">
+                      <a href="../Trackerpage/Tracker.html"><p>Attendance Tracker</p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../Drone Page final/Drone Page.html"><p>Drone Solutions</p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../RemoteHandling final/RemoteHandling.html"><p>Remote Handling </p></a>
+                    </div>
+
+                    
+                    <div class="footer-text">
+                      <a href="../Lightpage/lightControlHub.html"><p>Light Control Hub</p></a>
+                    </div>
+
+                    <div class="footer-text">
+                      <a href="#"><p>Equinox - A trading Bot</p></a>
+                    </div>
+
+                  
+                </div>
+            </div>
+            <div class="contact3">
+                <div id="footer-3">
+                    <h3><b>Our Services</b></h3>
+                    <div class="footer-text">
+                      <a href="../Automation/automation.html"><p>Automation</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Application  Page final/Application.html"><p>Application Services </p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Software Engineering/softwareEng.html"><p>Software Engineering</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../AIPAGE/AiPage-final.html"><p>Data & AI</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Cloud Page Final/Cloud.html"><p>Cloud maintenance and support</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../Emerging Technology final/Emerging.html"><p>Emerging Technologies</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../IOT/IOT.html"><p>Internet of Things</p></a>
+                    </div>
+                    <div class="footer-text">
+                      <a href="../ERP/ERP.html"><p>ERP and CRM</p></a>
+                    </div>
+
+                </div>
+            </div>
+            
+
+
+          
+           
+
+
+           </div>
+          
+           
+
+
+        </div>
+
+      <div class="contact-4">
+         
+        <div class="contact-4-head">
+            <div class="contact-green2-box">
+                <h3>Contact us</h3>
+            </div>
+        </div>
+        <div class="contact-4-content">
+          <div class="Ph-num">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 9952311408</p>
+          </div>
+          <div class="E-mail">
+            <i class="fa-regular fa-envelope"></i>
+            <p>contact@emblock.in
+            </p>
+          </div>
+
+
+        
+
+
+          <div  class="linkin-logo">
+              
+            <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i>
+            </a>
+
+        </div>
+
+        <div class="Insta-logo">
+            <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+          
+
+
+      </div>
+
+    </div>
+
+       <div class="copyright-content">
+          <p class="footer-copyright"> Copyright <i class="fa-regular fa-copyright"></i><b>EMBLOCK</b> . All
+            Rights
+            Reserved
+          </p>
+       </div>
+        
+
+    </div>
+
+
+</footer>
+
+
+
+
+  
+
+<script src="https://kit.fontawesome.com/49bafbd5a4.js" crossorigin="anonymous"></script>
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/RemoteHandling.js"></script>
+<script src="./JS/navbar.js"></script>
+<script src="./JS/navbarServices.js"></script>
+<script src="./JS/navbarProducts.js"></script>
+
+</body>
+</html>

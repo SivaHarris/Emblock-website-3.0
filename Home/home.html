@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="At Emblock, we are dedicated to delivering cutting-edge IoT and Blockchain-enabled solutions, underpinned by our unwavering commitment to core competency and exceptional Quality of Service (QoS). Our vision extends beyond the present, as we embrace the future through the transformative power of Web3 technology."
+        name="description">
+    <meta content="blockchain, startup, web3, ai, data, analytics" name="keywords">
+    <meta name="robots" content="index, follow">
+    <title>Emblock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/FooterPage.css">
+    <link rel="stylesheet" href="./CSS/Teams.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+
+    <link rel="stylesheet" href="./CSS/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <div class="toggler-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img id="hamburger" onclick="navHamburger(this)" src="./IMAGES/hamburger.svg" alt="">
+                    <img id="hamburgerBack" onclick="navHamburger(this)" src="./IMAGES/back.svg" alt="">
+                </button>
+                <div class="brand">
+                    <div class="logoName">
+                        <a class="navbar-brand" href="../Home/home.html"><img src="./IMAGES/Logo.jpg" alt=""></a>
+                        <a href="../Home/home.html"><h1 class="logoName">Emblock</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mb-2 mb-lg-0 nav-ul">
+                    <li id="homeli" class="nav-item">
+                        <img id="navGifCheck" class="navliGif" src="./Images/home.gif" alt="">
+                        <a class="nav-link active" aria-current="page" href="../Home/home.html">Home</a>
+                    </li>
+                    <li id="servicesli" class="nav-item dropSerM dropdownS" onclick="servicesMToggle()">
+                        <img class="navliGif" src="./Images/services.gif" alt="">
+                        <a id="aboutus" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services<img class="parkdown" src="./Images/parkdown.svg" alt=""></a>
+
+                        <div class="servicesDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Automation</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Application
+                                            Services</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Data & AI</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Software
+                                            Engineering</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Cloud</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Emerging
+                                            Technologies</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/iotGif.gif" alt="">
+                                        <h3 class="rHead">Internet of
+                                            Things</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">ERP & CRM</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="productsli" class="nav-item dropProM dropdownP" onclick="productsMToggle()">
+                        <img class="navliGif" src="./Images/products.gif" alt="">
+                        <a class="nav-link" href="#">Products<img class="parkdown" src="./Images/parkdown.svg"
+                                alt=""></a>
+
+                        <div class="productsDrop">
+                            <div class="servicesDropCenter">
+                                <div class="srow r1">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/automationGif.gif" alt="">
+                                        <h3 class="rHead">Factory
+                                            Insights</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/applicationServicesGif.gif" alt="">
+                                        <h3 class="rHead">Smart Vision
+                                            System</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/dataAiGif.gif" alt="">
+                                        <h3 class="rHead">Attendance
+                                            Tracker</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r2">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/softwareEngineeringGif.gif" alt="">
+                                        <h3 class="rHead">Drone
+                                            Solutions</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/cloudGif.gif" alt="">
+                                        <h3 class="rHead">Remote
+                                            Handling</h3>
+                                    </div>
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/emergingTechnologyGif.gif" alt="">
+                                        <h3 class="rHead">Light Control
+                                            Hub</h3>
+                                    </div>
+                                </div>
+                                <div class="srow r3">
+                                    <div class="rbox">
+                                        <img class="rgif" src="./Images/ermcrmGif.gif" alt="">
+                                        <h3 class="rHead">Equinox</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="contactusli" class="nav-item">
+                        <img class="navliGif" src="./Images/contactus.gif" alt="">
+                        <a class="nav-link" href="#contactusid">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdownServices">
+                <div class="left">
+                    <img id="servicesGif" src="" alt="">
+                    <h1 id="servicesH1"></h1>
+                    <p id="servicesP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" id="automation" onmouseover="servicesLoad('automation')" onmouseout="servicesDefault()">
+                            <a href="../Automation/automation.html">Automation</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('softwareEngineering')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Software Engineering/softwareEng.html">Software Engineering</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('applicationServices')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Application  Page final/Application.html">Application Services</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('dataAi')" onmouseout="servicesDefault()"><a href="../AIPAGE/AiPage-final.html">Data & AI</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('cloud')" onmouseout="servicesDefault()"><a href="../Cloud Page Final/Cloud.html">Cloud</a></div>
+                        <div class="item" onmouseover="servicesLoad('iot')" onmouseout="servicesDefault()">
+                            <a href="../IOT/IOT.html">Internet of Things</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('emergingTechnology')"
+                            onmouseout="servicesDefault()">
+                            <a href="../Emerging Technology final/Emerging.html">Emerging Technologies</a>
+                        </div>
+                        <div class="item" onmouseover="servicesLoad('erpcrm')" onmouseout="servicesDefault()"><a href="../ERP/ERP.html">ERP & CRM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownProducts">
+                <div class="left">
+                    <img id="productsGif" src="" alt="">
+                    <h1 id="productsH1"></h1>
+                    <p id="productsP"></p>
+                </div>
+                <div class="right">
+                    <div class="gridOptions">
+                        <div class="item" onmouseover="productsLoad('factoryInsights')" onmouseout="productsDefault()">
+                            <a href="../Factory/factoryMonitoring.html">Factory Insights</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('smartVisionSystem')"
+                            onmouseout="productsDefault()">
+                            <a href="../Smart Vision System/smartVisionSystem.html"> Smart Vision System</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('attendanceTracker')"
+                            onmouseout="productsDefault()">
+                            <a href="../Trackerpage/Tracker.html"> Attendance Tracker</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('droneSolustions')" onmouseout="productsDefault()">
+                            <a href="../Drone Page final/Drone Page.html"> Drone Solutions</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('remoteHandling')" onmouseout="productsDefault()">
+                            <a href="../RemoteHandling final/RemoteHandling.html"> Remote Handling</a>
+                        </div>
+                        <div class="item" onmouseover="productsLoad('lightControlHub')" onmouseout="productsDefault()">
+                            <a href="../Lightpage/lightControlHub.html"> Light Control Hub</a></div>
+                        <div id="equi" class="item" onmouseover="productsLoad('equinox')"
+                            onmouseout="productsDefault()">Equinox - A
+                            Trading Bot</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="home-bg">
+        <img id="1m" class="meteor fall1" src="./IMAGES/meteor.png" alt="">
+        <img id="2m" class="meteor " src="./IMAGES/meteor.png" alt="">
+        <img id="3m" class="meteor " src="./IMAGES/meteor.png" alt="">
+        <img class="stars" src="./IMAGES/star2.png" alt="">
+        <div class="home-text">
+            <div class="home-text-content">
+                <h1>
+                    Connecting Possibilities,
+                    <br>
+                    Crafting Experiences
+                </h1>
+                <p>
+                    Your IoT Software Journey Begins Here
+                </p>
+            </div>
+        </div>
+        <img class="hills" src="./IMAGES/hills.png" alt="">
+    </div>
+    <div class="downHill">
+        <img src="./IMAGES/downhill.png" alt="">
+        <div class="downHill-text">
+            <div class="downHill-text-content">
+                <div class="left">
+                    <div class="line">
+                        <p><span class="w">W</span><span class="ith">ith &nbsp</span><span class="rec"><span
+                                    class="R">R</span><span class="eason">eason</span></span></p>
+                    </div>
+                    <div class="line">
+                        <p><span class="R ml">C</span><span class="eason">reativity</span></p>
+                    </div>
+                    <div class="line">
+                        <p><span class="R ml">C</span><span class="eason">uriosity</span></p>
+                    </div>
+                    <div class="line">
+                        <p><span class="wat">we aspire to &nbsp</span>
+                            <span class="animateSpan">
+                                <span id="as1" class="as">INNOVATE</span>
+                                <span id="as2" class="as">NAVIGATE</span>
+                                <span id="as3" class="as">DESIGN</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p> “As a startup, our primary objective is to transform the industry and offer cutting-edge
+                        solutions
+                        that satisfy the demands of our intended clients”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cricles-div">
+        <div class="three-circles">
+            <div class="circle-container">
+                <div class="circle" id="circle">
+                    <div class="circle-content">
+                        <img src="./IMAGES/circlestar.png">
+                        <div class="img-text">Enterprises Platform</div>
+                    </div>
+                    <div class="hover-content">
+                        <img src="./IMAGES/circle-hover.gif">
+                        <div class="hover-img-text">Enterprises <br>Platform</div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-container">
+                <div class="circle" id="circle">
+                    <div class="circle-content">
+                        <img src="./IMAGES/circlestar.png">
+                        <div class="img-text">Emerging Technologies</div>
+                    </div>
+                    <div class="hover-content">
+                        <img src="./IMAGES/circle-hover.gif">
+                        <div class="hover-img-text">Emerging <br> Technologies</div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-container">
+                <div class="circle" id="circle">
+                    <div class="circle-content">
+                        <img src="./IMAGES/circlestar.png">
+                        <div class="img-text">Cloud-Driven Solutions</div>
+                    </div>
+                    <div class="hover-content">
+                        <img src="./IMAGES/circle-hover.gif">
+                        <div class="hover-img-text">Cloud-Driven <br> Solutions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mvv">
+        <div class="left">
+            <img class="mission-img" src="./IMAGES/mission.png" alt="">
+            <img class="vision-img " src="./IMAGES/vision.png" alt="">
+            <img class="values-img " src="./IMAGES/values.png" alt="">
+        </div>
+        <div class="right">
+            <div id="mission" class="mvv-ani">
+                <div class="mvv-head">
+                    Mission
+                </div>
+                <div class="mvv-cont">
+                    Our mission is to empower individuals and organizations to thrive in a rapidly evolving world.
+                </div>
+            </div>
+            <div id="vision" class="mvv-ani">
+                <div class="mvv-head">
+                    Vision
+                </div>
+                <div class="mvv-cont">
+                    Envisioning global leadership in the realm of Technology
+                </div>
+            </div>
+            <div id="values" class="mvv-ani">
+                <div class="mvv-head">
+                    Values
+                </div>
+                <div class="mvv-cont">
+                    We prioritize our clients with tailored solutions, upheld by integrity and collaboration.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Teams -->
+
+    <div class="teams-div">
+        <div class="Team-heading">
+            <h1 class="linee">TEAMS</h1>
+        </div>
+        <div class="main1">
+            <div class="Team-box" onclick="expandBox(this)">
+                <img src="./IMAGES/Design Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>Design Team</h2>
+                    <p>Crafting seamless and intuitive user experiences through UI/UX design, our team
+                        transforms
+                        digital
+                        landscapes
+                        into user-centric and visually compelling environments</p>
+                </div>
+            </div>
+            <div class="Team-box " onclick="expandBox(this)">
+                <img src="./IMAGES/Mobile Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>Mobile Team</h2>
+                    <p>We're the mobile mavens, a compact and dynamic crew devoted to perfecting
+                        pocket-sized
+                        perfection. From
+                        coding wizardry to sleek design finesse, we pack a punch in crafting seamless mobile
+                        experiences
+                    </p>
+                </div>
+            </div>
+            <div class="Team-box " onclick="expandBox(this)">
+                <img src="./IMAGES/Marketing Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>Marketing Team</h2>
+                    <p>With a finger on the pulse of market trends, we elevate brand visibility, engage
+                        audiences, and
+                        turn
+                        prospects
+                        into loyal customers</p>
+                </div>
+            </div>
+            <div class="Team-box " onclick="expandBox(this)">
+                <img src="./IMAGES/IoT Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>IOT Team</h2>
+                    <p>We orchestrate seamless connectivity and innovation, transforming data into
+                        actionable insights
+                        to drive
+                        the
+                        next wave of technological advancement</p>
+                </div>
+            </div>
+            <div class="Team-box " onclick="expandBox(this)">
+                <img src="./IMAGES/Web Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>Web Team</h2>
+                    <p>We're the web wizards, crafting seamless online experiences. From code to design, we
+                        turn ideas
+                        into
+                        interactive magic, shaping the digital future
+                        with creativity and precision</p>
+                </div>
+            </div>
+            <div class="Team-box" onclick="expandBox(this)">
+                <img src="./IMAGES/Data Science Team.png" class="boxImage">
+                <div class="conten">
+                    <h2>Data Science Team</h2>
+                    <p>With a passion for unravelling complex data puzzles, we transform raw information
+                        into
+                        meaningful patterns and predictions</p>
+                </div>
+            </div>
+        </div>
+        <div class="Tech-heading">
+            <h1 class="linee">TECHNOLOGY WE USE</h1>
+        </div>
+        <div class="scroll">
+            <div class="scroll1">
+                <div class="logos-slide">
+                    <img src="./IMAGES/Image 1.png" />
+                    <img src="./IMAGES/Image 2.png" />
+                    <img src="./IMAGES/Image 3.png" />
+                    <img src="./IMAGES/Image 4.png" />
+                    <img src="./IMAGES/Image 5.png" />
+                    <img src="./IMAGES/Image 6.png" />
+                    <img src="./IMAGES/Image 7.png" />
+                    <img src="./IMAGES/Image 8.png" />
+                    <img src="./IMAGES/Image 9.png" />
+                    <img src="./IMAGES/Image 10.png" />
+                    <img src="./IMAGES/Image 11.png" />
+                    <img src="./IMAGES/Image 12.png" />
+                    <img src="./IMAGES/Image 14.png" />
+                </div>
+                <div class="logos-slide">
+                    <img src="./IMAGES/Image 1.png" />
+                    <img src="./IMAGES/Image 2.png" />
+                    <img src="./IMAGES/Image 3.png" />
+                    <img src="./IMAGES/Image 4.png" />
+                    <img src="./IMAGES/Image 5.png" />
+                    <img src="./IMAGES/Image 6.png" />
+                    <img src="./IMAGES/Image 7.png" />
+                    <img src="./IMAGES/Image 8.png" />
+                    <img src="./IMAGES/Image 9.png" />
+                    <img src="./IMAGES/Image 10.png" />
+                    <img src="./IMAGES/Image 11.png" />
+                    <img src="./IMAGES/Image 12.png" />
+                    <img src="./IMAGES/Image 14.png" />
+                </div>
+            </div>
+            <div class="scroll2">
+                <div class="logos-slide2">
+                    <img src="./IMAGES/Image 15.png" />
+                    <img src="./IMAGES/Image 16.png" />
+                    <img src="./IMAGES/Image 17.png" />
+                    <img src="./IMAGES/Image 18.png" />
+                    <img src="./IMAGES/Image 19.png" />
+                    <img src="./IMAGES/Image 20.png" />
+                    <img src="./IMAGES/Image 21.png" />
+                    <img src="./IMAGES/Image 22.png" />
+                    <img src="./IMAGES/Image 23.png" />
+                    <img src="./IMAGES/Image 24.png" />
+                    <img src="./IMAGES/Image 25.png" />
+                    <img src="./IMAGES/Image 26.png" />
+                    <img src="./IMAGES/Image 27.png" />
+                </div>
+                <div class="logos-slide2">
+                    <img src="./IMAGES/Image 15.png" />
+                    <img src="./IMAGES/Image 16.png" />
+                    <img src="./IMAGES/Image 17.png" />
+                    <img src="./IMAGES/Image 18.png" />
+                    <img src="./IMAGES/Image 19.png" />
+                    <img src="./IMAGES/Image 20.png" />
+                    <img src="./IMAGES/Image 21.png" />
+                    <img src="./IMAGES/Image 22.png" />
+                    <img src="./IMAGES/Image 23.png" />
+                    <img src="./IMAGES/Image 24.png" />
+                    <img src="./IMAGES/Image 25.png" />
+                    <img src="./IMAGES/Image 26.png" />
+                    <img src="./IMAGES/Image 27.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer id="contactusid">
+        <div class="Copyright">
+            <div class="contact">
+                <div class="contact-sep-1">
+                   
+                    <div class="contact1">
+                      <div class="contact1-sep-1">
+                        <div class="logo-Emblock">
+                            <a href="../Home/home.html"><img src="Images/Logo.jpg" class="logo-con1">
+                                <h1>Emblock</h1>
+                            </a>
+                        </div>
+                        <div class="logo-txt">
+                            <p>Welcome to EMBLOCK - your catalyst for business transformation. We fuse technology,
+                                innovation, and expertise to drive your success.</p>
+                        </div> 
+                      </div>
+    
+    
+    
+                        <div class="contact1-sep-2">
+                            <div class="phone-container">
+                                <div class="phone-txt">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>+91 9952311408</p>
+                                </div>
+                                <div class="phone-txt">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <p>contact@emblock.in
+                                    </p>
+                                </div>
+                            </div>  
+                            <div class="phone-container-2">
+                                <div class="follow-txt-1">
+                                    <p class="txt-green">Follow us on:</p>
+                                </div>
+                                <div class="follow-txt-2">
+                                            <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                                                class="fa-brands fa-instagram"></i>
+                                            </a>
+                                
+                                </div>
+                                <div class="follow-txt-2">
+                                    <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i>
+                                </a>
+                                </div>
+    
+                            </div>  
+                            <div class="contact-green-box">
+                                <p>
+                                    Contact Us
+                                </p>
+    
+                            </div>
+                          
+                        </div>
+                    </div>
+                       
+    
+    
+                  
+    
+    
+                </div>
+    
+    
+    
+              <div class="contact-sep-2">
+                   
+                <div class="contact2">
+                    <div id="footer-2">
+                        <h3>Our Products</h3>
+    
+                        <div class="footer-text">
+                          <a href="../Factory/factoryMonitoring.html"><p>Factory Insights</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Smart Vision System/smartVisionSystem.html"><p>Smart Vision System</p></a>
+                        </div>
+                       
+                        <div class="footer-text">
+                          <a href="../Trackerpage/Tracker.html"><p>Attendance Tracker</p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../Drone Page final/Drone Page.html"><p>Drone Solutions</p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../RemoteHandling final/RemoteHandling.html"><p>Remote Handling </p></a>
+                        </div>
+    
+                        
+                        <div class="footer-text">
+                          <a href="../Lightpage/lightControlHub.html"><p>Light Control Hub</p></a>
+                        </div>
+    
+                        <div class="footer-text">
+                          <a href="#"><p>Equinox - A trading Bot</p></a>
+                        </div>
+    
+                      
+                    </div>
+                </div>
+                <div class="contact3">
+                    <div id="footer-3">
+                        <h3><b>Our Services</b></h3>
+                        <div class="footer-text">
+                          <a href="../Automation/automation.html"><p>Automation</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Application  Page final/Application.html"><p>Application Services </p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Software Engineering/softwareEng.html"><p>Software Engineering</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../AIPAGE/AiPage-final.html"><p>Data & AI</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Cloud Page Final/Cloud.html"><p>Cloud maintenance and support</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../Emerging Technology final/Emerging.html"><p>Emerging Technologies</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../IOT/IOT.html"><p>Internet of Things</p></a>
+                        </div>
+                        <div class="footer-text">
+                          <a href="../ERP/ERP.html"><p>ERP and CRM</p></a>
+                        </div>
+    
+                    </div>
+                </div>
+                
+    
+    
+              
+               
+    
+    
+               </div>
+              
+               
+    
+    
+            </div>
+    
+          <div class="contact-4">
+             
+            <div class="contact-4-head">
+                <div class="contact-green2-box">
+                    <h3>Contact us</h3>
+                </div>
+            </div>
+            <div class="contact-4-content">
+              <div class="Ph-num">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 9952311408</p>
+              </div>
+              <div class="E-mail">
+                <i class="fa-regular fa-envelope"></i>
+                <p>contact@emblock.in
+                </p>
+              </div>
+    
+    
+            
+    
+    
+              <div  class="linkin-logo">
+                  
+                <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i>
+                </a>
+    
+            </div>
+    
+            <div class="Insta-logo">
+                <a href="https://www.instagram.com/emblock_tech/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+    
+              
+    
+    
+          </div>
+    
+        </div>
+    
+           <div class="copyright-content">
+              <p class="footer-copyright"> Copyright <i class="fa-regular fa-copyright"></i><b>EMBLOCK</b> . All
+                Rights
+                Reserved
+              </p>
+           </div>
+            
+    
+        </div>
+    
+    
+    </footer>
+
+    
+
+    <script src="./JS/home.js"></script>
+    <script src="./JS/navbar.js"></script>
+    <script src="./JS/navbarServices.js"></script>
+    <script src="./JS/navbarProducts.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/49bafbd5a4.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

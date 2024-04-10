@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    margin: 0;
+    padding: 0; 
+    background: black !important; 
+    overflow-x: hidden;
+    position: relative;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+    cursor: none;
+}
+
+
+
+.nav{
+    height: 80px;
+    width: 100%;
+    background-color: black ;
+   }
+
+   .landing-bg{
+    height: 530px;
+    width: 100%;
+    position: relative;
+   }
+
+
+
+   .expert-box{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+   }
+
+   .expert-info{
+    height: 100%;
+    width: 50%;
+   }
+
+   .expert-info h1{
+    color: #D9D9D9;
+    font-family: Montserrat;
+    font-size: 300%;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+   }
+
+   .expert-info p{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 100%;
+    font-weight: 400;
+    margin-top: 3%;
+   }
+
+   .landing-looping{
+    position: absolute;
+    left: 38%;
+    top: 1%;
+    width: 26%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+   }
+
+   .landing-looping p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 130%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 4%;
+   }
+
+   .word{
+    overflow: hidden;
+    height: 100%;
+    font-family: Poppins;
+    font-size: 220%;
+    font-style: normal;
+    font-weight: 700;
+   }
+
+    .txt-1,.txt-2,.txt-3{
+    display: block;
+    height: 100%;
+    padding-top: 2%;
+    animation: spin_words 4s infinite;
+    }
+
+    .txt-1{
+        color: #1ED760;
+        position: relative;
+        top: -7px;
+    }
+
+    .txt-2{
+        color: #1ED7CF;
+        position: relative;
+        top: -7px;
+
+    }
+
+    .txt-3{
+        color: #8A39E9;
+        position: relative;
+        top: -9px;
+    }
+    @keyframes spin_words{
+        0%{
+            transform: translateY(0%);
+        }
+        10%{
+            transform: translateY(0%);
+        }
+        30%{
+            transform: translateY(-120%);
+        }
+        
+        35% {
+            transform: translateY(-100%);
+        }
+        40% {
+            transform: translateY(-100%);
+        }
+        55%{
+            transform: translateY(-220%);
+        }
+        65%
+        {
+            transform: translateY(-200%);
+        }
+        75%{
+            transform: translateY(-200%);
+        
+        }
+        90% {
+            transform: translateY(0%);
+        }
+
+    }
+
+
+    /* Division 3 ball animation */
+
+
+    .chooseus-head{
+        height: 50px;
+        width: 100%;
+       }
+
+       .chooseus-head h1{
+        text-align: center;
+        color: #D9D9D9;
+        font-family: Montserrat;
+        font-size: 160%;
+        font-style: italic;
+        font-weight: 800;
+        padding-top: 0.5%;
+       }
+
+
+       .chooseus-container{
+        height: 610px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+       }
+
+       .chooseus-info-box{
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .chooseus-txt{
+        height: 100%;
+        width: 38%;
+       }
+
+       .chooseus-txt h4{
+        color: #D9D9D9;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 8%;
+       }
+
+       .curve-1{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 4%;
+        background:none;
+       }
+
+       .curve-2{
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+       }
+
+       .curve-3{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -25%;
+       }
+
+       .ball {
+    height: 48%;
+    width: 24%;
+    position: absolute;
+    right: -20%; /* Initial position */
+    top: 3%;
+    animation: moveBall 2s linear infinite;
+}
+
+
+       .ball img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+       }
+
+
+       @keyframes moveBall {
+  0% {
+        transform: translate(0%, 0%);
+    }
+    20%{
+      transform: translate(-120%,7%);
+    }
+    40%{
+      transform: translate(-190%,43%);
+    }
+    60%{
+      transform: translate(-300%,15%);
+    }
+
+    75%{
+      transform: translate(-360%,25%);
+    }
+
+    85%{
+      transform: translate(-400%,40%);
+    }
+
+
+    100%{
+      transform: translate(-450%,60%);
+    }
+
+}
+
+
+
+    
