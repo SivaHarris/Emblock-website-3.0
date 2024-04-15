@@ -19,14 +19,12 @@ body{
     height: 550px;
     width: 100%;
     position: relative;
-   
 }
 
 #video-background{
     width: 100%;
     height: 100%;
    object-fit: cover;
-
 }
 
   
@@ -62,6 +60,7 @@ body{
     height: 330px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .App-overflow-1{
@@ -91,13 +90,12 @@ body{
     top: 0%;
    background-size: cover;
    animation: circle-anim 3s  ease  infinite ;
-   
 }
 
 .circle-1{
     height: 100%;
     width: 100%;
-    border-radius: 300px;
+    border-radius:50%;
     background-image: url("../IMAGES/circle-img-4.png");
     background-size: cover;
     display: block;
@@ -106,7 +104,7 @@ body{
 .circle-2 {
     height: 100%;
     width: 100%;
-    border-radius: 300px;
+    border-radius: 50%;
     background-image: url("../Images/circle-img-3.jpg");
     background-size: cover;
     display: none;
@@ -303,7 +301,6 @@ right: 0;
     height:43%;
     width: 95%;
     margin-right: 6%;
-
 }
 
 .slide-head h3{
@@ -330,10 +327,11 @@ right: 0;
 .App-service{
     height: 550px;
     width: 100%;
-    display: flex;
+    display:flex;
     justify-content: flex-start;
     align-content: flex-start;
     position: relative;
+    overflow-x: hidden ;
 }
 
 .App-ser-container{
@@ -520,7 +518,7 @@ top: 0%;
 .ser-hover-box-1:hover .box-info-1{
 opacity: 1;
 margin-left: 6.5%;
-height: 100%;
+height:auto;
 width: 93.5%;
 transform: rotateX(0deg);
 }
@@ -528,7 +526,7 @@ transform: rotateX(0deg);
 .ser-hover-box-2:hover .box-info-2{
 opacity: 1;
 margin-left: 6.5%;
-height: 100%;
+height:auto;
 width: 93.5%;
 transform: rotateX(0deg);
 }
@@ -603,7 +601,7 @@ color: black;
     position: relative;
     bottom: 20px;
     z-index: -1;
-    display: flex;
+    display:flex;
 
 
   }
@@ -674,15 +672,925 @@ backdrop-filter: blur(44px);
 
   .black-box-txt p{
     font-family: 'Montserrat', sans-serif;
-font-weight: 300;
-font-size: 125%;
-color: #fff;
+    font-weight: 300;
+    font-size: 125%;
+    color: #fff;
   }
 
 
-.gap{
-    height: 80px;
-    width: 100%;
+
+/* Media Querry..... */
+
+@media (max-width:1400px){
+
+    /* Application services... */
+    .App-circle{
+        height: 300px;
+    }
+
+    .App-overflow-2{
+        width: 280px;
+    }
+
+    .App-overflow-3{
+        width: 150px;
+    }
+    .slide-head h3{
+        font-size: 130%;
+    }
+
+    .slide-info p{
+        font-size: 100%;
+    }
+
+    .App-overflow-3 h2{
+        font-size: 130%;
+    }
+
+    .slide-info{
+        width: 90%;
+        margin-right: 3%;
+    }
+
+
+
+    /* Application details... */
+
+    .App-details{
+        height: 350px;
+    }
+
+    .App-txt-emp{
+        border-left: 250px solid #F9AC07 ;
+        border-bottom: 413px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 100%;
+    }
+
+    /* Application  Hover.... */
+
+    .App-service{
+        height: 500px;
+    }
+
+    .box-txt{
+        font-size: 125%;
+    }
+
+    .box-txt-3{
+        font-size: 130%;
+    }
+
+    .box-info-1 p,.box-info-2 p,.box-info-3 p{
+        font-size: 90%;
+    }
+
+    .box-info-4 p{
+        font-size: 80%;
+    }
+
 }
 
+
+
+
+
+@media (max-width:1200px){
+     /* Application services... */
+     .App-circle{
+        height: 240px;
+    }
+
+    .App-overflow-2{
+        width: 230px;
+    }
+
+    .App-overflow-3{
+        width: 120px;
+    }
+
+    .slide-head h3{
+        font-size: 100%;
+    }
+
+    .slide-info p{
+        font-size: 90%;
+    }
+
+
+    .slide-head{
+        height: 12%;
+    }
+
+    .App-overflow-3 h2{
+        font-size: 110%;
+    }
+
+    /* Applicaiton details */
+
+    .App-details{
+        height: 300px;
+    }
+
+    .App-txt-emp{
+        border-left: 230px solid #F9AC07 ;
+        border-bottom: 353px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 80%;
+    }
+
+    /* Application green and black box */
+
+    .App-differ{
+        height: 600px;
+    }
+
+    .green-box-txt h2{
+        font-size: 180%;
+    }
+
+    .black-box-txt p{
+        font-size: 110%;
+    }
+
+        /* Application  Hover.... */
+
+        .App-service{
+            height: 400px;
+        }
+    
+        .box-txt{
+            font-size: 105%;
+        }
+    
+        .box-txt-3{
+            font-size: 110%;
+        }
+    
+        .box-info-1 p,.box-info-2 p,.box-info-3 p{
+            font-size: 70%;
+        }
+    
+        .box-info-4 p{
+            font-size: 60%;
+        }
+
+}
+
+@media (max-width:1100px){
+    .Application-bg{
+        height: 500px;
+    }
+
+    .Application-content h1{
+        font-size: 3.5rem;
+    }
+
+    .Application-content p{
+        font-size: 105%;
+    }
+
+
+
+     /* Application services... */
+
+        .App-circle{
+            height: 230px;
+        }
+
+        .App-overflow-1{
+            width: 90%;
+            left: 20%;
+        }
+
+        .App-overflow-2{
+            width: 215px;
+            left: 5%;
+        }
+    
+        .App-overflow-3{
+            width: 115px;
+            left: 10.2%;
+        }
+    
+        .slide-info p{
+            font-size: 80%;
+        }
+
+        .slide-head{
+            margin-left: 2%;
+        }
+    
+        .slide-info{
+            width: 90%;
+            margin-right:0%;
+            margin-left: 2%;
+        }
+
+        
+        /* Application  Hover.... */
+
+        .App-service{
+            height: 350px;
+        }
+
+        .box-txt{
+            font-size: 94%;
+        }
+
+        .box-info-1 p,.box-info-2 p,.box-info-3 p{
+            font-size: 65%;
+        }
+
+        .ser-circle h2{
+            font-size: 160%;
+            margin-right: 40px;
+        }
+
+}
+
+
+@media (max-width:900px){
+    .Application-bg{
+        height: 400px;
+    }
+
+
+    .Application-content h1{
+        font-size: 2.5rem;
+    }
+
+    .Application-content p{
+        width: 65%;
+        font-size: 90%;
+    }
+
+     /* Application services... */
+
+     .App-circle{
+        height: 210px;
+    }
+
+    .App-overflow-1{
+        width: 95%;
+        left: 17%;
+    }
+
+    .App-overflow-2{
+        width: 200px;
+        left: 2%;
+    }
+
+    .App-overflow-3{
+        width: 105px;
+        left: 63px;
+    }
+
+    .slide-head h3{
+        font-size: 90%;
+    } 
+
+    .slide-info p{
+        font-size: 70%;
+    }
+    .slide-info{
+        width: 85%;
+        margin-left: 5%;
+    }
+
+    
+
+    /* Applicaiton details */
+
+    .App-details{
+        height: 250px;
+    }
+
+    .App-txt-emp{
+        border-left: 140px solid #F9AC07 ;
+        border-bottom: 295px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 60%;
+    }
+
+
+    /* Application black and green box */
+
+    .App-differ{
+        height: 500px;
+    }
+
+    .green-box-txt h2{
+        font-size: 150%;
+    }
+
+    .black-box-txt p{
+        font-size: 80%;
+    }
+
+    /* Application  Hover.... */
+
+     .App-service{
+        height: 700px;
+        overflow-x:visible;
+    }
+
+    .ser-circle{
+        height: 85%;
+        width: 50%;
+        right: 25%;
+        z-index: -2;
+        bottom: 75%;
+    }
+
+    .ser-circle h2{
+        font-size: 170%;
+        margin-top:350px ;
+        margin-right: 0px;
+    }
+
+    .App-ser-container{
+        justify-content: flex-start;
+        height: 65%;
+        width: 95%;
+        margin-top: 25%;
+    }
+
+    .ser-hover-container-1,.ser-hover-container-2{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .ser-hover-box-1,.ser-hover-box-2,.ser-hover-box-3,.ser-hover-box-4{
+        height: 50%;
+        width: 100%;
+    }
+
+    .box-txt-3{
+        padding-bottom: 0%;
+    }
+
+    .box-txt{
+        font-size: 110%;
+    }
+
+    .box-img{
+        height: 70%;
+        width: 3%;
+    }
+
+    .ser-box-head-4 h3{
+        padding-top: 0%;
+    }
+
+    .ser-hover-box-1:hover .box-info-1,.ser-hover-box-2:hover .box-info-2,.ser-hover-box-3:hover .box-info-3,.ser-hover-box-4:hover .box-info-4{
+        margin-left: 4.5%;
+    }
+    .ser-hover-box-1:hover .box-info-1 p,.ser-hover-box-2:hover .box-info-2 p,.ser-hover-box-3:hover .box-info-3 p,.ser-hover-box-4:hover .box-info-4 p{
+        padding-top: 5%;
+    }
+
+    
+    .box-info-1 p,.box-info-2 p,.box-info-3 p,.box-info-4 p{
+        font-size: 100%;
+        text-align: left;
+    }
+
+}
+
+@media (max-width:750px){
+
+    /* Application service....... */
+
+    .App-circle{
+        height: 190px;
+    }
+
+    .App-overflow-2{
+        width: 180px;
+        left: 0%;
+    }
+
+    .App-overflow-3{
+        width: 95px;
+        left: 42px;
+    }
+
+    .slide-info p{
+        font-size: 60%;
+    }
+
+    .App-overflow-3 h2{
+        font-size: 90%;
+    }
+
+    
+    /* Applicaiton details */
+
+    .App-txt-emp{
+        border-left: 120px solid #F9AC07 ;
+        border-bottom: 295px solid transparent;
+    }
+
+    /* Application Hover...... */
+
+    .ser-circle{
+        height: 50%;
+        width: 50%;
+        bottom: 80%;
+    }
+    
+    .ser-circle h2{
+        font-size: 160%;
+        margin-top:150px ;
+    }
+
+}
+
+
+
+@media (max-width:600px){
+    .Application-bg{
+        height: 300px;
+    }
+
+    .Application-content h1{
+        font-size: 1.5rem;
+    }
+
+    .Application-content p{
+        font-size: 70%;
+    }
+    
+
+
+    /* Application service....... */
+
+        .App-circle{
+            height: 220px;
+        }
+
+        .App-overflow-1{
+            width: 120%;
+            left: 0%;
+        }
+    
+        .App-overflow-2{
+            height: 70%;
+            width: 155px;
+            left: 3%;
+            top: 16%;
+        }
+    
+        .App-overflow-3{
+            height: 34%;
+            width: 75px;
+            left: 56px;
+            top: 35%;
+        }
+
+        .App-overflow-3 h2{
+            font-size: 70%;
+        }
+
+
+
+        .slide-head h3{
+            font-size: 90%;
+        }
+    
+        .slide-info p{
+            font-size: 80%;
+        }
+
+
+        .slide-txt{
+            width: 70%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        .slide-container-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button img{
+            display: none;
+        }
+
+        .slide-image,.slide-image-2,.slide-image-3,.slide-image-4,.slide-image-5,.slide-image-6{
+            display: none;
+        }
+
+
+    /* Applicaiton details */
+
+    .App-details{
+        height: 270px;
+        bottom: 0%;
+        margin-top: 20px;
+    }
+
+    .App-txt-emp{
+        border-left: 90px solid #F9AC07 ;
+        border-bottom: 270px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 60%;
+        bottom: 45%;
+    }
+
+    .emp-img-box{
+        height: 100%;
+        top: 0%;
+    }
+
+
+    
+    /* Application black and green box */
+
+    .App-differ{
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .green-box-txt h2{
+        font-size: 110%;
+    }
+
+    .black-box-txt p{
+        font-size: 60%;
+    }
+
+    .black-box-txt{
+        width: 80%;
+    }
+
+
+/* Application  Hover.... */
+
+   .App-service{
+    height: 550px;
+}
+
+.ser-circle{
+    height: 50%;
+    width: 50%;
+    bottom: 85%;
+}
+
+.ser-circle h2{
+    font-size: 120%;
+    margin-top:180px ;
+}
+
+.App-ser-container{
+    height: 73%;
+}
+
+
+
+.box-txt,.box-txt-3 {
+    font-size: 90%;
+
+}
+
+.box-img{
+    height: 60%;
+    width: 3%;
+}
+
+
+
+.box-info-1 p,.box-info-2 p,.box-info-3 p,.box-info-4 p{
+    font-size: 80%;
+}
+
+.ser-hover-box-1:hover .box-info-1 p,.ser-hover-box-2:hover .box-info-2 p,.ser-hover-box-3:hover .box-info-3 p,.ser-hover-box-4:hover .box-info-4 p{
+    padding-top: 6%;
+}
+
+
+
+}
   
+
+
+@media (max-width:500px){
+
+    /* Application service....... */
+
+        .App-circle{
+            height: 180px;
+        }
+
+        .App-overflow-1{
+            width: 120%;
+            left: 0%;
+        }
+    
+        .App-overflow-2{
+            height: 70%;
+            width: 125px;
+        }
+    
+        .App-overflow-3{
+            height: 34%;
+            width: 60px;
+            left: 45px;
+            top: 35%;
+        }
+
+        .App-overflow-3 h2{
+            font-size: 60%;
+        } 
+
+        .slide-head h3{
+            font-size: 70%;
+        }
+    
+        .slide-info p{
+            font-size: 60%;
+        }
+
+        .slide-txt{
+            margin-top: 8%;
+        }
+
+        /* Applicaiton details */
+
+    .App-details{
+        height: 200px;
+    }
+
+    .App-txt-emp{
+        border-left: 70px solid #F9AC07 ;
+        border-bottom: 200px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 45%;
+       width: 53%;
+       left: 15%;
+    }
+
+
+}
+
+
+@media (max-width:400px){
+    .Application-bg{
+        height: 250px;
+    }
+
+    .Application-content h1{
+        font-size: 1rem;
+    }
+
+    .Application-content p{
+        width: 70%;
+        font-size: 65%;
+    }
+
+    /* Application service....... */
+
+        .App-circle{
+            height: 150px;
+        }
+
+    
+        .App-overflow-2{
+            height: 60%;
+            width: 90px;
+            top: 21%;
+        }
+    
+        .App-overflow-3{
+            height: 30%;
+            width: 45px;
+            left: 33px;
+            top: 36%;
+        }
+
+        .App-overflow-3 h2{
+            font-size: 50%;
+            margin-bottom: 0%;
+        } 
+
+        .slide-head{
+            margin-top: 6%;
+        }
+        .slide-head h3{
+            font-size: 70%;
+        }
+    
+        .slide-info p{
+            font-size: 55%;
+        }
+
+        /* Applicaiton details */
+
+    .App-details{
+        height: 170px;
+    }
+
+    .App-txt-emp{
+        border-left: 60px solid #F9AC07 ;
+        border-bottom: 170px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 40%;
+       width: 50%;
+       left: 15%;
+    }
+
+        /* Application black and green box */
+
+        .App-differ{
+            height: 300px;
+            margin-top: 0px;
+        }
+    
+        .green-box-txt h2{
+            font-size: 90%;
+        }
+    
+        .black-box-txt p{
+            font-size: 50%;
+        }
+
+        
+/* Application  Hover.... */
+
+   .App-service{
+    height: 450px;
+}
+
+.ser-circle{
+    height: 50%;
+    width: 50%;
+    bottom: 85%;
+}
+
+.ser-circle h2{
+    font-size: 100%;
+    margin-top:150px ;
+}
+
+.App-ser-container{
+    height: 73%;
+}
+
+
+
+.box-txt,.box-txt-3 {
+    font-size: 70%;
+
+}
+
+.box-img{
+    height: 60%;
+    width: 3%;
+}
+
+
+
+.box-info-1 p,.box-info-2 p,.box-info-3 p,.box-info-4 p{
+    font-size: 60%;
+}
+
+.ser-hover-box-1:hover .box-info-1 p,.ser-hover-box-2:hover .box-info-2 p,.ser-hover-box-3:hover .box-info-3 p,.ser-hover-box-4:hover .box-info-4 p{
+    padding-top: 7%;
+}
+    
+}
+
+
+
+
+@media (max-width:300px){
+    .Application-bg{
+        height: 200px;
+    }
+
+    .Application-content h1{
+        font-size: 0.8rem;
+    }
+
+    .Application-content p{
+        font-size: 50%;
+    }
+
+        /* Application service....... */
+
+        .App-circle{
+            height: 120px;
+        }
+
+    
+        .App-overflow-2{
+            height: 60%;
+            width: 70px;
+            top: 21%;
+        }
+    
+        .App-overflow-3{
+            height: 30%;
+            width: 35px;
+            left: 26px;
+            top: 37%;
+        }
+
+        .App-overflow-3 h2{
+            font-size: 40%;
+        } 
+
+        .slide-head h3{
+            font-size: 60%;
+        }
+    
+        .slide-info p{
+            font-size: 45%;
+        }
+
+        /* Applicaiton details */
+
+    .App-details{
+        height: 140px;
+    }
+
+    .App-txt-emp{
+        border-left: 45px solid #F9AC07 ;
+        border-bottom: 140px solid transparent;
+    }
+
+    .emp-txt-box{
+        font-size: 30%;
+       left: 16%;
+    }
+
+    /* Application black and green box */
+
+    .App-differ{
+            height: 200px;
+        }
+        
+    .green-box-txt h2{
+        font-size: 70%;
+        }
+        
+    .black-box-txt p{
+        font-size: 35%;
+        margin-top: 6%;
+    }
+
+            
+/* Application  Hover.... */
+
+   .App-service{
+    height: 380px;
+}
+
+.ser-circle{
+    height: 50%;
+    width: 50%;
+    bottom: 85%;
+}
+
+.ser-circle h2{
+    font-size: 70%;
+    margin-top:130px ;
+}
+
+
+.box-txt,.box-txt-3 {
+    font-size: 60%;
+
+}
+
+.box-img{
+    height: 60%;
+    width: 3%;
+}
+
+
+
+.box-info-1 p,.box-info-2 p,.box-info-3 p,.box-info-4 p{
+    font-size: 50%;
+}
+
+.ser-hover-box-1:hover .box-info-1 p,.ser-hover-box-2:hover .box-info-2 p,.ser-hover-box-3:hover .box-info-3 p,.ser-hover-box-4:hover .box-info-4 p{
+    padding-top: 7%;
+}
+
+}
