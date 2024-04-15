@@ -372,7 +372,7 @@ body{
 }
 
 .gap-left-1{
-    padding-left:0%;
+    padding-left:3%;
 }
 
 .gap-right-3{
@@ -487,8 +487,25 @@ body{
 
 
 
+/* Our service head... */
 
+.our-ser-head{
+    display: none;
+    height: 40px;
+    width: 100%;
+    background-color: #161616 ;
+}
 
+.services-head {
+    height: 100%;
+    width: 100%;
+    font-size: 160%;
+    font-family: Inter;
+    font-weight: 600;
+    color: #FFF;
+    margin-top: 1%;
+    margin-left: 5%;
+}
 
 /* Emerging slide  */
 
@@ -545,7 +562,8 @@ body{
     text-align: center;
     position: absolute;
     bottom: 26%;
-    left: 33.5%;
+    left: 26%;
+    width: 50%;
 }
 
 .indicator {
@@ -564,6 +582,7 @@ body{
 
 .but-container{
     height: 50px;
+    width: 170px !important;
     position: absolute;
     left: 44%;
     border-radius: 50px;
@@ -584,10 +603,35 @@ body{
     flex-direction: row;
 }
 
+
+
+.slide-mobile{
+  display: none !important;
+  height: 100%;
+  width: 100%;
+}
+
 .slide-info-1{
     height: 100%;
     width: 50%;
     background: linear-gradient(283deg, rgba(0, 80, 68, 0.70) 0%, rgba(39, 39, 39, 0.40) 98.86%);
+}
+
+.slide-info-mobile{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(283deg, rgba(0, 80, 68, 0.70) 0%, rgba(39, 39, 39, 0.40) 98.86%);
+}
+
+.slide-info-mobile h1{
+    height: 15%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 200%;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
 }
 
 .slide-info-2{
@@ -596,10 +640,44 @@ body{
     background: linear-gradient(283deg, rgba(55, 11, 79, 0.7) 0%, rgba(39, 39, 39, 0.40) 98.86%);
 }
 
+.slide-info-mobile-2{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(283deg, rgba(55, 11, 79, 0.7) 0%, rgba(39, 39, 39, 0.40) 98.86%);
+}
+
+.slide-info-mobile-2 h1{
+    height: 15%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 200%;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
+}
+
 .slide-info-3{
     height: 100%;
     width: 50%;
     background: linear-gradient(283deg, rgba(16, 59, 93, 0.7) 0%, rgba(39, 39, 39, 0.40) 98.86%);
+}
+
+.slide-info-mobile-3{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(283deg, rgba(16, 59, 93, 0.7) 0%, rgba(39, 39, 39, 0.40) 98.86%);
+}
+
+.slide-info-mobile-3 h1{
+    height: 15%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 200%;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
 }
 
 .slide-info-1 ul,.slide-info-2 ul{
@@ -660,4 +738,738 @@ body{
     font-size: 200%;
     color: black;
     padding-bottom: 5%;
+}
+
+/* mobile division for slide */
+
+.slide-mob-content-1{
+    height: 42%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 2%;
+}
+
+.img-mob-box{
+    height: 100%;
+    width: 40%;
+}
+
+.img-mob-1{
+    height: 100%;
+    width: 100%;
+}
+
+.mob-info-1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob-txt-1{
+    height: auto;
+    width: 100%;
+}
+
+.mob-info-2{
+    height:43%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob-txt-2{
+    height: 100%;
+    width: 95%;
+}
+
+/* media querry...... */
+
+@media (max-width:1300px){
+
+    /* Emerging Benefits........ */
+
+
+    .Emg-benefits{
+        height: 400px;
+    }
+
+    .ben-img-head h2{
+        font-size: 160%;
+    }
+
+    .ben-info-head h2{
+        font-size: 150%;
+    }
+
+    .dg-info{
+        font-size: 80%;
+    }
+
+    .gap-left-1{
+        padding-left: 4.5%;
+    }
+
+    .gap-left{
+        padding-left: 13%;
+    }
+
+    .gap-right{
+        padding-right: 13%;
+    }
+
+
+    /* Emerging details... */
+
+    .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+        font-size: 140%;
+    }
+
+    .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+        font-size: 140%;
+    }
+
+    .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+        font-size: 100%;
+    }
+
+    .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+        font-size: 100%;
+    }
+
+    /* Emerging slide... */
+
+    .slide-info-head{
+        font-size: 180%;
+    }
+
+    .slide-info-content{
+        font-size: 90%;
+    }
+
+    .slide-ul-font{
+        font-size: 90%;
+    }
+
+    .slide-info-content-2{
+        font-size: 90%;
+    }
+    
+    .right-arrow,.left-arrow{
+        font-size: 180%;
+    }
+        
+}
+
+@media (max-width:1100px){
+    .Emg-top-txt h1{
+        font-size: 300%;
+    }
+
+    .Emg-top-txt p{
+        font-size: 100%;
+    }
+
+
+    /* Emerging Benefits........ */
+
+    .Emg-benefits{
+        height: 350px;
+    }
+
+    .ben-img-head h2{
+        font-size: 120%;
+    }
+
+    .ben-info-head h2{
+        font-size: 110%;
+    }
+
+    .dg-info{
+        font-size: 60%;
+    }
+
+    
+    /* Emerging details... */
+
+    .emg-box-container{
+        height: 470px;
+    }
+
+    .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+        font-size: 120%;
+    }
+
+    .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+        font-size: 120%;
+    }
+
+    .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+        font-size: 80%;
+    }
+
+    .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+        font-size: 80%;
+    }
+
+    .emg-details h1{
+        font-size: 180%;
+    }
+
+        /* Emerging slide... */
+
+        .emg-slide-container{
+            height: 450px;
+        }
+
+        .slide-info-head{
+            font-size: 160%;
+        }
+    
+        .slide-info-content, .slide-ul-font,.slide-info-content-2{
+            font-size: 80%;
+        }
+    
+
+        .right-arrow,.left-arrow{
+            font-size: 160%;
+        }
+           
+        
+    .but-container{
+        height: 40px;
+        width: 130px !important;
+    }
+
+    .indicator{
+        width: 8px;
+        height: 9px;
+    }
+
+}
+
+
+@media (max-width:900px){
+
+    .Emerging-bg{
+        height: 450px;
+    }
+    .Emg-top-txt h1{
+        font-size: 220%;
+    }
+
+    .Emg-top-txt p{
+        font-size: 80%;
+    }
+
+      /* Emerging Benefits........ */
+
+      .Emg-benefits{
+        height: 300px;
+    }
+
+    .ben-img-head h2{
+        font-size: 100%;
+    }
+
+    .ben-info-head h2{
+        font-size: 90%;
+    }
+
+    .dg-info{
+        font-size: 50%;
+    }
+
+    .gap-left-1{
+        padding-left: 5%;
+    }
+
+    .gap-left{
+        padding-left: 14%;
+    }
+
+        /* Emerging details... */
+
+        .emg-box-container{
+            height: 400px;
+            margin-top: 0px;
+        }
+    
+        .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+            font-size: 100%;
+        }
+    
+        .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+            font-size: 100%;
+        }
+    
+        .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+            font-size: 70%;
+        }
+    
+        .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+            font-size: 70%;
+        }
+    
+        .emg-details h1{
+            font-size: 150%;
+        }
+
+        /* Emerging slide... */
+
+        .emg-slide-container{
+            height: 400px;
+        }
+        
+        .slide-info-head{
+            font-size: 140%;
+        }
+            
+         .slide-info-content, .slide-ul-font,.slide-info-content-2{
+            font-size: 70%;
+        }
+            
+        
+        .right-arrow,.left-arrow{
+            font-size: 140%;
+         }
+                   
+                
+        .but-container{
+            height: 35px;
+             width: 110px !important;
+        }
+        
+        .indicator{
+            width: 6px;
+             height: 7px;
+             bottom: 25%;
+         }
+}
+
+
+
+@media (max-width:750px){
+          /* Emerging Benefits........ */
+
+          .Emg-benefits{
+            height: 230px;
+        }
+    
+        .ben-img-head h2{
+            font-size: 80%;
+        }
+    
+        .ben-info-head h2{
+            font-size: 70%;
+        }
+    
+        .dg-info{
+            font-size: 40%;
+        }
+
+        
+        /* Emerging details... */
+
+        .emg-box-container{
+            height: 330px;
+        }
+
+        .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+            font-size: 90%;
+        }
+        .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+            font-size: 90%;
+        }
+    
+        .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+            font-size: 60%;
+        }
+    
+        .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+            font-size: 60%;
+        }
+
+        /* Emerging slide... */
+
+        .emg-slide-container{
+            height: 350px;
+        }
+
+        .slide-info-head{
+            font-size: 120%;
+        }
+            
+         .slide-info-content, .slide-ul-font,.slide-info-content-2{
+            font-size: 60%;
+        }
+            
+}
+
+@media (max-width:600px){
+
+    .Emerging-bg{
+        height: 350px;
+    }
+    .Emg-top-txt h1{
+        font-size: 160%;
+    }
+
+    .Emg-top-txt p{
+        font-size: 60%;
+    }
+
+    /* Emerging Benefits........ */
+    
+    .Emg-benefits {
+        height: 600px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ben-img{
+        height: 50%;
+        width: 90%;
+    }
+
+    .ben-info{
+        height: 35%;
+        width: 90%;
+    }
+
+    .ben-img-head h2{
+        font-size: 120%;
+        width: 70%;
+    }
+
+    .ben-info-head h2{
+        font-size: 110%;
+    }
+
+    .dg-info{
+        font-size: 50%;
+    }
+
+    /* Emerging details... */
+
+    .emg-box-container{
+        height: 380px;
+        justify-content: space-around;
+        gap: 0%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .emg-box-container::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .emg-box-1,.emg-box-2,.emg-box-3,.emg-box-4{
+        min-width:250px;
+        margin-left: 2%;
+    }
+
+    .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+        font-size: 120%;
+    }
+    .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+           font-size: 120%;
+    }
+        
+    .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+        font-size: 80%;
+    }
+        
+    .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+        font-size: 75%;
+    }
+
+    .emg-details{
+        height: 40px;
+    }
+    .emg-details h1{
+        font-size: 120%;
+    }
+
+    /* Emerging Slide.....*/
+
+    .slide-desktop{
+        display: none !important;
+    }
+
+    .slide-mobile{
+        display: block !important;
+    }
+
+    .emg-slide-container{
+        height: 450px;
+    }
+
+    .slide-info-mobile h1, .slide-info-mobile-3 h1,.slide-info-mobile-2 h1{
+        font-size: 120%;
+        padding-top: 4%;
+    }
+
+    .emg-slide-box{
+        height: 75%;
+    }
+
+    .slide-info-content{
+        font-size: 70%;
+        width: 95%;
+        margin-left:3%;
+    }
+
+    .slide-ul-font{
+        font-size: 70%;
+    }
+
+    .services-head{
+        font-size: 120%;
+    }
+
+    .but-container{
+        left:38%;
+    }
+}
+
+
+
+
+@media (max-width:450px){
+
+    /* Emerging benefit diagram.... */
+    .Emg-benefits{
+        height: 520px;
+    }
+
+    .ben-img-head h2{
+        font-size: 100%;
+    }
+
+    .ben-info-head h2{
+        font-size:90%;
+    }
+    
+    .dg-info{
+        font-size: 40%;
+    }
+
+   
+}
+
+
+
+
+@media (max-width:400px){
+
+
+    .Emerging-bg{
+        height: 250px;
+    }
+    .Emg-top-txt h1{
+        font-size: 110%;
+    }
+
+    .Emg-top-txt p{
+        font-size: 40%;
+    }
+
+        /* Emerging benefit diagram.... */
+        .Emg-benefits{
+            height: 430px;
+        }
+    
+        .ben-img-head h2{
+            font-size: 89%;
+            width: 70%;
+        }
+    
+        .ben-info-head h2{
+            font-size:70%;
+        }
+
+        .ben-img{
+            height: 53%;
+            width: 90%;
+        }
+    
+        .ben-info{
+            height: 40%;
+            width: 90%;
+        }
+        
+        .dg-info{
+            font-size: 35%;
+        }
+
+            /* Emerging details... */
+
+    .emg-box-container{
+        height: 350px;
+    }
+    
+    
+    .emg-box-1,.emg-box-2,.emg-box-3,.emg-box-4{
+        min-width:230px;
+    }
+
+    .emg-box-1 h3,.emg-box-2 h3,.emg-box-3 h3,.emg-box-4 h3{
+        font-size: 110%;
+    }
+    .emg-details-info-1 h3,.emg-details-info-2 h3,.emg-details-info-3 h3,.emg-details-info-4 h3{
+           font-size: 110%;
+    }
+        
+    .emg-details-info-1 p,.emg-details-info-2 p,.emg-details-info-3 p,.emg-details-info-4 p{
+        font-size: 70%;
+    }
+        
+    .emg-details-info-1 ul,.emg-details-info-2 ul,.emg-details-info-3 ul,.emg-details-info-4 ul{
+        font-size: 65%;
+    }
+
+    .emg-details{
+        height: 30px;
+    }
+    .emg-details h1{
+        font-size: 100%;
+    }
+
+    /* Emerging slide... */
+
+    .emg-slide-container{
+        height: 400px;
+    }
+
+    .slide-info-mobile h1, .slide-info-mobile-3 h1,.slide-info-mobile-2 h1{
+        font-size: 100%;
+        padding-top: 4%;
+    }
+
+
+    .slide-info-content{
+        font-size: 55%;
+        width: 95%;
+        margin-left:3%;
+    }
+
+    .slide-ul-font{
+        font-size: 55%;
+    }
+
+    .services-head{
+        font-size: 100%;
+    }
+
+    .right-arrow,.left-arrow{
+        font-size: 120%;
+     }
+               
+            
+    .but-container{
+        height: 30px;
+         width: 95px !important;
+    }
+    
+    .indicator{
+        width: 5px;
+         height: 6px;
+     }
+
+     .indicators{
+        bottom: 22%;
+     }
+
+     .button-1,.button-2{
+        padding-bottom: 30%;
+     }
+
+     
+    .but-container{
+        left:36%;
+    }
+}
+
+
+
+@media (max-width:350px){
+
+    /* Emerging Benefits......... */
+
+    .Emg-benefits{
+        height: 350px;
+    }
+
+    .dg-info{
+        font-size: 30%;
+    }
+}
+
+
+
+
+@media (max-width:300px){
+
+    .Emerging-bg{
+        height: 200px;
+    }
+    .Emg-top-txt h1{
+        font-size: 90%;
+    }
+
+        .Emg-top-txt p {
+            font-size: 40%;
+        }
+    
+        /* Emerging benefit diagram.... */
+    .Emg-benefits {
+        height: 300px;
+    }
+    
+    .ben-img-head h2 {
+         font-size: 70%;
+    }
+    
+    .ben-info-head h2 {
+        font-size: 60%;
+    }
+    
+    
+    .dg-info {
+        font-size: 27%;
+    }
+
+
+    /* Emerging slide.... */
+
+    .emg-slide-container{
+        height: 350px;
+    }
+
+    .slide-info-mobile h1, .slide-info-mobile-3 h1,.slide-info-mobile-2 h1{
+        font-size: 90%;
+        padding-top: 4%;
+    }
+
+
+    .slide-info-content{
+        font-size: 50%;
+        width: 95%;
+        margin-left:3%;
+    }
+
+    .slide-ul-font{
+        font-size: 50%;
+    }
+
+    .services-head{
+        font-size: 90%;
+    }
+
+
 }
