@@ -1,62 +1,209 @@
-
-.Fm-mmo{
-    width: 100%;
-    height: 520px;
-    background: #071627;
+.Fm-mmo {
+  width: 100%;
+  height: 520px;
+  background: #071627;
 }
 
-.mmo-images{
-    position: relative;
-    top:35px;
-    left:3%;
-    max-width: 650px;
+.mmo-images {
+  position: relative;
+  top: 35px;
+  left: 3%;
+  max-width: 650px;
 }
 
-.mmo-text{
-    position: relative;
-    top:-386px;
-    left: 53%;;
-    max-width: 535px;
+.mmo-text {
+  position: relative;
+  top: -386px;
+  left: 53%;
+  max-width: 535px;
 }
 .mmo-head {
-    color: white;
-    font-family: Montserrat;
-    word-wrap: break-word;
+  color: white;
+  font-family: Montserrat;
+  word-wrap: break-word;
 }
-.mmo-head .M{
-    font-size: 40px;
-    font-weight: 700;
+.mmo-head .M {
+  font-size: 40px;
+  font-weight: 700;
 }
 .mmo-head .achine {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.mmo-subhead
-{
- position: relative;
- top:16px;
- left:-5px;;
- color: #8B929B;
- font-size: 16px;
- font-weight: 400;
- max-width: 485px;
- font-family: Montserrat;
- display: flex;
- flex-direction: column;
- align-items:center;
- text-align: center;
+.mmo-subhead {
+  position: relative;
+  top: 16px;
+  left: -5px;
+  color: #8b929b;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 485px;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.mmo-info
-{
-     color: white;
-     position: relative;
-     top:60px;
-     left:0%;;
-     font-size: 16px;
-     font-family: Montserrat;
-     font-weight: 400;
-     line-height: 28px;
-     word-wrap: break-word;
-     max-width: 511px;
+.mmo-info {
+  color: white;
+  position: relative;
+  top: 60px;
+  left: 0%;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+  max-width: 511px;
+}
+@media screen and (max-width: 281px) {
+  .Fm-mmo {
+    margin-top: auto;
+    width: 100%;
+    height: fit-content;
+  }
+  .mmo-images {
+    top: auto;
+    left: 0%;
+    width: 100%;
+  }
+  .mmo-images img {
+    width: 100%;
+    height: 100%;
+  }
+  .mmo-text {
+    top: auto;
+    left: 0%;
+    width: 100%;
+  }
+  .mmo-head {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mmo-head .M {
+    font-size: 12px;
+  }
+  .mmo-head .achine {
+    font-size: 12px;
+  }
+  .mmo-subhead {
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+  }
+  .mmo-info {
+    top: auto;
+    font-size: 10px;
+    line-height: normal;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .Fm-mmo {
+    margin-top: auto;
+    width: 100%;
+    height: fit-content;
+  }
+  .mmo-images {
+    top: auto;
+    left: 0%;
+    width: 100%;
+  }
+  .mmo-images img {
+    width: 100%;
+    height: 100%;
+  }
+  .mmo-text {
+    top: auto;
+    left: 0%;
+    width: 100%;
+  }
+  .mmo-head {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mmo-head .M {
+    font-size: 16px;
+  }
+  .mmo-head .achine {
+    font-size: 16px;
+  }
+  .mmo-subhead {
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+  }
+  .mmo-info {
+    top: 5%;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1025px) {
+  
+  .Fm-mmo {
+    margin-top: auto;
+    width: 100%;
+    height: fit-content;
+  }
+  .mmo-images {
+    top: auto;
+    left: 0%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mmo-images img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  .mmo-text {
+    top: auto;
+    left: 0%;
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .mmo-head {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+  }
+  .mmo-subhead {
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+  }
+  .mmo-info {
+    top: 5%;
+    max-width: auto;
+    line-height: normal;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+  }
 }

@@ -1,362 +1,849 @@
-.future-iot{
-    background-color: black;
-    width: 100%;
-    height: 806px;
-    display: flex;
-    position: relative;
-    
-    
+.future-iot {
+  background-color: black;
+  width: 100%;
+  height: 806px;
+  display: flex;
+  position: relative;
 }
 
-.user-exp{
-    width:552px;
-    height:213px;
-    background-image: url('../IMAGES/user-exp.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    position: absolute;
-    left: -100%; 
-    top: 42%;
-    transform: translate(0, -50%);
-    transition: left 1s ease;
+.user-exp {
+  width: 552px;
+  height: 213px;
+  background-image: url("../IMAGES/user-exp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: absolute;
+  left: -100%;
+  top: 42%;
+  transform: translate(0, -50%);
+  transition: left 1s ease;
 }
-
 
 .user-exp-content,
 .hover-content,
 .oper-eff-content,
 .smart-city-content,
 .seam-integ-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-exp-head {
+  width: 322px;
+  height: 87px;
+  left: 10%;
+  top: 52px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.hover-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.user-exp:hover .user-exp-content {
+  opacity: 0;
+}
+
+.user-exp:hover .hover-content {
+  opacity: 1;
+}
+
+.oper-eff:hover .oper-eff-content {
+  opacity: 0;
+}
+
+.oper-eff:hover .hover-content {
+  opacity: 1;
+}
+
+.smart-city:hover .smart-city-content {
+  opacity: 0;
+}
+
+.smart-city:hover .hover-content {
+  opacity: 1;
+}
+
+.seam-integ:hover .seam-integ-content {
+  opacity: 0;
+}
+
+.seam-integ:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-info {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  position: absolute;
+  left: 10%;
+  max-width: 450px;
+}
+
+.user-exp-cube1 {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+}
+
+.user-exp-cube2 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 90%;
+  top: 70%;
+}
+
+.user-exp-cube-hover1 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 90%;
+  top: 70%;
+}
+
+.oper-eff {
+  width: 272px;
+  height: 235px;
+  background-image: url("../IMAGES/oper-eff.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: absolute;
+  left: -100%;
+  top: 71.5%;
+  transform: translate(0, -50%);
+  transition: left 1s ease;
+}
+
+.oper-eff-head,
+.smart-city-head {
+  width: 172.62px;
+  height: 63.99px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  left: 17%;
+  top: 35%;
+  position: absolute;
+}
+
+.hover-info2 {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  position: absolute;
+  left: 10%;
+  max-width: 220px;
+}
+
+.hover-info3 {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  position: absolute;
+  left: 10%;
+  max-width: 230px;
+}
+
+.oper-eff-cube1,
+.smart-city-cube1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 65%;
+  top: 1%;
+}
+
+.oper-eff-cube2,
+.smart-city-cube2 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 57%;
+  top: 10%;
+}
+
+.oper-eff-cube3,
+.smart-city-cube3 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 78%;
+  top: 35%;
+}
+
+.oper-eff-cube-hover1,
+.smart-city-cube-hover1 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0.4%;
+  top: 70%;
+}
+
+.smart-city {
+  width: 272px;
+  height: 235px;
+  background-image: url("../IMAGES/smart-city.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: absolute;
+  right: -200%;
+  top: 71.5%;
+  transform: translate(0, -50%);
+  transition: right 1s ease;
+}
+
+.seam-integ {
+  width: 258px;
+  height: 457px;
+  background-image: url("../IMAGES/seam-integ.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: absolute;
+  right: -200%;
+  top: 57.8%;
+  transform: translate(0, -50%);
+  transition: right 1s ease;
+}
+
+.seam-integ-head {
+  width: 197.25px;
+  height: 58px;
+  left: 10%;
+  top: 190px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.hover-info4 {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  max-width: 180px;
+  text-align: center;
+  line-height: 150%;
+}
+
+.seam-integ-cube1 {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.seam-integ-cube2 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 7%;
+  top: 35%;
+}
+
+.seam-integ-cube3 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 41%;
+  top: 22%;
+}
+
+.seam-integ-cube-hover1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 75%;
+  top: 1%;
+}
+
+.seam-integ-cube-hover2 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 82%;
+  top: 6%;
+}
+
+.seam-integ-cube-hover3 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 1%;
+  top: 85%;
+}
+
+.seam-integ-cube-hover4 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 5%;
+  top: 92%;
+}
+
+.future-iot-text {
+  color: white;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 800;
+  position: absolute;
+  /*top: -10%;
+    left:45%;
+    animation: slideDown 2s forwards;*/
+  opacity: 0;
+}
+
+.future-iot-head {
+  color: white;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 800;
+}
+
+.future-iot-subhead {
+  color: white;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  left: -36%;
+  max-width: 720px;
+}
+
+@keyframes slideDown {
+  to {
+    top: 6%;
+    opacity: 1;
+  }
+}
+
+.slideDown {
+  top: -20%;
+  left: 43.8%;
+  animation: slideDown 2s forwards;
+}
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .future-iot {
+    height: 700px;
+  }
+  .future-iot-text {
+    width: 100%;
+    justify-items: center;
+  }
+  .future-iot-head {
+    font-size: 43.75%;
+    width: fit-content;
+    justify-self: center;
+    left: 40%;
+  }
+  .future-iot-subhead {
+    font-size: 37.5%;
+    justify-self: center;
+    width: 90%;
+    left: 0%;
+  }
+  .slideDown {
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #user-exp-div {
+    width: 60%;
+    height: 25%;
+    left: 0% !important;
+  }
+  .user-exp-head {
+    font-size: 87.5%;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0%;
+  }
+  .user-exp-cube1 {
+    width: 50%;
+    height: 50%;
+    left: 45%;
+    top: 40%;
+  }
+  .user-exp-cube2 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+  }
+  .hover-info {
+    font-size: 75%;
+    top: 10%;
+    text-align: center;
+    left: 0%;
+  }
+  .user-exp-cube-hover1 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+    top: 82%;
+  }
+  #seam-integ-div {
+    width: 38%;
+    height: 50%;
+    left: 62%;
+    top: 55%;
+  }
+  .seam-integ-head {
+    font-size: 87.5%;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.user-exp-head{
-    width: 322px;
-    height: 87px; 
-    left: 10%; 
-    top: 52px; 
-    position: absolute; 
-    text-align: center; 
-    color: white; 
-    font-size: 24px; 
-    font-family: Inter; 
-    font-weight: 700;
-}
-
-.hover-content{
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.user-exp:hover .user-exp-content {
-    opacity: 0;
-}
-
-.user-exp:hover .hover-content {
-    opacity: 1;
-}
-
-.oper-eff:hover .oper-eff-content {
-    opacity: 0;
-}
-
-.oper-eff:hover .hover-content {
-    opacity: 1;
-}
-
-.smart-city:hover .smart-city-content {
-    opacity: 0;
-}
-
-.smart-city:hover .hover-content {
-    opacity: 1;
-}
-
-.seam-integ:hover .seam-integ-content {
-    opacity: 0;
-}
-
-.seam-integ:hover .hover-content {
-    opacity: 1;
-}
-
-.hover-info{
-    color: white;
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info4 {
     position: absolute;
-    left:10%;
-    max-width: 450px;
+    font-size: 75%;
+    top: 10%;
+    text-align: center;
+    left: 0%;
+  }
+  .seam-integ-cube3 {
+    left: 65%;
+  }
+  #oper-eff-div {
+    width: 28%;
+    height: 25%;
+    left: 0% !important;
+    top: 68%;
+  }
+  .oper-eff-head {
+    font-size: 87.5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info2 {
+    font-size: 70%;
+    text-align: center;
+    left: 0%;
+  }
 
-}
-
-.user-exp-cube1{
-    width:145px;
-    height: 145px;
+  .oper-eff-cube1,
+  .smart-city-cube1 {
+    width: 40%;
+    height: 40%;
     position: absolute;
-    left:70%;
-    top:30%;
-}
-
-.user-exp-cube2{
-    width:55px;
-    height: 55px;
+    left: 35%;
+    top: 1%;
+  }
+  .oper-eff-cube2,
+  .smart-city-cube2 {
+    width: 17%;
+    height: 17%;
     position: absolute;
-    left:90%;
-    top:70%;
-}
-
-.user-exp-cube-hover1{
-    width:55px;
-    height: 55px;
+    left: 25%;
+    top: 10%;
+  }
+  .oper-eff-cube3,
+  .smart-city-cube3 {
+    width: 17%;
+    height: 17%;
     position: absolute;
-    left:90%;
-    top:70%;
-}
-
-
-.oper-eff{
-    width:272px;
-    height:235px;
-    background-image: url('../IMAGES/oper-eff.png');
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    position: absolute;
-    left: -100%; 
-    top: 71.5%;
-    transform: translate(0, -50%);
-    transition: left 1s ease;
-}
-
-.oper-eff-head,
-.smart-city-head{
-    width: 172.62px;
-    height: 63.99px; 
-    text-align: center; 
-    color: white; 
-    font-size: 24px; 
-    font-family: Inter; 
-    font-weight: 700;
-    left: 17%; 
-    top: 35%; 
-    position: absolute;
-    
-}
-
-.hover-info2{
-    color: white;
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    position: absolute;
-    left:10%;
-    max-width: 220px;
-}
-
-.hover-info3{
-    color: white;
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    position: absolute;
-    left:10%;
-    max-width: 230px;
-}
-
-.oper-eff-cube1,
-.smart-city-cube1{
-    width:100px;
-    height: 100px;
-    position: absolute;
-    left:65%;
-    top:1%;
-}
-
-.oper-eff-cube2,
-.smart-city-cube2{
-    width:45px;
-    height: 45px;
-    position: absolute;
-    left:57%;
-    top:10%;
-}
-
-.oper-eff-cube3,
-.smart-city-cube3{
-    width:45px;
-    height: 45px;
-    position: absolute;
-    left:78%;
-    top:35%;
-}
-
-.oper-eff-cube-hover1,
-.smart-city-cube-hover1{
-    width:80px;
-    height: 80px;
-    position: absolute;
-    left:0.4%;
-    top:70%;
-}
-
-.smart-city{
-    width:272px;
-    height:235px;
-    background-image: url('../IMAGES/smart-city.png');
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    position: absolute;
-    right:-200%; 
-    top: 71.5%;
-    transform: translate(0, -50%);
-    transition: right 1s ease;
-    
-}
-
-.seam-integ{
-    width:258px;
-    height:457px;
-    background-image: url('../IMAGES/seam-integ.png');
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    position: absolute;
-    right:-200%; 
-    top:57.8%;
-    transform: translate(0, -50%);
-    transition: right 1s ease;
-    
-}
-
-.seam-integ-head{
-    width: 197.25px; 
-    height: 58px; 
-    left: 10%; 
-    top: 190px; 
-    position: absolute; 
-    text-align: center; 
-    color: white; 
-    font-size: 24px; 
-    font-family: Inter; 
-    font-weight: 700;
-}
-
-.hover-info4{
-    color: white;
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    position: absolute;
-    left:15%;
+    left: 70%;
     top: 15%;
-    max-width: 180px;
+  }
+  .oper-eff-cube-hover1,
+  .smart-city-cube-hover1 {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 0.4%;
+    top: 70%;
+  }
+  #smart-city-div {
+    width: 28%;
+    height: 25%;
+    top: 68%;
+  }
+  .smart-city-head {
+    font-size: 87.5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info3 {
+    font-size: 70%;
     text-align: center;
-    line-height: 150%;
+    left: 0%;
+  }
 }
+@media screen and (max-width: 281px) {
+  .future-iot {
+    height: 700px;
+  }
+  .future-iot-text {
+    width: 100%;
+    justify-items: center;
+  }
+  .future-iot-head {
+    font-size: 43.75%;
+    width: fit-content;
+    justify-self: center;
+    left: 40%;
+  }
+  .future-iot-subhead {
+    font-size: 37.5%;
+    justify-self: center;
+    width: 90%;
+    left: 0%;
+  }
+  .slideDown {
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.seam-integ-cube1{
-    width:115px;
-    height: 115px;
-    position: absolute;
-    left:10%;
-    top:20%;
-}
-
-.seam-integ-cube2{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:7%;
-    top:35%;
-}
-
-.seam-integ-cube3{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:41%;
-    top:22%;
-}
-
-.seam-integ-cube-hover1{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:75%;
-    top:1%;
-}
-
-.seam-integ-cube-hover2{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:82%;
-    top:6%;
-}
-
-.seam-integ-cube-hover3{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:1%;
-    top:85%;
-}
-
-.seam-integ-cube-hover4{
-    width:32px;
-    height: 32px;
-    position: absolute;
-    left:5%;
-    top:92%;
-}
-
-.future-iot-text{
-    color: white;
-    font-size: 32px;
-    font-family: Poppins;
-    font-weight: 800;
-    position: absolute;
-    /*top: -10%;
-    left:45%;
-    animation: slideDown 2s forwards;*/
-    opacity: 0;
-}
-
-.future-iot-head{
-    color: white;
-    font-size: 32px;
-    font-family: Poppins;
-    font-weight: 800;
-}
-
-.future-iot-subhead{
-    color: white;
-    font-size: 14px;
-    font-family: Montserrat;
-    font-weight: 300;
+  #user-exp-div {
+    width: 60%;
+    height: 25%;
+    left: 0% !important;
+    margin-top: 20%;
+  }
+  .user-exp-head {
+    font-size: 75%;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0%;
+  }
+  .user-exp-cube1 {
+    width: 50%;
+    height: 50%;
+    left: 45%;
+    top: 40%;
+  }
+  .user-exp-cube2 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+  }
+  .hover-info {
+    font-size: 50%;
+    top: 30%;
     text-align: center;
-    position: relative;
-    left:-36%;
-    max-width: 720px;
-}
 
-@keyframes slideDown {
-to {
-    top: 6%;
-    opacity: 1;
-}
-}
+    left: 0%;
+  }
+  .user-exp-cube-hover1 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+    top: 82%;
+  }
+  #seam-integ-div {
+    width: 38%;
+    height: 50%;
+    left: 62%;
+    top: 55%;
+    margin-top: 20%;
+  }
+  .seam-integ-head {
+    font-size: 75%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info4 {
+    font-size: 50%;
+    top: 30%;
+    text-align: center;
+    left: 0%;
+  }
+  .seam-integ-cube1 {
+    height: 25%;
+    width: 50%;
+    left: auto;
+  }
+  .seam-integ-cube3 {
+    left: 65%;
+  }
+  #oper-eff-div {
+    width: 28%;
+    height: 25%;
+    left: 0% !important;
+    top: 68%;
+    margin-top: 20%;
+  }
+  .oper-eff-head {
+    font-size: 75%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info2 {
+    font-size: 50%;
+    text-align: center;
+    left: 0%;
+  }
 
-.slideDown{
-    top: -20%;
-    left:43.8%;
-    animation: slideDown 2s forwards;
+  .oper-eff-cube1,
+  .smart-city-cube1 {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 35%;
+    top: 1%;
+  }
+  .oper-eff-cube2,
+  .smart-city-cube2 {
+    width: 17%;
+    height: 17%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+  }
+  .oper-eff-cube3,
+  .smart-city-cube3 {
+    width: 17%;
+    height: 17%;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+  }
+  .oper-eff-cube-hover1,
+  .smart-city-cube-hover1 {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 0.4%;
+    top: 70%;
+  }
+  #smart-city-div {
+    width: 28%;
+    height: 25%;
+    top: 68%;
+    margin-top: 20%;
+  }
+  .smart-city-head {
+    font-size: 75%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info3 {
+    font-size: 50%;
+    text-align: center;
+    left: 0%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .future-iot-text {
+    width: 100%;
+    justify-items: center;
+  }
+  .future-iot-head {
+    width: fit-content;
+    justify-self: center;
+    left: 40%;
+  }
+  .future-iot-subhead {
+    justify-self: center;
+    width: 90%;
+    left: 0%;
+  }
+  .slideDown {
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #user-exp-div {
+    width: 60%;
+    max-width: 500px;
+    height: 25%;
+    left: 0% !important;
+  }
+  .user-exp-head {
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 0%;
+  }
+  .user-exp-cube1 {
+    width: 50%;
+    height: 50%;
+    left: 45%;
+    top: 40%;
+  }
+  .user-exp-cube2 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+  }
+  .hover-info {
+    top: 10%;
+    text-align: center;
+    left: 0%;
+  }
+  .user-exp-cube-hover1 {
+    width: 20%;
+    height: 20%;
+    left: 80%;
+    top: 82%;
+  }
+  #seam-integ-div {
+    width: 38%;
+    max-width: 300px;
+    height: 50%;
+    left: 62%;
+    top: 55%;
+  }
+  .seam-integ-head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: auto;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+  }
+  .hover-info4 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    text-align: center;
+  }
+  .seam-integ-cube3 {
+    left: 65%;
+  }
+  #oper-eff-div {
+    width: 28%;
+    max-width: 230px;
+    height: 25%;
+    left: 0% !important;
+    top: 68%;
+  }
+  .oper-eff-head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info2 {
+    text-align: center;
+    left: 0%;
+  }
+
+  .oper-eff-cube1,
+  .smart-city-cube1 {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 35%;
+    top: 1%;
+  }
+  .oper-eff-cube2,
+  .smart-city-cube2 {
+    width: 17%;
+    height: 17%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+  }
+  .oper-eff-cube3,
+  .smart-city-cube3 {
+    width: 17%;
+    height: 17%;
+    position: absolute;
+    left: 70%;
+    top: 15%;
+  }
+  .oper-eff-cube-hover1,
+  .smart-city-cube-hover1 {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 0.4%;
+    top: 70%;
+  }
+  #smart-city-div {
+    width: 28%;
+    max-width: 230px;
+    height: 25%;
+    top: 68%;
+  }
+  .smart-city-head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+  }
+  .hover-info3 {
+    text-align: center;
+    left: 0%;
+  }
+  @media screen and (min-width: 810px) and (max-width: 1000px) {
+    #user-exp-div {
+      left: auto;
+    }
+  }
 }
