@@ -286,6 +286,58 @@ body {
 
 }
 
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    .landing-bg{
+        display: flex;
+        align-items: center;
+        height: 350px;
+    }
+    .expert-box{
+        top: auto;
+    }
+    .expert-info h1{
+        font-size: 18px !important;
+    }
 
+    .expert-info p{
+        font-size: 12px !important;
+    }
+    /* end of first section */
+    /* choose us section */
+    .chooseus-head{
+        height: fit-content;
+    }
+    .chooseus-head h1{
+        font-size: 100%;
+    }
+    .chooseus-txt{
+        width: 45%;
+    }
+    .chooseus-txt h4{
+        margin-top: auto;
+        font-size: 12px;
+    }
+    .chooseus-container{
+        height: 400px;
+    }
+    .curve-1{
+        height: 400px;
+        bottom: auto;
+    }
+    .curve-2{
+        height: 450px;
+        bottom: auto;
+    }
+    .curve-3{
+        height: 500px;
+        bottom: auto;
+    }
+    .ball{
+        height: 200px;
+        width: 100px;
+        right: -20%;
+    }
+
+}
 
     

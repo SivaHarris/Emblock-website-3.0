@@ -1041,3 +1041,176 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 120%;
   flex-shrink: 0;
 }
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .form-container {
+    height: 700px;
+  }
+  .landingPageServicesInputContainer {
+    width: 55%;
+    height: 24%;
+  }
+  .landingPageProductsInputContainer {
+    width: 60%;
+    height: 24%;
+  }
+  .LandingPageSlide-container {
+    width: 80%;
+    left: 10%;
+  }
+  .landingPageFormTitle {
+    font-size: 16px;
+  }
+  .enterUrInfo {
+    font-size: 14px;
+  }
+  .enterUrInfoName {
+    font-size: 12px;
+  }
+  .landingPageFormName {
+    font-size: 12px;
+  }
+  .enterUrInfoContact {
+    font-size: 12px;
+    width: 50px;
+    top: 48%;
+  }
+  .landingPageFormContactNo {
+    font-size: 12px;
+  }
+  .enterUrInfoEmail {
+    font-size: 12px;
+  }
+  .landingPageFormEmail {
+    font-size: 12px;
+  }
+  .landingPageFormFirstNextBtn {
+    width: 25%;
+    height: 7%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  /* second form */
+  #landingPageFormSectionVariant2 .enterUrCompanyInfo {
+    font-size: 14px;
+  }
+  #landingPageFormSectionVariant2 .enterUrCompanyName {
+    font-size: 12px;
+    left: 12%;
+  }
+  #landingPageFormSectionVariant2 .landingPageFormCompanyName {
+    font-size: 12px;
+  }
+  #landingPageFormSectionVariant2 .enterUrStageOfProject {
+    font-size: 12px;
+    left: 12%;
+    width: 30%;
+  }
+  #landingPageFormSectionVariant2 .enterUrInfoSubject {
+    font-size: 12px;
+    left: 12%;
+  }
+  #landingPageFormSectionVariant2 .landingPageFormSubject {
+    font-size: 12px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .landingPageFormSecondNextBtn {
+    width: 25%;
+    height: 7%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  .landingPageFormSecondBackBtn {
+    width: 25%;
+    height: 7%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  /* 3rd section starts here */
+  #landingPageFormSectionVariant3 .landingPageServices {
+    font-size: 12px;
+    left: 5%;
+  }
+  .landingPageServicesInputContainer > div {
+    font-size: 12px;
+  }
+  .landingPageProducts {
+    font-size: 12px;
+    left: 5%;
+  }
+  .landingPageProductsInputContainer > div {
+    font-size: 12px;
+  }
+  #landingPageFormSectionVariant3 .landingPageFormSecondNextBtn {
+    width: 25%;
+    height: 7%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  #landingPageFormSectionVariant3 .landingPageFormSecondBackBtn {
+    width: 25%;
+    height: 7%;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+  /* section 4  */
+  #landingPageFormSection4 .landingPageFormTitle {
+    font-size: 16px;
+  }
+  #landingPageFormSection4 .enterPlanMeeting {
+    font-size: 14px;
+  }
+  .inputPlanMeetingContainer {
+    left: 15%;
+    font-size: 12px;
+  }
+  #landingPageFormSection4 .enterDate {
+    font-size: 12px;
+  }
+  .landingPageFormMeetingDate{
+    font-size: 12px;
+    width: 50%;
+    left: 32%;
+  }
+  #LandingPageChooseDate{
+    left: 70%;
+  }
+  .calendar{
+    top: -10%;
+    width: 200px;
+    height: fit-content;
+  }
+  .controls{
+    width: 200px;
+    top: -25%;
+  }
+  #landingPageFormSection4 .enterTime {
+    font-size: 12px;
+  }
+  .landingPageFormMeetingTime{
+    font-size: 12px;
+    width: 50%;
+    left: 32%;
+  }
+  .landingPageClockInputmain-container{
+    width: 200px;
+    height: 200px;
+  }
+  #LandingPageChooseTime{
+    left: 70%;
+  }
+  .landingPageFormAnyOtherQuestions {
+    font-size: 12px;
+  }
+  .landingPageFormAnyOtherQuestionsInput {
+    font-size: 12px;
+  }
+  /* section 5 starts */
+  #landingPageFormSection5 .landingPageFormTitle {
+    font-size: 16px;
+  }
+  #landingPageFormSection5 .enterRecordedMsg{
+    font-size: 20px;
+  }
+}
