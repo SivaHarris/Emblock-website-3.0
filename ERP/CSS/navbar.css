@@ -27,6 +27,7 @@
     position: relative;
     padding: 0;
     display: flex;
+    display: none !important;
     justify-content: space-around;
 }
 .navbar{
