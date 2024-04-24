@@ -721,7 +721,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 39px;
   display: grid;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 #LandingPageChooseDate img {
   background-size: cover;
@@ -743,7 +743,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: cover;
   align-self: center;
   justify-self: center;
-  z-index: 2;
+  z-index: -1;
   cursor: pointer;
 }
 #landingPageFormSection4 .enterTime {
@@ -930,7 +930,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-top-right-radius: 5px;
   overflow: hidden;
   position: absolute;
-  top: 0%;
+  top: -10%;
   opacity: 0;
   z-index: 3;
 }
@@ -1099,6 +1099,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   #landingPageFormSectionVariant2 .landingPageFormCompanyName {
     font-size: 12px;
+    left: 45%;
   }
   #landingPageFormSectionVariant2 .enterUrStageOfProject {
     font-size: 12px;
@@ -1111,6 +1112,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   #landingPageFormSectionVariant2 .landingPageFormSubject {
     font-size: 12px;
+    left: 45%;
+  }
+  .radioInputNewProject {
+    left: 41%;
+  }
+  .radioInputAddOn {
+    left: 41%;
+  }
+  .radioInputMaintenance {
+    left: 41%;
   }
   label {
     font-size: 12px;
@@ -1168,36 +1179,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   #landingPageFormSection4 .enterDate {
     font-size: 12px;
   }
-  .landingPageFormMeetingDate{
+  .landingPageFormMeetingDate {
     font-size: 12px;
     width: 50%;
     left: 32%;
   }
-  #LandingPageChooseDate{
+  #LandingPageChooseDate {
     left: 70%;
   }
-  .calendar{
-    top: -10%;
+  .calendar {
+    top: -5%;
     width: 200px;
     height: fit-content;
   }
-  .controls{
+  .controls {
     width: 200px;
-    top: -25%;
+    top: -50%;
   }
+
   #landingPageFormSection4 .enterTime {
     font-size: 12px;
   }
-  .landingPageFormMeetingTime{
+  .landingPageFormMeetingTime {
     font-size: 12px;
     width: 50%;
     left: 32%;
   }
-  .landingPageClockInputmain-container{
+  .landingPageClockInputmain-container {
     width: 200px;
     height: 200px;
   }
-  #LandingPageChooseTime{
+  #LandingPageChooseTime {
     left: 70%;
   }
   .landingPageFormAnyOtherQuestions {
@@ -1210,7 +1222,199 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   #landingPageFormSection5 .landingPageFormTitle {
     font-size: 16px;
   }
-  #landingPageFormSection5 .enterRecordedMsg{
+  #landingPageFormSection5 .enterRecordedMsg {
     font-size: 20px;
+  }
+  .landingPageFormNavLineContainer {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer2 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer2 #landingPageFormNavLineFill {
+    left: auto;
+  }
+  .landingPageFormNavLineContainer3 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer3 #landingPageFormNavLineFill {
+    left: auto;
+  }
+  .landingPageFormNavLineContainer4 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer4 #landingPageFormNavLineFill {
+    margin-left: -33.1%;
+  }
+
+  #landingPageFormNavFirstCircle {
+    left: 0%;
+  }
+  #landingPageFormNavSecondCircle {
+    left: 33%;
+  }
+  #landingPageFormNavThirdCircle {
+    left: 66%;
+  }
+  #landingPageFormNavFourthCircle {
+    left: 95%;
+  }
+}
+/* for tab view */
+@media screen and (min-width: 750px) and (max-width: 1290px) {
+  .form-container {
+    height: 700px;
+  }
+  .landingPageServicesInputContainer {
+    width: 55%;
+    height: 24%;
+  }
+  .landingPageProductsInputContainer {
+    width: 60%;
+    height: 24%;
+  }
+  .LandingPageSlide-container {
+    width: 70%;
+    left: 15%;
+  }
+  .enterUrInfoContact {
+    top: 45%;
+    width: min-content;
+  }
+  .landingPageFormName {
+    width: 300px;
+  }
+  .landingPageFormContactNo {
+    width: 300px;
+  }
+  .landingPageFormEmail {
+    width: 300px;
+  }
+  /* second form */
+  #landingPageFormSectionVariant2 .enterUrCompanyName {
+    left: 12%;
+  }
+  #landingPageFormSectionVariant2 .landingPageFormCompanyName {
+    left: 45%;
+  }
+  #landingPageFormSectionVariant2 .enterUrStageOfProject {
+    left: 12%;
+    width: 30%;
+  }
+  #landingPageFormSectionVariant2 .enterUrInfoSubject {
+    left: 12%;
+  }
+  #landingPageFormSectionVariant2 .landingPageFormSubject {
+    left: 45%;
+  }
+  .radioInputNewProject {
+    left: 43%;
+  }
+  .radioInputAddOn {
+    left: 43%;
+  }
+  .radioInputMaintenance {
+    left: 43%;
+  }
+  .landingPageFormSecondNextBtn{
+    font-size: 100%;
+  }
+  .landingPageFormSecondBackBtn{
+    font-size: 100%;
+  }
+  /* 3rd section starts here */
+  #landingPageFormSectionVariant3 .landingPageServices {
+    left: 5%;
+  }
+  .landingPageProducts {
+    left: 5%;
+  }
+  #landingPageFormSectionVariant3 .landingPageFormSecondNextBtn {
+    font-size: 100%;
+  }
+  #landingPageFormSectionVariant3 .landingPageFormSecondBackBtn {
+    font-size: 100%;
+  }
+  /* section 4  */
+  .inputPlanMeetingContainer {
+    left: 15%;
+  }
+  .landingPageFormFirstNextBtn{
+    font-size: 100%;
+  }
+  .landingPageFormMeetingDate {
+    width: 50%;
+    left: 32%;
+  }
+  #LandingPageChooseDate {
+    left: 70%;
+  }
+  .calendar {
+    top: -5%;
+    height: fit-content;
+  }
+  .controls {
+    top: -50%;
+  }
+  .landingPageFormMeetingTime {
+    width: 50%;
+    left: 32%;
+  }
+  .landingPageClockInputmain-container {
+    height: 200px;
+  }
+  #LandingPageChooseTime {
+    left: 70%;
+  }
+  /* navline container */
+  .landingPageFormNavLineContainer {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer2 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer2 #landingPageFormNavLineFill {
+    left: auto;
+  }
+  .landingPageFormNavLineContainer3 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer3 #landingPageFormNavLineFill {
+    left: auto;
+  }
+  .landingPageFormNavLineContainer4 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landingPageFormNavLineContainer4 #landingPageFormNavLineFill {
+    margin-left: -33.1%;
+  }
+
+  #landingPageFormNavFirstCircle {
+    left: 0%;
+  }
+  #landingPageFormNavSecondCircle {
+    left: 33%;
+  }
+  #landingPageFormNavThirdCircle {
+    left: 66%;
+  }
+  #landingPageFormNavFourthCircle {
+    left: 95%;
   }
 }
