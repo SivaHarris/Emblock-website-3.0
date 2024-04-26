@@ -15,6 +15,7 @@ body{
     display: flex;
     background-color: #161616 !important;
     position: relative;
+    overflow: hidden;
 }
 
 @keyframes changeBrightness {
@@ -83,17 +84,17 @@ body{
 }
 
 .arrow-slide{
-    height: 75%;
-    width: 75%;
-    padding-bottom: 12.5%;
+    height: 100%;
+    width: 85%;
+    padding-bottom: 3px;
 }
 
 
 .indicators {
     text-align: center;
     position: absolute;
-    bottom: 20%;
-    left: 26%;
+    bottom: 10%;
+    left: 22%;
 }
 
 .indicator {
@@ -111,11 +112,11 @@ body{
 }
 
 .but-container{
-    height: 10%;
+    height:40px;
     position: absolute;
-    left: 42%;
+    left: 41%;
     bottom: 5%;
-    width: 20%;
+    width:185px;
 }
 
 
@@ -200,7 +201,7 @@ font-size: 140%;
 font-weight: 500;
 text-align: center;
 padding-top: 2%;
-padding-right: 15%;
+padding-right: 10%;
 color: #BBB7B7; 
 }
 
@@ -248,7 +249,7 @@ margin-bottom: 0;
 
    .head-box{
     height: 100%;
-    width: 14%;
+    width: 18%;
     display: flex;
    }
 
@@ -270,7 +271,7 @@ margin-bottom: 0;
    font-weight: 600;
   text-align: center;
   color: #fff;
-  padding-top: 4%;
+  padding-top:10px;
    }
 
 
@@ -287,7 +288,7 @@ margin-bottom: 0;
 
    .ben-head-box{
     height: 100%;
-    width: 10%;
+    width: 11%;
     display: flex;
    }
 
@@ -304,7 +305,7 @@ margin-bottom: 0;
    font-weight: 400;
   text-align: center;
   color: #fff;
-  padding-top: 7%;
+  padding-top:10px;
    }
 
 
@@ -327,6 +328,7 @@ margin-bottom: 0;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .left-line{
@@ -353,6 +355,17 @@ margin-bottom: 0;
     transform: rotateY(180deg);
 }
 
+.blue-circle{
+    display: none;
+    width: 110%;
+    height: 142%;
+    border-radius:50%;
+    position: absolute;
+    top: 38%;
+    left: -5%;
+    background-color: #345871;
+}
+
 .ben-container:hover .right-line{
     display: block;
 }
@@ -366,7 +379,10 @@ margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
+
+
 
 .ben-img img{
     height: 100%;
@@ -452,3 +468,466 @@ margin-bottom: 0;
     font-weight: 300;
     text-align: center;   
 }
+
+.ben-txt-2{
+    font-size: 115%;
+}
+
+
+
+/* Media querry... */
+
+
+@media(max-width:1100px){
+
+    .ben-head-box{
+        width: 12%;
+    }
+    .ben-head-box-2 h1{
+        font-size: 140%;
+        padding-top: 12px;
+    }
+
+        /* Benefits container */
+
+        .ben-container{
+            height:750px;
+        }
+    
+        .ben-info-head{
+            font-size: 140%;
+        }
+    
+        .ben-info-txt{
+            font-size: 90%;
+        }
+
+    /* Application Head */
+
+    .head-box{
+        width: 20%;
+    }
+
+    .head-box-2 h1{
+        font-size: 140%;
+    }
+
+    /* Application slide */
+
+    .drone-app-container{
+        height: 650px;
+    }
+
+    .slide-head h1{
+        font-size: 180%;
+    }
+
+    .slide-sub-head-1{
+        font-size: 120%;
+    }
+
+
+    .slide-sub-head-2{
+        font-size: 130%;
+    }
+
+    .slide-info-font{
+        font-size: 110%;
+    }
+}
+
+
+
+@media(max-width:900px){
+
+    .benifits-head{
+        height: 40px;
+    }
+    .ben-head-box{
+        width: 12%;
+    }
+    .ben-head-box-2 h1{
+        font-size: 110%;
+        padding-top: 11px;
+    }
+
+
+    /* Benefits container */
+
+    .ben-container{
+        height:700px;
+    }
+        
+    .ben-info-head{
+        font-size: 120%;
+    }
+    
+    .ben-info-txt{
+        font-size: 70%;
+    }
+
+    .ben-img{
+        width: 35%;
+    }
+
+    /* Application Head */
+
+    .App-head{
+        height: 40px;
+    }
+
+    .head-box{
+        width: 20%;
+    }
+    
+    .head-box-2 h1{
+        font-size: 120%;
+    }
+
+    /* Application slide */
+
+    .drone-app-container{
+        height: 550px;
+    }
+
+    .slide-head h1{
+        font-size: 160%;
+    }
+
+    .slide-sub-head-1{
+        font-size: 110%;
+        padding-left: 18%;
+    }
+
+
+    .slide-sub-head-2{
+        font-size: 120%;
+    }
+
+    .slide-info-font{
+        font-size: 100%;
+    }
+
+    .but-container{
+        width: 150px;
+        left: 38%;
+    }
+
+    .indicator{
+        width: 13px;
+        height: 13px;
+        margin: 0 8px;
+    }
+
+    .ul-container{
+        margin-left: 21%;
+    }
+
+}
+
+
+
+
+@media(max-width:750px){
+
+    .benifits-head{
+        height: 40px;
+    }
+
+    .ben-head-box{
+        width: 12%;
+    }
+    .ben-head-box-2 h1{
+        font-size: 90%;
+        padding-top: 11px;
+    }
+
+    
+    /* Benefits container */
+
+    .ben-container{
+        height:650px;
+        margin-top: 0px;
+    }
+
+    .ben-info-head{
+        font-size: 110%;
+    }
+
+    .ben-info-txt{
+        font-size: 75%;
+    }
+
+    .ben-info-1,.ben-info-2,.ben-info-3,.ben-info-4,.ben-info-5{
+        width: 40%;
+    }
+
+    .left-line,.right-line{
+        width: 25%;
+    }
+
+
+    .ben-img{
+        width: 40%;
+    }
+
+    /* Application Head */
+
+    
+    .head-box{
+        width: 22%;
+    }
+        
+    .head-box-2 h1{
+        font-size: 100%;
+    }
+
+
+    /* Application slide */
+
+    .drone-app-container{
+        height: 500px;
+    }
+
+    .slide-head h1{
+        font-size: 140%;
+    }
+
+    .slide-sub-head-1{
+        font-size: 100%;
+        padding-left: 0%;
+    }
+
+
+    .slide-sub-head-2{
+        font-size: 110%;
+        padding-right: 0;
+        margin-left: 10%;
+    }
+
+    .slide-info-font{
+        font-size: 90%;
+    }
+
+    .ul-container{
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .ul-container-right{
+        width: 90%;
+    }
+
+    .but-container{
+        left: 34%;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .benifits-head{
+        height: 30px;
+    }
+
+    .ben-head-box{
+        width: 16%;
+    }
+    .ben-head-box-2 h1{
+        font-size: 80%;
+        padding-top: 8.5px;
+    }
+
+    /* Benefits Container */
+
+    .ben-container{
+        height:600px;
+        gap: 2%;
+    }
+
+    .ben-img-box{
+        height: 80%;
+    }
+
+
+    .ben-info-head{
+        font-size: 90%;
+    }
+
+    .ben-info-txt{
+        font-size: 65%;
+    }
+
+    .ben-info-1,.ben-info-2,.ben-info-3,.ben-info-4,.ben-info-5{
+        width: 45%;
+    }
+
+    .ben-img{
+        width: 70%;
+    }
+
+    .left-line,.right-line{
+        display: none !important;
+    }
+
+    .blue-circle{
+        display: block;
+    }
+
+        /* Application Head */
+
+        .App-head{
+            height: 35px;
+            margin-top: 50px;
+        }
+
+        .head-box{
+            width: 26%;
+        }
+        
+        .head-box-2 h1{
+            font-size: 80%;
+            padding-top:10px;
+        }
+    /* Application slide */
+
+    .drone-app-container{
+        height: 350px;
+    }
+
+    .slide-head h1{
+        font-size: 100%;
+    }
+
+    .slide-sub-head-1{
+        font-size: 70%;
+        padding-left: 0%;
+    }
+
+
+    .slide-sub-head-2{
+        font-size: 80%;
+        padding-right: 0;
+        margin-left: 10%;
+    }
+
+    .slide-info-font{
+        font-size: 60%;
+    }
+
+    .but-container{
+        width: 100px;
+        left: 50%;
+        transform: translate(-50%,-5%);
+    }
+
+    .indicator{
+        width: 9px;
+        height: 9px;
+        margin: 0 4px;
+    }
+
+    .indicators{
+        bottom: 3%;
+    }
+}
+
+
+
+@media(max-width:400px){
+
+    .ben-head-box{
+        width: 18%;
+    }
+    .ben-head-box-2 h1{
+        font-size: 70%;
+        padding-top: 9px;
+    }
+
+    .ben-img{
+        width:80% ;
+    }
+
+    /* Benefits Container */
+
+    .ben-container{
+        height:550px;
+        gap: 2%;
+    }
+    
+    .ben-info-head{
+        font-size: 70%;
+    }
+    
+    .ben-info-txt{
+        font-size: 55%;
+    }
+
+    .blue-circle{
+        top: 45%;
+        height: 132%;
+    }
+
+    
+        /* Application Head */
+
+        .App-head{
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        .head-box{
+            width: 30%;
+        }
+        
+        .head-box-2 h1{
+            font-size: 70%;
+        }
+
+    /* Application slide */
+
+    .drone-app-container{
+        height: 220px;
+    }
+
+    .slide-head h1{
+        font-size: 70%;
+        padding-top: 9px;
+    }
+
+    .slide-sub-head-1{
+        font-size: 50%;
+        padding-left: 0%;
+    }
+
+
+    .slide-sub-head-2{
+        font-size: 50%;
+        padding-right: 0;
+        margin-left: 10%;
+    }
+
+    .slide-info-font{
+        font-size: 45%;
+    }
+
+    .but-container{
+        width: 70px;
+    }
+
+    .indicator{
+        width: 7px;
+        height: 7px;
+        margin: 0 3px;
+    }
+
+    .indicators{
+        bottom: 3%;
+    }
+}
+
+
+
+
+
