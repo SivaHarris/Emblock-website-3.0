@@ -2,34 +2,40 @@
 .offeringsContainer {
   background-image: url("../IMAGES/image\ 200.png");
   width: 100%;
-  height: 533px;
+  height: 550px;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 3%;
   color: white;
 }
 .offeringsHeader {
   text-decoration: underline;
   text-decoration-color: aqua;
-  height: 57px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 10%;
+  width: 100%;
   text-align: center;
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 200%;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  margin-top: 4%;
+  margin-top: 2%;
  
 }
 .offeringsBodyPara {
-  height: 77px;
-  width: 794px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offeringsBodyPara p{
+  width: 60%;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 110%;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -51,6 +57,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
 }
 .offeringsBoxText {
   text-align: center;
@@ -68,12 +75,15 @@
 }
 /* hover functionality end */
 .offeringsHoverBoxArea {
+  height: auto;
+  width: 100%;
   display: grid;
   column-gap: 19px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   grid-template-columns: auto auto auto auto auto;
+  margin-top: 3%;
 }
 
 /* cst-Customer Service transformation */
@@ -125,12 +135,280 @@
 }
 /* gif inside hoverbox */
 .offeringsHoverBoxGif {
-  width: 116px;
-  height: 65px;
+  width: 70%;
+  height: 100%;
   flex-shrink: 0;
   justify-self: center;
 }
 .offeringsHoverBoxGif img {
-  width: 116px;
-  height: 65px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width:1100px){
+
+  .offeringsContainer{
+    height: 500px;
+  }
+
+  .offeringsHeader{
+    font-size: 180%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 95%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:140px;
+    width: 145px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 90%;
+    padding: 8%;
+    width: 146px;
+    height: 75px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:900px){
+
+  .offeringsContainer{
+    height: 450px;
+  }
+
+  .offeringsHeader{
+    font-size: 160%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 85%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:130px;
+    width: 125px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 80%;
+    padding: 0 6%;
+    width: 126px;
+    height: 58px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 8px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size: 8px;
+  }
+}
+
+
+@media (max-width:750px){
+
+  .offeringsContainer{
+    height: 450px;
+  }
+
+  .offeringsHeader{
+    font-size: 130%;
+    height: 8%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 75%;
+    width: 75%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:105px;
+    width: 95px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 70%;
+    padding: 0% 5%;
+    width: 92px;
+    height: 53px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 7px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size: 7px;
+  }
+}
+
+
+@media (max-width:600px){
+
+  .offeringsHoverBoxArea {
+    grid-template-columns: auto auto;
+    column-gap:22px;
+    row-gap: 25px;
+    margin-top: 2%;
+  }
+
+  .mob-pos{
+  position: relative;
+  top: 100px;
+  left: 0;
+  }
+
+  .offeringsContainer{
+    height: 800px;
+    gap:1.5%;
+  }
+
+  .offeringsHeader{
+    font-size: 130%;
+    height: 4%;
+  }
+
+  .offeringsBodyPara{
+    height: 15%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 85%;
+    width: 90%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:170px;
+    width: 140px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 90%;
+    padding: 4% 8%;
+    width: 130px;
+    height: 100px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size: 11px;
+  }
+
+  .offeringsHoverBoxHCM {
+    margin-top: 0px;
+  }
+
+  .offeringsHoverBoxEAI {
+    margin-top: 0px;
+  }
+}
+
+
+@media (max-width:400px){
+
+
+
+  .offeringsContainer{
+    height: 750px;
+    gap:1.5%;
+  }
+
+  .offeringsHeader{
+    font-size: 110%;
+    height: 4%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 70%;
+    width: 90%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:155px;
+    width: 120px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 80%;
+    padding: 4% 8%;
+    width: 115px;
+    height: 100px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size: 10px;
+  }
+
+}
+
+
+@media (max-width:300px){
+
+  .offeringsContainer{
+    height: 700px;
+    gap:1.5%;
+  }
+
+  .offeringsHeader{
+    font-size: 100%;
+    height: 4%;
+  }
+
+  .offeringsBodyPara p{
+    font-size: 65%;
+    width: 90%;
+  }
+
+  .offeringsHoverBoxCST,.offeringsHoverBoxHCM,.offeringsHoverBoxDSCT,.offeringsHoverBoxEAI,.offeringsHoverBoxEPI{
+    height:140px;
+    width: 100px;
+  } 
+
+  
+  .offeringsBoxText{
+    font-size: 70%;
+    padding: 4% 8%;
+    width:100px;
+    height: 90px;
+  }
+
+  .offeringsBoxText:hover{
+    padding: 0;
+    font-size: 9px;
+  }
+
+  .offeringsBoxText:hover .offeringsBoxTextHide{
+    font-size:9px;
+  }
+
 }

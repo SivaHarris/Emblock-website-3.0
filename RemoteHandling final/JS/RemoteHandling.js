@@ -68,8 +68,9 @@ setTimeout(() => {
 
 function changeOpacity() {
     // Get the gif image element
-    var gifImage = document.getElementById('gifImage');
-    var circle = document.getElementById('circleSvg').querySelector('circle');
+    var gifImage = document.getElementById('gifImage2');
+    var divImage = document.getElementById('gifImage1');
+    var circle = document.getElementById('circle');
     var offtext = document.getElementById('OFF');
     var ontext = document.getElementById('ON');
     var onswap = document.getElementById('on-swap');
@@ -78,17 +79,19 @@ function changeOpacity() {
           
           
 
-          if (gifImage.style.opacity === '0') {
-              gifImage.style.opacity = '1';
-              circle.style.fill = '#96002D';
+          if (gifImage.style.display === 'none') {
+              gifImage.style.display = 'block';
+              divImage.style.display='none';
+              circle.style.backgroundColor = '#96002D';
               ontext.style.opacity = '0';
               offtext.style.opacity= '1';
               onswap.style.color= '#928B8B';
               offswap.style.color= 'black';
 
           } else {
-              gifImage.style.opacity = '0';
-              circle.style.fill = '#11606D';
+              gifImage.style.display = 'none';
+              divImage.style.display='block';
+              circle.style.backgroundColor= '#11606D';
               ontext.style.opacity = '1';
               offtext.style.opacity= '0';
               onswap.style.color= 'black';

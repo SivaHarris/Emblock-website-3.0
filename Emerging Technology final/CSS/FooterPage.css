@@ -1040,7 +1040,7 @@ footer{
 
   .contact-4 h3{
     font-size: 40%;
-    padding-top:8%;
+    padding-top:7%;
   }
 
   .footer-copyright{
@@ -1080,10 +1080,11 @@ footer{
   
     .contact-4 h3{
       font-size: 40%;
-      padding-top: 9%;
+      padding-top: 7%;
     }
 
     .contact-green2-box{
+      width: 15%;
       border-radius: 3px;
     }
 

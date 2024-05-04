@@ -18,16 +18,17 @@ body {
   transition: 800ms;
   position: absolute;
   height: 15%;
-  width: 7%;
+  width: 9%;
   display: flex;
-  top: 35%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
   flex-direction: column;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%,-50%);
 }
-/* .rmtHandlingHomeCtrPwrCtr div {
-  padding-left: 15%;
-} */
+
 .rmtHandlingHomeCtrPwrText {
   transition: 700ms;
   color: #7e7e7e;
@@ -40,21 +41,21 @@ body {
   height: 20%;
   width: 100%;
   z-index: 1;
-  padding-left: 25%;
+text-align: center;
 }
 
 .rmtHandlingHomeCtrPwrLogo {
   height: 70%;
   width: 100%;
   cursor: pointer;
-  padding-left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rmtHandlingHomeCtrPwrLogo img {
   background-color: none;
-  height: 93%;
-  width: 70%;
-  padding-top: 5%;
-  padding-left: 2.5%;
+  height: 90%;
+  width: 55px;
 }
 
 .rmtHandlingHomeCtrTxtSection {
@@ -62,7 +63,7 @@ body {
   height: 30%;
   color: #fff;
   position: absolute;
-  left: -50%;
+  left: -100%;
   top: 38%;
   z-index: 0;
   transition: 500ms;
@@ -87,25 +88,25 @@ body {
   transition: 1.3s;
 }
 .rmtHandlingHomeCtrPwrCtr.turnOnPos {
-  top: 80%;
-  left: 91.5%;
+  top: 87%;
+  left: 95.5%;
   transition: 800ms;
 }
 
 @keyframes shake1 {
   0%{
-    top: 80%;
-    left: 91.5%;
+    top: 87%;
+    left: 95.5%;
   }
 
   50%{
-    top: 81%;
-    left: 92.5%;
+    top: 88%;
+    left: 96.5%;
   }
 
   100%{
-    top: 80%;
-    left: 91.5%;
+    top: 87%;
+    left: 95.5%;
   }
 
   
@@ -113,18 +114,18 @@ body {
 
 @keyframes shake2 {
   0%{
-    top: 35%;
-  left: 45%;
+    top: 50%;
+  left: 50%;
   }
 
   50%{
-    top: 34%;
-    left: 44%;
+    top: 49%;
+    left: 49%;
   }
 
   100%{
-    top: 35%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
   }
 
   
@@ -150,39 +151,38 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  height: 100%;
 }
 
 .right-img-div{
-  
+  height: 100%; 
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-gif-section{
   width: 530px;
-  height:400px;
-  margin-top: 17%;
-  margin-left: 15%;
+  height:70%;
 }
 
 .machine-img{
-  position: relative;
-  margin-top: 1%;
-  margin-left: 1%;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .machine-gif{
-  opacity: 0;
-  position: relative;
-  top: -94.7%;
-  left: 1%;
-  width: 500px;
-  height: 375px;
+  display: none;
+  width:100%;
+  height:100%;
+  object-fit: cover;
   overflow: hidden;
 }
 
 .remote-head{
-  
   width:max-content;
   height: auto;
   font-family: Poppins;
@@ -190,21 +190,17 @@ body {
   font-weight: 600;
   margin-top: 7%;
   margin-left: 11%;
-
-
 }
 
 .remote-text{
-  
   color: black;
-  max-width: 550px;
-  width:max-content;
+  width: 93%;
   height: auto;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 5%;
   margin-left: 7%;
+  margin-top: 5%;
 }
 
 .remote-img{
@@ -233,11 +229,21 @@ body {
 
 }
 
-circle{
+.circle{
+  height:100%;
+  width: 100%;
+  background-color: #11606d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* circle{
   position: relative; 
   margin-top: 30%;
   fill: #11606D;
-}
+} */
 
 /*svg{
   position: relative;
@@ -288,11 +294,412 @@ circle{
 }
 
 .fa-power-off{
-  position: relative;
-  top: -36px;
-  left: 4.3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   color: white;
   cursor: pointer;
+  font-size: 32px;
 }
 
+
+/* Media Qurey... */
+
+@media(max-width:1100px){
+  .rmtHandlingHomeCtrTxtSection h1{
+    font-size: 2.7rem;
+  }
+
+  /* Remote division 2 */
+
+  .remote-div2 {
+    height: 550px;
+  }
+
+  .remote-text{
+    font-size: 15px;
+  }
+
+  .remote-head{
+    font-size: 24px;
+  }
+
+  .remote-on-off-text{
+    font-size: 18px;
+  }
+
+  .img-gif-section{
+    width: 420px;
+  }
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+  #rmtHandlingHomeSection{
+    height: 27rem;
+  }
+  .rmtHandlingHomeCtrTxtSection h1{
+    font-size: 2.3rem;
+  }
+
+  .rmtHandlingHomeCtrPwrLogo img{
+    width: 45px;
+  }
+
+  .rmtHandlingHomeCtrPwrText{
+    font-size: 90%;
+  }
+
+    /* Remote division 2 */
+
+    .remote-div2 {
+      height: 500px;
+    }
+  
+    .remote-text{
+      font-size: 12px;
+    }
+  
+    .remote-head{
+      font-size: 22px;
+    }
+  
+    .remote-on-off-text{
+      font-size: 14px;
+    }
+  
+    .img-gif-section{
+      width: 350px;
+      height: 60%;
+    }
+
+    .remote-img{
+      height: 220px;
+      width: 220px;
+      background-size: contain;
+    }
+
+
+
+}
+
+@media(max-width:750px){
+
+  #rmtHandlingHomeSection{
+    height: 23rem;
+  }
+  .rmtHandlingHomeCtrTxtSection h1{
+    font-size: 2rem;
+  }
+
+  .rmtHandlingHomeCtrPwrLogo img{
+    width: 35px;
+  }
+
+  .rmtHandlingHomeCtrPwrText{
+    font-size: 80%;
+  }
+  
+  
+.rmtHandlingHomeCtrTxtSection{
+  top: 42%;
+}
+
+
+    /* Remote division 2 */
+
+    .remote-div2 {
+      height: 400px;
+    }
+  
+    .remote-text{
+      font-size: 10px;
+    }
+  
+    .remote-head{
+      font-size: 18px;
+    }
+  
+    .remote-on-off-text{
+      font-size: 11px;
+    }
+  
+    .img-gif-section{
+      width: 300px;
+      height: 60%;
+    }
+
+    .machine-img{
+      object-fit: contain;
+    }
+
+    .machine-gif{
+      object-fit:contain;
+    }
+
+    .remote-img{
+      height: 170px;
+      width: 170px;
+      background-size: contain;
+    }
+
+    .click-button{
+      height:30px;
+      width: 30px;
+    }
+
+    .fa-power-off{
+      font-size: 24px !important;
+    }
+
+    .on-off-text{
+      font-size: 10px;
+      left: 36.2%;
+    }
+
+
+}
+
+
+@media(max-width:600px){
+
+  #rmtHandlingHomeSection{
+    height: 20rem;
+  }
+  .rmtHandlingHomeCtrTxtSection h1{
+    font-size: 1.2rem;
+  }
+
+  .rmtHandlingHomeCtrPwrLogo img{
+    width: 30px;
+  }
+
+  .rmtHandlingHomeCtrPwrText{
+    font-size: 60%;
+  }
+  
+  
+.rmtHandlingHomeCtrTxtSection{
+  top: 47%;
+}
+
+.rmtHandlingHomeCtrPwrCtr.turnOnPos {
+  left: 93%;
+}
+
+@keyframes shake1 {
+  0%{
+    top: 87%;
+    left: 93%;
+  }
+
+  50%{
+    top: 88%;
+    left: 94%;
+  }
+
+  100%{
+    top: 87%;
+    left: 93%;
+  }
+
+}
+
+.rmtHandlingHomeCtrPwrCtr{
+  width: 11%;
+  height: 14%;
+}
+
+
+    /* Remote division 2 */
+
+    .remote-div2 {
+      height:300px;
+    }
+  
+    .remote-text{
+      font-size: 6px;
+    }
+  
+    .remote-head{
+      font-size: 15px;
+    }
+  
+    .remote-on-off-text{
+      font-size: 8px;
+    }
+  
+    .img-gif-section{
+      width: 200px;
+      height: 60%;
+    }
+
+    .machine-img{
+      object-fit: contain;
+    }
+
+    .machine-gif{
+      object-fit:contain;
+    }
+
+    .remote-img{
+      height: 140px;
+      width: 140px;
+      background-size: contain;
+    }
+
+    .click-button{
+      height:25px;
+      width: 25px;
+    }
+
+    .fa-power-off{
+      font-size: 21px !important;
+    }
+
+    .on-off-text{
+      font-size: 9px;
+      left: 35%;
+    }
+
+}
+
+
+@media(max-width:400px){
+
+  #rmtHandlingHomeSection{
+    height: 17rem;
+  }
+  .rmtHandlingHomeCtrTxtSection h1{
+    font-size: 1rem;
+  }
+
+  .rmtHandlingHomeCtrPwrLogo img{
+    width: 25px;
+  }
+
+  .rmtHandlingHomeCtrPwrText{
+    font-size: 45%;
+  }
+  
+  
+.rmtHandlingHomeCtrTxtSection{
+  top: 55%;
+}
+
+.rmtHandlingHomeCtrPwrCtr.turnOnPos {
+  left: 90%;
+}
+
+@keyframes shake1 {
+  0%{
+    top: 87%;
+    left: 90%;
+  }
+
+  50%{
+    top: 88%;
+    left: 91%;
+  }
+
+  100%{
+    top: 87%;
+    left: 90%;
+  }
+
+}
+
+.rmtHandlingHomeCtrPwrCtr{
+  width: 12%;
+  height: 14%;
+  top: 56%;
+}
+
+@keyframes shake2 {
+  0%{
+    top: 56%;
+  left: 50%;
+  }
+
+  50%{
+    top: 55%;
+    left: 49%;
+  }
+
+  100%{
+    top: 56%;
+    left: 50%;
+  }
+
+
+}
+
+
+    /* Remote division 2 */
+
+    .remote-div2 {
+      height:230px;
+    }
+
+    .left-text{
+      width: 60%;
+    }
+
+    .right-img-div{
+      width: 40%;
+    }
+  
+    .remote-text{
+      font-size: 6px;
+    }
+  
+    .remote-head{
+      font-size: 12px;
+    }
+  
+    .remote-on-off-text{
+      font-size: 6px;
+    }
+  
+    .img-gif-section{
+      width: 140px;
+      height: 60%;
+      margin-top: 10%;
+    }
+
+    .machine-img{
+      object-fit: contain;
+    }
+
+    .machine-gif{
+      object-fit:contain;
+    }
+
+    .remote-img{
+      height: 110px;
+      width: 110px;
+      background-size: contain;
+    }
+
+    .click-button{
+      height:20px;
+      width: 20px;
+    }
+
+    .fa-power-off{
+      font-size: 17px !important;
+    }
+
+    .on-off-text{
+      font-size: 7px;
+      left: 35%;
+    }
+
+}
 

@@ -4,34 +4,40 @@
     display: flex;
     background: #161616; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;    
+    position: relative;  
+    justify-content: center;  
+    align-items: center;
 }
 
 .ERP-bg{
-    position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;  
 }
 
 .ERP-bg-img{
-    position: absolute;
-    top: -9%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     opacity: 0.2;
 }
 
+
+
 .production-bg{
     position: absolute;
-    top: 4%;
-    left:40%;
+    top: 6.5%;
+    left:50%;
     background-image: url('../IMAGES/Ellipse\ 110.png');
     width: 304px;
     height: 316px;
     background-repeat: no-repeat;
-    
+    background-size:contain;  
+    transform: translate(-50%,-6.5%);
+    z-index: 9;
 }
 
 .finance-bg{
@@ -42,6 +48,13 @@
     width: 312px;
     height: 261px;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 8;
+    overflow: hidden;
+}
+
+.prod-div{
+    z-index: 6;
 }
 
 .Logistics-bg{
@@ -52,6 +65,9 @@
     width: 313px;
     height: 257px;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 7;
+    overflow: hidden;
 }
 
 .CRM-bg{
@@ -62,6 +78,9 @@
     width: 343px;
     height: 316px;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 6;
+    overflow: hidden;
 }
 
 .HR-bg{
@@ -72,6 +91,9 @@
     width: 303px;
     height: 270px;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 5;
+    overflow: hidden;
 }
 
 .Proj-manage-bg{
@@ -82,6 +104,9 @@
     width: 312px;
     height: 260px;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: 4;
+    overflow: hidden;
 }
 
 .center-bg{
@@ -92,6 +117,8 @@
     width: 225px;
     height: 216px;
     background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
 }
 
 .center-text{
@@ -120,6 +147,8 @@
     display: flex;
     
 }
+
+
 
 .hover-content1,
 .hover-content2,
@@ -156,7 +185,7 @@
     font-weight: 700;
     position: absolute;
     top:65%;
-    left:41%;
+    left:46%;
     max-width: 124px;
     text-align: center;
 }
@@ -216,7 +245,7 @@
     font-weight: 700;
     position: absolute;
     top:50%;
-    left:20.5%;
+    left:24.5%;
     max-width: 124px;
     text-align: center;
 }
@@ -256,6 +285,7 @@
 .prod-div:hover .hover-content1 {
     opacity: 1;
 }
+
 
 .finance-bg:hover .finance-content {
     opacity: 0;
@@ -481,4 +511,627 @@
     left:8%;
     max-width: 200px;
     text-align: center;
+}
+
+
+/* media Query... */
+
+@media (max-width:900px){
+    .production-bg{
+        transform: translate(-48%,-10.5%);
+    }
+}
+
+
+@media (max-width:750px){
+
+    .ERP-doughnut-div{
+        height: 600px;
+    }
+
+    .production-bg{
+        width: 244px;
+        height: 256px;
+        top: 10.5%;
+        transform: translate(-50%,-10.5%);
+    }
+    
+    .finance-bg{
+        width: 252px;
+        height: 201px;
+        left: 50.5%;
+    }
+    
+    .Logistics-bg{
+        width: 253px;
+        height: 197px;
+        left: 49%;
+    }
+    
+    .CRM-bg{
+        width: 283px;
+        height: 250px;
+        top: -58%;
+    }
+    
+    .HR-bg{
+        width: 253px;
+        height: 210px;
+        top: -158.3%;
+        left: -55.7%;
+    }
+    
+    .Proj-manage-bg{
+        width: 262px;
+        height: 200px;
+        top: -321.5%;
+        left: -56%;
+    }
+    
+    .center-bg{
+        width: 165px;
+        height: 156px;
+        /* top: -352.5%; */
+        transform: translate(5.5%,24%);
+    }
+
+    .center-text{
+        font-size: 18px;
+    }
+
+    .production-head,.finance-head,.Logistics-head,.CRM-head,.HR-head,.Proj-manage-head{
+        font-size: 16px;
+    }
+
+    .production-gif,.finance-gif,.Logistics-gif,.CRM-gif,.HR-gif,.Proj-manage-gif{
+        width: 94px;
+        height: 93px;
+    }
+
+    .Proj-manage-head{
+        left: 18%;
+    }
+
+    .HR-head{
+        left: 23.5%;
+    }
+
+    .finance-head{
+        left: 45%;
+    }
+
+    .CRM-head{
+        left: 42.5%;
+    }
+
+    .Logistics-head{
+        left: 44.5%;
+    }
+
+    .production-gif{
+        left: 32%;
+    }
+
+    .production-head{
+        left: 33%;
+    }
+
+    .production-hover-head,.Logistics-hover-head,.CRM-hover-head,.HR-hover-head{
+        font-size: 16px;
+    }
+
+    .finance-hover-head{
+        font-size: 15px;
+        left: 39%;
+    }
+
+    .Proj-manage-hover-head{
+        font-size: 13px;
+        top: 34%;
+        left: 19%;
+    }
+
+    .HR-hover-head{
+        left: 20%;
+    }
+
+    .finance-hover-gif,.Logistics-hover-gif,.CRM-hover-gif{
+        width:40px;
+        height:40px;
+    }
+
+    .production-hover-gif{
+        width: 64px;
+        height: 64px;
+    }
+
+    .HR-hover-gif{
+        width: 50px;
+        height: 50px;
+    }
+
+    .Proj-manage-hover-gif{
+        width: 35px;
+        height: 35px;
+    }
+
+    .production-info{
+        font-size: 10px;
+        max-width: 130px;
+    }
+
+    .finance-info{
+        font-size: 9px;
+        max-width: 133px;
+    }
+
+    .Logistics-info{
+        font-size: 11px;
+        max-width: 125px;
+    }
+
+    .CRM-info{
+        font-size: 11px;
+        max-width: 145px;
+    }
+
+    .HR-info{
+        font-size: 11px;
+        max-width: 142px;
+    }
+
+    .Proj-manage-info{
+        font-size: 10px;
+        max-width: 158px;
+    }
+
+}   
+
+
+@media (max-width:600px){
+
+    .ERP-doughnut-div{
+        height: 470px;
+    }
+
+    .production-bg{
+        width: 201px;
+        height: 186px;
+        top: 24.5%;
+        left: 52%;
+        transform: translate(-48%,-24.5%);
+    }
+    
+    .finance-bg{
+        width: 182px;
+        height: 131px;
+        left: 50.5%;
+        top: 17.5%;
+    }
+    
+    .Logistics-bg{
+        width: 183px;
+        height: 127px;
+        left: 51%;
+    }
+    
+    .CRM-bg{
+        width: 213px;
+        height: 180px;
+        top: -56%;
+        left: -5.5%;
+    }
+    
+    .HR-bg{
+        width: 183px;
+        height: 136px;
+        top: -146.5%;
+        left: -43.5%;
+    }
+    
+    .Proj-manage-bg{
+        width: 192px;
+        height: 135px;
+        top: -293.5%;
+        left: -44.5%;
+    }
+    
+    .center-bg{
+        width: 95px;
+        height: 96px;
+        top: -328.5%;
+        left: 17.3%;
+        transform: translate(5.5%,24%);
+    }
+
+    .center-text{
+        font-size: 11px;
+    }
+
+    .production-head,.finance-head,.Logistics-head,.CRM-head,.HR-head,.Proj-manage-head{
+        font-size: 12px;
+    }
+
+    .production-gif,.finance-gif,.Logistics-gif,.CRM-gif,.HR-gif,.Proj-manage-gif{
+        width: 64px;
+        height: 63px;
+    }
+
+    .Proj-manage-head{
+        left: 6%;
+    }
+
+    .HR-head{
+        font-size: 12px;
+        left: 17.5%;
+        top: 43%;
+        }
+
+    .finance-head{
+        left: 39%;
+    }
+
+    .CRM-head{
+        left: 40.5%;
+    }
+
+    .Logistics-head{
+        left: 37.5%;
+    }
+
+    .production-gif{
+        left: 32%;
+    }
+
+    .Logistics-gif{
+        left: 35%;
+    }
+
+    .finance-gif{
+        left: 38%;
+    }
+
+    .production-head{
+        left: 29%;
+    }
+
+    .HR-gif{
+        top: 2%;
+        left: 16%;
+    }
+
+    .production-hover-head,.Logistics-hover-head,.CRM-hover-head,.HR-hover-head{
+        font-size: 12px;
+    }
+
+    .production-hover-head{
+        left: 33%;
+        top: 11%;
+    }
+
+    .finance-hover-head{
+        font-size: 10px;
+        left: 35%;
+        max-width: 84px;
+    }
+
+    .Logistics-hover-head{
+        left: 45%;
+    }
+
+    .Proj-manage-hover-head{
+        font-size: 10px;
+        top: 34%;
+        left: 19%;
+        max-width: 89px;
+    }
+
+    .HR-hover-head{
+        left: 20%;
+        max-width: 94px;
+    }
+
+    .finance-hover-gif,.Logistics-hover-gif,.CRM-hover-gif{
+        width:30px;
+        height:30px;
+    }
+
+    .finance-hover-gif{
+        left: 29%;
+    }
+
+    .Logistics-hover-gif{
+        left: 30%;
+    }
+
+    .production-hover-gif{
+        width: 54px;
+        height: 54px;
+        top: 1%;
+        left: 10%;
+    }
+
+    .HR-hover-gif{
+        width: 40px;
+        height: 40px;
+    }
+
+    .Proj-manage-hover-gif{
+        width: 25px;
+        height: 25px;
+    }
+
+    .production-info{
+        font-size: 7px;
+        max-width: 88px;
+    }
+
+    .finance-info{
+        font-size: 6px;
+        max-width: 83px;
+        left: 29%;
+    }
+
+    .Logistics-info{
+        font-size: 7px;
+        max-width: 73px;
+    }
+
+    .CRM-info{
+        font-size: 9px;
+        max-width: 130px;
+        top: 51%;
+        left: 17%;
+    }
+
+    .HR-info{
+        font-size: 7px;
+        max-width: 91px;
+    }
+
+    .Proj-manage-info{
+        font-size: 7px;
+        max-width: 117px;
+        top: 61%;
+    }
+
+
+
+}   
+
+
+
+@media (max-width:400px){
+
+    .ERP-doughnut-div{
+        height: 370px;
+    }
+
+    .production-bg{
+        width: 145px;
+        height: 129px;
+        top: 30%;
+        left: 52%;
+        transform: translate(-48%,-30%);
+    }
+    
+    .finance-bg{
+        width: 132px;
+        height: 81px;
+        left: 53.5%;
+        top: 17.5%;
+    }
+    
+    .Logistics-bg{
+        width: 133px;
+        height: 80px;
+        left: 54%;
+        top: 23%;
+    }
+    
+    .CRM-bg{
+        width: 136px;
+        height: 127px;
+        top: -54%;
+        left: -3.5%;
+    }
+    
+    .HR-bg{
+        width: 143px;
+        height: 87px;
+        top: -140%;
+        left: -37.5%;
+    }
+    
+    .Proj-manage-bg{
+        width: 152px;
+        height: 84px;
+        top: -275.5%;
+        left: -38.5%;
+    }
+    
+    .center-bg{
+        width: 45px;
+        height: 46px;
+        top: -298.5%;
+        left: 25.3%;
+        transform: translate(5.5%,24%);
+    }
+
+    .center-text{
+        font-size: 5px;
+    }
+
+    .production-head,.finance-head,.Logistics-head,.CRM-head,.HR-head,.Proj-manage-head{
+        font-size: 8px;
+    }
+
+    .production-gif,.finance-gif,.Logistics-gif,.CRM-gif,.HR-gif,.Proj-manage-gif{
+        width: 44px;
+        height: 43px;
+    }
+
+    .Proj-manage-head{
+        left: 6%;
+        max-width: 83px;
+    }
+
+    .HR-head{
+        font-size: 7px;
+        left: 17.5%;
+        top: 43%;
+        }
+
+    .finance-head{
+        left: 28%;
+    }
+
+    .CRM-head{
+        left: 43.5%;
+    }
+
+    .Logistics-head{
+        left: 31.5%;
+    }
+
+    .production-gif{
+        left: 27%;
+    }
+
+    .Logistics-gif{
+        left: 27%;
+        top: 1%;
+    }
+
+    .finance-gif{
+        left: 24%;
+        top: 15%;
+    }
+
+    .production-head{
+        left: 29%;
+    }
+
+    .HR-gif{
+        top: -4%;
+        left: 13%;
+    }
+
+    .Proj-manage-gif{
+        top: 14%;
+        left: 18%;
+    }
+
+    .CRM-gif{
+        left: 34.5%;
+    }
+
+    .production-hover-head,.Logistics-hover-head,.CRM-hover-head{
+        font-size: 9px;
+    }
+
+    .production-hover-head{
+        left: 33%;
+        top: 11%;
+    }
+
+    .finance-hover-head{
+        font-size: 6px;
+        left: 29%;
+        max-width: 50px;
+    }
+
+    .Logistics-hover-head{
+        left: 32%;
+    }
+
+    .Proj-manage-hover-head{
+        font-size: 6px;
+        top: 34%;
+        left: 19%;
+        max-width: 44px;
+    }
+
+    .HR-hover-head{
+        left: 20%;
+        max-width: 57px;
+        font-size: 7px;
+    }
+
+    .finance-hover-gif,.Logistics-hover-gif,.CRM-hover-gif{
+        width:20px;
+        height:20px;
+    }
+
+    .finance-hover-gif{
+        left: 23%;
+    }
+
+    .Logistics-hover-gif{
+        left: 18%;
+    }
+
+    .production-hover-gif{
+        width: 34px;
+        height: 34px;
+        top: 3%;
+        left: 10%;
+    }
+
+    .HR-hover-gif{
+        width: 30px;
+        height: 30px;
+        top: 1%;
+        left: 8%;
+    }
+
+    .Proj-manage-hover-gif{
+        width: 15px;
+        height: 15px;
+        left: 16%;
+    }
+
+    .production-info{
+        font-size: 5px;
+        max-width: 61px;
+        top: 24%;
+        left: 23%;
+    }
+
+    .finance-info{
+        font-size: 4px;
+        max-width: 56px;
+        left: 22%;
+    }
+
+    .Logistics-info{
+        font-size: 4px;
+        max-width: 48px;
+        left: 27%;
+    }
+
+    .CRM-info{
+        font-size: 6px;
+        max-width: 94px;
+        top: 51%;
+        left: 16%;
+    }
+
+    .HR-info{
+        font-size: 4px;
+        max-width: 55px;
+    }
+
+    .Proj-manage-info{
+        font-size: 4px;
+        max-width:69px;
+        top: 64%;
+    }
+
+}   
+
+@media (max-width:300px){
+    .production-bg{
+        transform: translate(-46%,-10.5%);
+    }
 }
