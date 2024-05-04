@@ -349,6 +349,13 @@
 .item:hover {
   background-color: rgba(41, 62, 47, 0.9);
 }
+
+@media (min-width: 992px) {
+  .nav-ul {
+    width: 450px;
+  }
+}
+
 @media only screen and (max-width: 1030px) {
   .navbar .container-fluid {
     justify-content: space-between;
