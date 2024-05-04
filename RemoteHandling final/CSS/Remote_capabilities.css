@@ -1,6 +1,6 @@
 .capabilities {
     width: 100%;
-    height: 600px;
+    height: 620px;
     background-color: #001023;
     background: linear-gradient(268deg, black 55%, #032524 100%);
     overflow: hidden;
@@ -19,11 +19,17 @@
     top:10%;
 }
 .image{
-    width: 800px;
-    height: 570px;
+    width: 50%;
+    height:100%;
     position: relative;
-    left: 52%;
+    left: 54%;
     top:2%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 *,
@@ -33,7 +39,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-p{
+.content p{
     max-width: 90%;
 }
 .container{
@@ -83,9 +89,9 @@ p{
 }
 
 
+
+
 /* Benefits of Remote Handling */
-
-
 
 .Benefits{
     width: 100%;
@@ -105,21 +111,22 @@ p{
     max-width: 350px;
 }
 .benefits-boxes{
-    display: flex;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: center;
     align-items: center;
     position: relative;
     top: 11%;
-    left:0%;
-    width: 100%;
+    left:2%;
+    width:96%;
     height: 80%;
     gap: 3%;
 }
 
 .box1{
     background-color: black;
-    width: 21%;
     height: 94%;
+    overflow: hidden;
 }
 .box{
     color: white;
@@ -150,7 +157,7 @@ p{
 }
 .box-image-1{
     width: 100%;
-    height: 56%;
+    height: 55%;
     margin-top: 5%;
 }
 .box-image-2{
@@ -158,3 +165,321 @@ p{
     height: 49%;
     margin-top: 5%;
 }
+
+
+
+/* Media Query.... */
+
+
+@media(max-width:1200px){
+    /* Benefits.... */
+
+    .box,.box1 span{
+        font-size: 16px;
+    }
+
+    .box-info{
+        font-size: 16px;
+    }
+
+    .box-image,.box-image-1{
+        height: 50%;
+    }
+
+    .box-image-2{
+        height: 46%;
+    }
+
+    .box-info-4{
+        margin-right:1%;
+    }
+}
+
+@media(max-width:1100px){
+
+    /* capabilities..... */
+
+    .capabilities-head{
+        font-size: 22px;
+    }
+
+    .content{
+        font-size: 14px;
+        line-height:20px;
+    }
+
+    .toggle{
+        font-size: 18px;
+    }
+
+    /* Benefits.... */
+
+    .Benefits{
+        height: 550px;;
+    }
+
+    .box,.box1 span{
+        font-size: 14px;
+    }
+
+    .box-info{
+        font-size: 15px;
+    }
+
+
+    .benefits-topic{
+        font-size: 22px;
+    }
+    
+}
+
+
+
+@media(max-width:900px){
+
+    /* capabilities..... */
+
+    .capabilities-head{
+        font-size: 20px;
+    }
+
+    .content{
+        font-size: 13px;
+        line-height:20px;
+    }
+
+    .toggle{
+        font-size: 16px;
+    }
+
+    /* Benefits.... */
+
+    .Benefits{
+        height: 500px;
+    }
+
+
+    .box,.box1 span{
+        font-size: 12px;
+    }
+
+    .box-info{
+        font-size: 13px;
+    }
+
+    .benefits-topic{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media(max-width:750px){
+
+    /* capabilities..... */
+
+    .capabilities{
+        height: 580px;
+    }
+
+    .capabilities-head{
+        font-size: 24px;
+        z-index: 1;
+    }
+
+    .content{
+        font-size: 15px;
+        line-height:20px;
+        width: 115%;
+    }
+
+    .toggle{
+        font-size: 20px;
+    }
+    
+    .image{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .image img{
+        background: transparent;
+    }
+
+    .container{
+        width: 93%;
+        top: 23%;
+        max-width: 93% !important;
+    }
+
+
+    .content p{
+        width: 100%;
+    }
+
+        /* Benefits.... */
+
+        .Benefits{
+            height: 400px;
+        }
+    
+    
+        .box,.box1 span{
+            font-size: 9px;
+        }
+    
+        .box-info{
+            font-size: 10px;
+        }
+    
+        .box-image,.box-image-1{
+            height: 50%;
+        }
+    
+        .box-image-2{
+            height: 46%;
+        }
+    
+        .box-info-4{
+            margin-right:1%;
+        }
+    
+        .benefits-topic{
+            font-size: 18px;
+        }
+}
+
+
+@media(max-width:600px){
+
+    /* capabilities..... */
+
+    .capabilities{
+        height: 530px;
+    }
+
+    .capabilities-head{
+        font-size: 18px;
+        z-index: 1;
+    }
+
+    .content{
+        font-size: 12px;
+        line-height:20px;
+        width: 115%;
+    }
+
+    .toggle{
+        font-size: 16px;
+    }
+
+    .wrapper{
+        padding: 10px 30px;
+    }
+
+    .container{
+        top: 25%;
+    }
+
+        /* Benefits.... */
+
+        .Benefits{
+            height: 1000px;
+        }
+
+        .benefits-boxes{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            column-gap: 6%;
+            row-gap: 3%;
+            margin-left: 5%;
+            width: 85%;
+        }
+    
+    
+        .box,.box1 span{
+            font-size: 14px;
+        }
+    
+        .box-info{
+            font-size: 13px;
+        }
+
+    
+        .benefits-topic{
+            font-size: 22px;
+        }
+
+}
+
+
+
+@media(max-width:400px){
+
+    /* capabilities..... */
+
+    .capabilities{
+        height: 430px;
+    }
+
+    .capabilities-head{
+        font-size: 16px;
+        z-index: 1;
+    }
+
+    .content{
+        font-size: 8px;
+        line-height:15px;
+        width: 115%;
+    }
+
+    .toggle{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        padding: 5px 30px;
+    }
+
+    .container{
+        top: 25%;
+    }
+
+
+        /* Benefits.... */
+
+        .Benefits{
+            height: 800px;
+        }
+
+        .benefits-boxes{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            column-gap: 6%;
+            row-gap: 3%;
+            margin-left: 5%;
+            width: 85%;
+        }
+    
+    
+        .box,.box1 span{
+            font-size: 12px;
+        }
+    
+        .box-info{
+            font-size: 11px;
+        }
+
+    
+        .benefits-topic{
+            font-size: 19px;
+        }
+
+
+}
+
+
