@@ -129,8 +129,8 @@ function getDate(date) {
     "z-index: 0";
   document.getElementsByClassName("landingPageFormAnyOtherQuestions")[0].style =
     "z-index: 0";
-  document.getElementById("LandingPageChooseDate").style = "opacity: 1";
-  document.getElementById("LandingPageChooseTime").style = "opacity: 1";
+  document.getElementById("LandingPageChooseDate").style = "z-index: 2 !important";
+  document.getElementById("LandingPageChooseTime").style = "z-index: 2 !important";
   document.getElementById("meetingDate").textContent = date;
 }
 var meetDate;
@@ -169,8 +169,8 @@ function openCalendar() {
     "z-index: -1";
   document.getElementsByClassName("landingPageFormAnyOtherQuestions")[0].style =
     "z-index: -1";
-  document.getElementById("LandingPageChooseDate").style = "opacity: 0";
-  document.getElementById("LandingPageChooseTime").style = "opacity: 0";
+  document.getElementById("LandingPageChooseDate").style = "z-index: -1 !important";
+  document.getElementById("LandingPageChooseTime").style = "z-index: -1 !important";
 }
 
 //time

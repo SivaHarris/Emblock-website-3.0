@@ -473,3 +473,427 @@
   opacity: 0;
   transition: 5s;
 }
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  #AttendanceTrackerWhatWeOfferSection {
+    overflow: hidden;
+
+  }
+  .AttendanceTrackerWhatWeOfferHeader {
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+  }
+  .AttendanceTrackerWhatWeOfferPara {
+    width: 90%;
+    padding-bottom: 5%;
+    height: fit-content;
+  }
+  .AttendanceTrackerScrollSection{
+    grid-template-columns: auto 150px auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  /* resizing boxes */
+  .AttendanceScrollBoxRealtime{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxRealtimePara{
+    display: none;
+  }
+  .AttendanceScrollBoxRealtimeGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxRealtimeGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxRealtimeGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxCustomReport{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxCustomReportGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxCustomReportGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxCustomReportGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxCustomReportPara{
+    display: none;
+  }
+  .AttendanceScrollBoxGeolocation{
+    width: 80px !important;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxGeolocationGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxGeolocationGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxGeolocationGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxGeolocationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxBiometrics{
+    width: 150px;
+    height: 250px;
+  }
+  .AttendanceScrollBoxBiometricsGif{
+    width: 100px;
+    height: 80px;
+  }
+  .AttendanceScrollBoxBiometricsHeader{
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+  }
+  .AttendanceScrollBoxBiometricsPara{
+    width: 80%;
+    justify-self: center;
+    height: fit-content;
+    font-size: 10px;
+  }
+  .AttendanceScrollBoxMobileAccess{
+    width: 80px !important;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxMobileAccessGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxMobileAccessGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxMobileAccessGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxMobileAccessPara{
+    display: none;
+  }
+  .AttendanceScrollBoxIntegration{
+    width: 80px !important;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxIntegrationGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxIntegrationGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxIntegrationGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxIntegrationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxAutomated{
+    width: 80px !important;
+    height: 80px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxAutomatedGifSection{
+    width: 80px !important;
+    height: 80px;
+  }
+  .AttendanceScrollBoxAutomatedGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxAutomatedGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxAutomatedPara{
+    display: none;
+  }
+  
+}
+@media screen and (min-width:750px) and (max-width: 1050px) {
+  #AttendanceTrackerWhatWeOfferSection {
+    overflow: hidden;
+  }
+  .AttendanceTrackerWhatWeOfferHeader {
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+  }
+  .AttendanceTrackerWhatWeOfferPara {
+    width: 80%;
+    padding-bottom: 5%;
+    height: fit-content;
+    font-size: 16px;
+  }
+  .AttendanceTrackerScrollSection{
+    grid-template-columns: auto 250px auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  /* resizing boxes */
+   .AttendanceScrollBoxRealtime{
+    opacity: 1;
+  }
+   .AttendanceScrollBoxRealtimePara{
+    display: none;
+  }
+  .AttendanceScrollBoxCustomReport{
+    opacity: 1;
+  }
+  .AttendanceScrollBoxCustomReportPara{
+    display: none;
+  }
+  .AttendanceScrollBoxGeolocation{
+    
+    opacity: 1;
+  }
+  .AttendanceScrollBoxGeolocationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxBiometrics{
+    width: 250px;
+    height: 250px;
+  }
+  .AttendanceScrollBoxBiometricsHeader{
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+  }
+  .AttendanceScrollBoxBiometricsPara{
+    width: 80%;
+    justify-self: center;
+    height: fit-content;
+    font-size: 14px;
+  }
+  .AttendanceScrollBoxMobileAccess{
+    opacity: 1;
+  }
+  .AttendanceScrollBoxMobileAccessPara{
+    display: none;
+  }
+  .AttendanceScrollBoxIntegration{
+    opacity: 1;
+  }
+  .AttendanceScrollBoxIntegrationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxAutomated{
+    opacity: 1;
+  }
+  .AttendanceScrollBoxAutomatedPara{
+    display: none;
+  }
+}
+@media screen and (max-width:281px) {
+  #AttendanceTrackerWhatWeOfferSection {
+    overflow: hidden;
+
+  }
+  .AttendanceTrackerWhatWeOfferHeader {
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+  }
+  .AttendanceTrackerWhatWeOfferPara {
+    width: 90%;
+    padding-bottom: 5%;
+    height: fit-content;
+  }
+  .AttendanceTrackerScrollSection{
+    grid-template-columns: auto 120px auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  /* resizing boxes */
+  .AttendanceScrollBoxRealtime{
+    width: 65px;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxRealtimePara{
+    display: none;
+  }
+  .AttendanceScrollBoxRealtimeGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxRealtimeGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxRealtimeGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxCustomReport{
+    width: 65px;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxCustomReportGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxCustomReportGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxCustomReportGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxCustomReportPara{
+    display: none;
+  }
+  .AttendanceScrollBoxGeolocation{
+    width: 65px !important;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxGeolocationGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxGeolocationGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxGeolocationGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxGeolocationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxBiometrics{
+    width: 120px;
+    height: 250px;
+  }
+  .AttendanceScrollBoxBiometricsGif{
+    width: 100px;
+    height: 80px;
+  }
+  .AttendanceScrollBoxBiometricsHeader{
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+  }
+  .AttendanceScrollBoxBiometricsPara{
+    width: 80%;
+    justify-self: center;
+    height: fit-content;
+    font-size: 10px;
+  }
+  .AttendanceScrollBoxMobileAccess{
+    width: 65px !important;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxMobileAccessGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxMobileAccessGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxMobileAccessGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxMobileAccessPara{
+    display: none;
+  }
+  .AttendanceScrollBoxIntegration{
+    width: 65px !important;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxIntegrationGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxIntegrationGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxIntegrationGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxIntegrationPara{
+    display: none;
+  }
+  .AttendanceScrollBoxAutomated{
+    width: 65px !important;
+    height: 65px;
+    opacity: 1;
+  }
+  .AttendanceScrollBoxAutomatedGifSection{
+    width: 65px !important;
+    height: 65px;
+  }
+  .AttendanceScrollBoxAutomatedGifSectionGif{
+    width: 39px;
+    height: 39px;
+  }
+  .AttendanceScrollBoxAutomatedGifSectionText{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: auto;
+    font-size: 8px;
+  }
+  .AttendanceScrollBoxAutomatedPara{
+    display: none;
+  }
+}
